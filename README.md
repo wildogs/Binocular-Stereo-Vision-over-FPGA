@@ -1,7 +1,11 @@
 # Plataforma de Visión Estereoscópica en PYNQ‑Z2 (TFG)
 
-Sistema hardware/software para capturar dos cámaras OV5640 en una placa de prototipado PYNQ‑Z2 que integra un dispositivo ZYNQ-7000.
-Se calcula un mapa de disparidad haciendo uso de un IP **StereoLBM** acelerado por hardware y se visualiza por HDMI. Este repositorio contiene el **código bare‑metal en C** para controlar cámaras, framebuffers, la salida HDMI y el IP de estereovisión.
+Sistema hardware/software para la captura de vídeo de dos sensores de imágenes OV5640 sobre una placa de prototipado PYNQ‑Z2 que integra un dispositivo ZYNQ-7000.
+Se calcula un mapa de disparidad haciendo uso de un IP **StereoLBM** acelerado mediante síntesis de alto nivel y se visualiza haciendo uso de un monitor externo HDMI. Este repositorio contiene:
+- El **código bare‑metal en C** para controlar cámaras, framebuffers, la salida HDMI y el IP de estereovisión.
+- La plataforma hardware, artefactos de Vivado (xdc, xsa)
+- Scripts TCL/HLS/XSCT útiles
+- Documentación del proyecto
 
 > *Desarrollo de una plataforma de percepción estereoscópica de profundidad basada en SoPC* (ULPGC).
 
