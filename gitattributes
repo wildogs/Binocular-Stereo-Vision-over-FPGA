@@ -1,0 +1,4 @@
+# Git LFS para artefactos de hardware
+*.bit filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.xsa filter=lfs diff=lfs merge=lfs -text
