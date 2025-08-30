@@ -11,47 +11,13 @@ Se calcula un mapa de disparidad haciendo uso de un IP **StereoLBM** acelerado m
 
 ---
 
-## Estructura del repositorio
-
-La jerarquía de código (carpeta `sw/`) sigue la estructura de la captura adjunta:
-
-```
-sw/
-├─ camera/
-│  ├─ ov5640_sccb.c
-│  └─ ov5640_sccb.h
-├─ display_ctrl_hdmi/
-│  ├─ display_ctrl.c
-│  ├─ display_ctrl.h
-│  └─ lcd_modes.h
-├─ dynclk/
-│  ├─ dynclk.c
-│  └─ dynclk.h
-├─ led_blink/
-│  ├─ led_blink.c
-│  └─ led_blink.h
-├─ sv_ctrl/
-│  ├─ sv_ctrl.c
-│  └─ sv_ctrl.h
-├─ vframebuffers/
-│  ├─ vframebuffers.c
-│  └─ vframebuffers.h
-├─ main.c
-├─ platform.c
-├─ platform.h
-├─ platform_config.h 
-└─ lscript.ld
-```
-
----
-
 ## Requisitos
 
 **Hardware**
 - Placa **PYNQ‑Z2** (Zynq‑7000 XC7Z020).
 - Módulo dual de cámaras **OV5640** (SCCB/I²C, salida DVP).
 - Monitor **HDMI** y cable.
-- Tarjeta **micro‑SD** con imagen de arranque o JTAG.
+- Tarjeta **micro‑SD** con imagen de arranque o JTAG. 
 
 **Software**
 - **Vivado 2023.1** y **Vitis 2023.1** (o compatibles).
