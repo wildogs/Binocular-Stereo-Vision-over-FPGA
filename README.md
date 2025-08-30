@@ -45,7 +45,7 @@ sw/
 
 ---
 
-## 🧰 Requisitos
+## Requisitos
 
 **Hardware**
 - Placa **PYNQ‑Z2** (Zynq‑7000 XC7Z020).
@@ -116,7 +116,7 @@ El punto de entrada es `main.c`, donde se ve claramente la secuencia: **Init cá
 
 ## Licencia y cita
 
-- Se sugiere **MIT** para el software. Los ficheros generados por herramientas de terceros mantienen sus propias licencias.
+- Licencia **MIT** para el software. Los ficheros generados por herramientas de terceros mantienen sus propias licencias.
 - Si publicas resultados, por favor menciona el TFG y el repositorio.
 
 
