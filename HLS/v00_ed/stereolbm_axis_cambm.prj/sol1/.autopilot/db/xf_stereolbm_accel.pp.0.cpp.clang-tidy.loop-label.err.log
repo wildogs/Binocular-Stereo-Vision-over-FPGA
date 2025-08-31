@@ -1,0 +1,5 @@
+4 warnings and 57 errors generated.
+Error while processing C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp.
+clang-tidy applied 268 of 268 suggested fixes.
+Suppressed 136 warnings (132 in non-user code, 4 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

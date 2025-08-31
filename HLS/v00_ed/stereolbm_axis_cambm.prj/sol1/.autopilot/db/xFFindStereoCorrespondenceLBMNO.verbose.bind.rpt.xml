@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'xFFindStereoCorrespondenceLBMNO'" level="0">
+<item name = "Date">Tue Jun 24 19:15:07 2025
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">stereolbm_axis_cambm.prj</item>
+<item name = "Solution">sol1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.570 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3998425, 3998425, 39.984 ms, 39.984 ms, 3998415, 3998415, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Sobel_0_3_0_3_600_800_1_false_2_2_2_3_fu_274">Sobel_0_3_0_3_600_800_1_false_2_2_2_3, 488007, 488007, 4.880 ms, 4.880 ms, 488007, 488007, no</column>
+<column name="grp_Sobel_0_3_0_3_600_800_1_false_2_2_2_s_fu_286">Sobel_0_3_0_3_600_800_1_false_2_2_2_s, 488007, 488007, 4.880 ms, 4.880 ms, 488007, 488007, no</column>
+<column name="call_ln0_entry_proc_fu_298">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_xFImageClip_600_800_1_2_4_0_3_0_800_4_fu_324">xFImageClip_600_800_1_2_4_0_3_0_800_4, 484201, 484201, 4.842 ms, 4.842 ms, 484201, 484201, no</column>
+<column name="grp_xFReadOutStream_600_800_1_2_4_0_3_800_5_fu_336">xFReadOutStream_600_800_1_2_4_0_3_800_5, 482401, 482401, 4.824 ms, 4.824 ms, 482401, 482401, no</column>
+<column name="grp_xFImageClip_600_800_1_2_4_0_3_0_800_s_fu_343">xFImageClip_600_800_1_2_4_0_3_0_800_s, 484201, 484201, 4.842 ms, 4.842 ms, 484201, 484201, no</column>
+<column name="grp_xFReadOutStream_600_800_1_2_4_0_3_800_s_fu_352">xFReadOutStream_600_800_1_2_4_0_3_800_s, 482401, 482401, 4.824 ms, 4.824 ms, 482401, 482401, no</column>
+<column name="grp_xFSADBlockMatching_fu_359">xFSADBlockMatching, 3998414, 3998414, 39.984 ms, 39.984 ms, 3998414, 3998414, no</column>
+<column name="grp_xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13_fu_373">xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13, 6, 480005, 60.000 ns, 4.800 ms, 6, 480005, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFGradientY3x3_0_4_s'
+================================================================
+* Date:           Tue Jun 24 19:14:48 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.757 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        1|  10.000 ns|  10.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.73>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%b2_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %b2_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107]   --->   Operation 3 'read' 'b2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%b1_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %b1_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107]   --->   Operation 4 'read' 'b1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%b0_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %b0_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107]   --->   Operation 5 'read' 'b0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%t2_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %t2_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107]   --->   Operation 6 'read' 't2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%t1_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %t1_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107]   --->   Operation 7 'read' 't1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%t0_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %t0_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107]   --->   Operation 8 'read' 't0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%M00 = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i8.i1, i8 %t1_val_read, i1 0" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107]   --->   Operation 9 'bitconcatenate' 'M00' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln107 = zext i9 %M00" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107]   --->   Operation 10 'zext' 'zext_ln107' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln109 = zext i8 %b0_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:109]   --->   Operation 11 'zext' 'zext_ln109' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln109_1 = zext i8 %b2_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:109]   --->   Operation 12 'zext' 'zext_ln109_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.91ns)   --->   "%A00 = add i9 %zext_ln109_1, i9 %zext_ln109" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:109]   --->   Operation 13 'add' 'A00' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln110 = zext i8 %t0_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:110]   --->   Operation 14 'zext' 'zext_ln110' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln110_1 = zext i8 %t2_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:110]   --->   Operation 15 'zext' 'zext_ln110_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (1.91ns)   --->   "%S00 = add i9 %zext_ln110_1, i9 %zext_ln110" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:110]   --->   Operation 16 'add' 'S00' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln110_2 = zext i9 %S00" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:110]   --->   Operation 17 'zext' 'zext_ln110_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (1.82ns)   --->   "%add_ln113 = add i10 %zext_ln110_2, i10 %zext_ln107" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:113]   --->   Operation 18 'add' 'add_ln113' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 3.75>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%M01 = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i8.i1, i8 %b1_val_read, i1 0" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:108]   --->   Operation 19 'bitconcatenate' 'M01' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln108 = zext i9 %M01" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:108]   --->   Operation 20 'zext' 'zext_ln108' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln109_2 = zext i9 %A00" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:109]   --->   Operation 21 'zext' 'zext_ln109_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln114 = zext i10 %add_ln113" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:114]   --->   Operation 22 'zext' 'zext_ln114' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%out_pix_2 = sub i11 %zext_ln108, i11 %zext_ln114" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:114]   --->   Operation 23 'sub' 'out_pix_2' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.87> <IPBlock> <Opcode : '<invalid operator> ' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 24 [1/1] (3.75ns) (root node of TernaryAdder)   --->   "%out_pix = add i11 %out_pix_2, i11 %zext_ln109_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:115]   --->   Operation 24 'add' 'out_pix' <Predicate = true> <Delay = 3.75> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.87> <IPBlock> <Opcode : '<invalid operator> ' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%ret_ln127 = ret i11 %out_pix" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:127]   --->   Operation 25 'ret' 'ret_ln127' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.738ns
+The critical path consists of the following:
+	wire read operation ('t2_val_read', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107) on port 't2_val' (C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:107) [10]  (0.000 ns)
+	'add' operation ('S00', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:110) [23]  (1.915 ns)
+	'add' operation ('add_ln113', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:113) [25]  (1.823 ns)
+
+ <State 2>: 3.757ns
+The critical path consists of the following:
+	'sub' operation ('out_pix_2', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:114) [27]  (0.000 ns)
+	'add' operation ('out_pix', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:115) [28]  (3.757 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

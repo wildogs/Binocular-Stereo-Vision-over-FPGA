@@ -1,0 +1,122 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::operator<<(hls::Scalar<3, ap_uint<8> > const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator-() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64> ap_int_base<64, false>::operator<<<32>(ap_int_base<32, false> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64> ap_int_base<64, false>::operator>><32>(ap_int_base<32, false> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::operator()(int, int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<64, false>::ssdm_int(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::RType<32, true>::minus operator-<1, false, 32, true>(ap_int_base<1, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::RType<($_0)32, true>::arg1 operator<<<64, false>(ap_range_ref<64, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<ap_uint<64>, 0>::operator<<(ap_uint<64> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<64, false>::ap_range_ref(ap_int_base<64, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<ap_uint<64>, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint<64>(ap_uint<64> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64> ap_int_base<64, false>::operator<<<32>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<ap_uint<64>, 0>::operator>>(ap_uint<64>&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base<64, false>(ap_range_ref<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<24>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<3>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi5ELb0EEC2EDq5_j" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<24, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<24, false>::ap_range_ref(ap_int_base<24, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<24, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<5>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\utils/x_hls_utils.h" line="252" pragmaType="inline" parentfunction="reg" off="1" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\utils/x_hls_utils.h" line="250" pragmaType="pipeline" parentfunction="reg" off="0" ii="1" style=""/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\utils/x_hls_utils.h" line="251" pragmaType="latency" parentfunction="reg" min="1" max="1"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::operator>>(hls::Scalar<3, ap_uint<8> >&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<24>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<24, false>::operator()(int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_rd_2_0/src/hls/hls_video_core.h" line="183" pragmaType="inline" parentfunction="hls::Scalar<3, ap_uint<8> >::Scalar()" off="0" region="0" recursive="0"/>
+<pragma file="c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_rd_2_0/src/hls/hls_video_core.h" line="184" pragmaType="array_partition" parentfunction="hls::Scalar<3, ap_uint<8> >::Scalar()" dim="1" factor="0" mode="complete" dynamic="0" variable="val4"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi3ELb0EEC2EDq3_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<3>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="50" pragmaType="dataflow" parentfunction="FrmbufRdHlsDataFlow" disable_start_propagation="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="38" pragmaType="stream" parentfunction="FrmbufRdHlsDataFlow" depth="1024" type="fifo" variable="plane0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="39" pragmaType="bind_storage" parentfunction="FrmbufRdHlsDataFlow" op="666" impl="8" latency="-1" variable="plane01"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi24ELb0EEC2EDq24_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="301" pragmaType="pipeline" parentfunction="MultiPixStream2AXIvideo" off="0" ii="1" rewind="0" style=""/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="300" pragmaType="loop_flatten" parentfunction="MultiPixStream2AXIvideo" off="1"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="288" pragmaType="array_partition" parentfunction="MultiPixStream2AXIvideo" dim="0" factor="0" mode="complete" dynamic="0" variable="map"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="84" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="axis" port="m_axis_video" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="86" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="s_axilite" port="width" bundle="CTRL" offset="16" name="" clock="" impl="" register="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="87" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="s_axilite" port="height" bundle="CTRL" offset="24" name="" clock="" impl="" register="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="88" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="s_axilite" port="stride" bundle="CTRL" offset="32" name="" clock="" impl="" register="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="89" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="s_axilite" port="video_format" bundle="CTRL" offset="40" name="" clock="" impl="" register="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="96" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="s_axilite" port="" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="98" pragmaType="stable" parentfunction="v_frmbuf_rd" variable="width"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="99" pragmaType="stable" parentfunction="v_frmbuf_rd" variable="height"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="100" pragmaType="stable" parentfunction="v_frmbuf_rd" variable="stride"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="101" pragmaType="stable" parentfunction="v_frmbuf_rd" variable="video_format"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="111" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="m_axi" port="frm_buffer" bundle="mm_video" offset="slave" name="" depth="2073600" num_read_outstanding="4" num_write_outstanding="-1" max_burst_read_length="16" max_burst_write_length="-1" latency="100" max_widen_bitwidth="-1" channel=""/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="112" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="s_axilite" port="frm_buffer" bundle="CTRL" offset="48" name="" clock="" impl="" register="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="114" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="m_axi" port="frm_buffer2" bundle="mm_video" offset="slave" name="" depth="2073600" num_read_outstanding="4" num_write_outstanding="-1" max_burst_read_length="16" max_burst_write_length="-1" latency="100" max_widen_bitwidth="-1" channel=""/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="115" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="s_axilite" port="frm_buffer2" bundle="CTRL" offset="60" name="" clock="" impl="" register="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="117" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="m_axi" port="frm_buffer3" bundle="mm_video" offset="slave" name="" depth="2073600" num_read_outstanding="4" num_write_outstanding="-1" max_burst_read_length="16" max_burst_write_length="-1" latency="100" max_widen_bitwidth="-1" channel=""/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="118" pragmaType="interface" parentfunction="v_frmbuf_rd" mode="s_axilite" port="frm_buffer3" bundle="CTRL" offset="116" name="" clock="" impl="" register="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<5>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<64, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<1, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<3, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="1261" pragmaType="loop_flatten" parentfunction="Bytes2MultiPixStream" off="1"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="1257" pragmaType="loop_tripcount" parentfunction="Bytes2MultiPixStream" min="0" max="4320" avg="2160"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="1264" pragmaType="pipeline" parentfunction="Bytes2MultiPixStream" off="0" ii="8" rewind="0" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>& ap_int_base<32, false>::operator=<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<24, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="436" pragmaType="loop_flatten" parentfunction="AXIMMvideo2Bytes" off="1"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="434" pragmaType="loop_tripcount" parentfunction="AXIMMvideo2Bytes" min="0" max="4320" avg="2160"/>
+<pragma file="C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp" line="439" pragmaType="pipeline" parentfunction="AXIMMvideo2Bytes" off="0" ii="1" rewind="0" style=""/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<5, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+</pragmas>

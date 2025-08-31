@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFInitUndistortRectifyMapInverseKernel'
+================================================================
+* Date:           Tue Jun 24 19:15:17 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.972 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+    +---------+---------+----------+----------+-----+--------+---------+
+    |       45|   480044|  0.450 us|  4.800 ms|   45|  480044|       no|
+    +---------+---------+----------+----------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+-----+--------+---------+
+        |                                                                                   |                                                                        |  Latency (cycles) |   Latency (absolute)  |   Interval   | Pipeline|
+        |                                      Instance                                     |                                 Module                                 |   min   |   max   |    min    |    max    | min |   max  |   Type  |
+        +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+-----+--------+---------+
+        |grp_xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1_fu_120        |xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1        |       11|       11|   0.110 us|   0.110 us|   11|      11|       no|
+        |grp_xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_178_2_fu_141        |xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_178_2        |        7|        7|  70.000 ns|  70.000 ns|    7|       7|       no|
+        |grp_xFInitUndistortRectifyMapInverseKernel_Pipeline_loop_height_loop_width_fu_152  |xFInitUndistortRectifyMapInverseKernel_Pipeline_loop_height_loop_width  |       31|   480030|   0.310 us|   4.800 ms|   31|  480030|       no|
+        +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+-----+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|   77|    7772|   4919|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     43|    -|
+|Register         |        -|    -|      39|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|   77|    7811|   4964|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   35|       7|      9|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
+    |                                      Instance                                     |                                 Module                                 | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
+    |mul_16ns_16ns_32_1_1_U203                                                          |mul_16ns_16ns_32_1_1                                                    |        0|   1|     0|     6|    0|
+    |grp_xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1_fu_120        |xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1        |        0|   0|   427|    64|    0|
+    |grp_xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_178_2_fu_141        |xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_178_2        |        0|   0|   169|    60|    0|
+    |grp_xFInitUndistortRectifyMapInverseKernel_Pipeline_loop_height_loop_width_fu_152  |xFInitUndistortRectifyMapInverseKernel_Pipeline_loop_height_loop_width  |        0|  76|  7176|  4789|    0|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                                              |                                                                        |        0|  77|  7772|  4919|    0|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |ap_block_state2_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |Total                            |          |   0|  0|   2|           1|           1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------+----+-----------+-----+-----------+
+    |         Name        | LUT| Input Size| Bits| Total Bits|
+    +---------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm            |  25|          5|    1|          5|
+    |mapxRMat_data_write  |   9|          2|    1|          2|
+    |mapyRMat_data_write  |   9|          2|    1|          2|
+    +---------------------+----+-----------+-----+-----------+
+    |Total                |  43|          9|    3|          9|
+    +---------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                              Name                                              | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                                       |   4|   0|    4|          0|
+    |grp_xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1_fu_120_ap_start_reg        |   1|   0|    1|          0|
+    |grp_xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_178_2_fu_141_ap_start_reg        |   1|   0|    1|          0|
+    |grp_xFInitUndistortRectifyMapInverseKernel_Pipeline_loop_height_loop_width_fu_152_ap_start_reg  |   1|   0|    1|          0|
+    |mul_ln163_reg_379                                                                               |  32|   0|   32|          0|
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                                           |  39|   0|   39|          0|
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+----------------------------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |              Source Object             |    C Type    |
++------------------------------+-----+-----+------------+----------------------------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel|  return value|
+|cameraMatrix_address0         |  out|    4|   ap_memory|                            cameraMatrix|         array|
+|cameraMatrix_ce0              |  out|    1|   ap_memory|                            cameraMatrix|         array|
+|cameraMatrix_q0               |   in|   32|   ap_memory|                            cameraMatrix|         array|
+|distCoeffs_address0           |  out|    3|   ap_memory|                              distCoeffs|         array|
+|distCoeffs_ce0                |  out|    1|   ap_memory|                              distCoeffs|         array|
+|distCoeffs_q0                 |   in|   32|   ap_memory|                              distCoeffs|         array|
+|ir_address0                   |  out|    4|   ap_memory|                                      ir|         array|
+|ir_ce0                        |  out|    1|   ap_memory|                                      ir|         array|
+|ir_q0                         |   in|   32|   ap_memory|                                      ir|         array|
+|mapxRMat_data_din             |  out|   32|     ap_fifo|                           mapxRMat_data|       pointer|
+|mapxRMat_data_num_data_valid  |   in|    2|     ap_fifo|                           mapxRMat_data|       pointer|
+|mapxRMat_data_fifo_cap        |   in|    2|     ap_fifo|                           mapxRMat_data|       pointer|
+|mapxRMat_data_full_n          |   in|    1|     ap_fifo|                           mapxRMat_data|       pointer|
+|mapxRMat_data_write           |  out|    1|     ap_fifo|                           mapxRMat_data|       pointer|
+|mapyRMat_data_din             |  out|   32|     ap_fifo|                           mapyRMat_data|       pointer|
+|mapyRMat_data_num_data_valid  |   in|    2|     ap_fifo|                           mapyRMat_data|       pointer|
+|mapyRMat_data_fifo_cap        |   in|    2|     ap_fifo|                           mapyRMat_data|       pointer|
+|mapyRMat_data_full_n          |   in|    1|     ap_fifo|                           mapyRMat_data|       pointer|
+|mapyRMat_data_write           |  out|    1|     ap_fifo|                           mapyRMat_data|       pointer|
+|rows                          |   in|   16|     ap_none|                                    rows|        scalar|
+|cols                          |   in|   16|     ap_none|                                    cols|        scalar|
++------------------------------+-----+-----+------------+----------------------------------------+--------------+
+

@@ -1,0 +1,672 @@
+{
+  "0": {
+    "basicblocks": 91,
+    "calls": "42 19 19 32 24 32 24 29 11 33 1 43",
+    "file": "xf_stereolbm_accel.cpp",
+    "fileloc": 23,
+    "instructions": 786,
+    "loads": {
+      "G": 6,
+      "L": 6
+    },
+    "name": "stereolbm_axis_cambm",
+    "stores": {
+      "L": 57
+    },
+    "total_instructions": 24519
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "22",
+    "file": "xf_dilation.hpp",
+    "fileloc": 356,
+    "instructions": 15,
+    "loads": {
+      "L": 2
+    },
+    "name": "dilate<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>",
+    "total_instructions": 475
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 541,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "__signbit",
+    "total_instructions": 3
+  },
+  "11": {
+    "basicblocks": 7,
+    "calls": "28 41 20",
+    "file": "xf_stereolbm_accel.cpp",
+    "fileloc": 5,
+    "instructions": 40,
+    "loads": {
+      "L": 3
+    },
+    "name": "ConvertShiftAbs",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 209
+  },
+  "12": {
+    "basicblocks": 62,
+    "calls": "26 26 15 50 50 48 3 50 50",
+    "file": "xf_sobel.hpp",
+    "fileloc": 306,
+    "instructions": 491,
+    "loads": {
+      "L": 33
+    },
+    "name": "xFSobelFilter3x3<0, 3, 600, 800, 1, 0, 4, 1, 2, 2, 2, 1, 6, 800, false>",
+    "stores": {
+      "L": 42
+    },
+    "total_instructions": 781
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 552,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "write<2, nullptr>",
+    "total_instructions": 3
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 3,
+    "name": "read<2, nullptr>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "15": {
+    "basicblocks": 5,
+    "calls": "48 3",
+    "file": "xf_sobel.hpp",
+    "fileloc": 134,
+    "instructions": 80,
+    "loads": {
+      "L": 16
+    },
+    "name": "xFSobel3x3<1, 1, 0, 4>",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 176
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "12",
+    "file": "xf_sobel.hpp",
+    "fileloc": 1873,
+    "instructions": 6,
+    "loads": {
+      "L": 2
+    },
+    "name": "Sobel<0, 3, 0, 3, 600, 800, 1, false, 2, 2, 2>",
+    "total_instructions": 787
+  },
+  "17": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 532,
+    "instructions": 13,
+    "loads": {
+      "L": 1
+    },
+    "name": "mantissa",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 13
+  },
+  "18": {
+    "basicblocks": 11,
+    "calls": "38",
+    "file": "xf_stereolbm.hpp",
+    "fileloc": 663,
+    "instructions": 29,
+    "name": "xFReadOutStream<600, 800, 1, 2, 4, 0, 3, 800>",
+    "total_instructions": 32
+  },
+  "19": {
+    "basicblocks": 27,
+    "calls": "20",
+    "file": "xf_infra.hpp",
+    "fileloc": 100,
+    "instructions": 178,
+    "loads": {
+      "L": 13
+    },
+    "name": "AXIvideo2xfMat<8, 0, 600, 800, 1, 2>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 181
+  },
+  "2": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "xf_stereolbm.hpp",
+    "fileloc": 598,
+    "instructions": 15,
+    "name": "xFImageClipUtility<1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 552,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "write<2, nullptr>",
+    "total_instructions": 3
+  },
+  "21": {
+    "basicblocks": 1607,
+    "calls": "",
+    "file": "xf_stereolbm.hpp",
+    "fileloc": 268,
+    "instructions": 14798,
+    "loads": {
+      "L": 2702
+    },
+    "name": "xFSADBlockMatching<600, 800, 0, 2, 15, 128, 16, 8, 614, 814, 814, 15, 30, 6, 14, false>",
+    "stores": {
+      "L": 1348
+    },
+    "total_instructions": 14798
+  },
+  "22": {
+    "basicblocks": 111,
+    "calls": "26 26 47 47 20 47",
+    "file": "xf_dilation.hpp",
+    "fileloc": 250,
+    "instructions": 430,
+    "loads": {
+      "L": 31
+    },
+    "name": "xfdilate<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>",
+    "stores": {
+      "L": 33
+    },
+    "total_instructions": 460
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "14",
+    "file": "xf_structs.hpp",
+    "fileloc": 688,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "name": "read_float",
+    "total_instructions": 8
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "27",
+    "file": "xf_remap.hpp",
+    "fileloc": 464,
+    "instructions": 14,
+    "loads": {
+      "L": 2
+    },
+    "name": "remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>",
+    "total_instructions": 934
+  },
+  "25": {
+    "basicblocks": 111,
+    "calls": "26 26 47 47 20 47",
+    "file": "xf_erosion.hpp",
+    "fileloc": 254,
+    "instructions": 525,
+    "loads": {
+      "L": 45
+    },
+    "name": "xferode<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>",
+    "stores": {
+      "L": 46
+    },
+    "total_instructions": 555
+  },
+  "26": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 3,
+    "name": "read<2, nullptr>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "27": {
+    "basicblocks": 238,
+    "calls": "26 23 23 37 37 20",
+    "file": "xf_remap.hpp",
+    "fileloc": 178,
+    "instructions": 560,
+    "loads": {
+      "L": 7
+    },
+    "name": "xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 920
+  },
+  "28": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 3,
+    "name": "read<2, nullptr>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "29": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "xf_stereolbm.hpp",
+    "fileloc": 906,
+    "instructions": 6,
+    "loads": {
+      "L": 2
+    },
+    "name": "StereoBM<15, 128, 16, 0, 2, 600, 800, 1, false, 2, 2, 2>",
+    "total_instructions": 16833
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_sobel.hpp",
+    "fileloc": 92,
+    "instructions": 48,
+    "loads": {
+      "L": 6
+    },
+    "name": "xFGradientY3x3<0, 4>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 48
+  },
+  "30": {
+    "basicblocks": 58,
+    "calls": "46 17 51 51 10",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 127,
+    "loads": {
+      "L": 3
+    },
+    "name": "generic_cast_IEEE754<short, AP_TRN_ZERO, double>",
+    "total_instructions": 159
+  },
+  "31": {
+    "basicblocks": 1,
+    "calls": "13",
+    "file": "xf_structs.hpp",
+    "fileloc": 699,
+    "instructions": 9,
+    "loads": {
+      "L": 1
+    },
+    "name": "write_float",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 12
+  },
+  "32": {
+    "basicblocks": 1,
+    "calls": "39",
+    "file": "xf_stereo_pipeline.hpp",
+    "fileloc": 236,
+    "instructions": 6,
+    "loads": {
+      "L": 2
+    },
+    "name": "InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>",
+    "total_instructions": 1455
+  },
+  "33": {
+    "basicblocks": 7,
+    "calls": "25",
+    "file": "xf_erosion.hpp",
+    "fileloc": 359,
+    "instructions": 15,
+    "loads": {
+      "L": 2
+    },
+    "name": "erode<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>",
+    "total_instructions": 570
+  },
+  "34": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "xf_stereo_pipeline.hpp",
+    "fileloc": 49,
+    "instructions": 32,
+    "loads": {
+      "L": 3
+    },
+    "name": "xf_one_over_x_approx<32, 12, AP_TRN, AP_WRAP>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 32
+  },
+  "35": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 312,
+    "instructions": 15,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 15
+  },
+  "36": {
+    "basicblocks": 1,
+    "calls": "30",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<short, double>",
+    "total_instructions": 161
+  },
+  "37": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
+    "instructions": 2,
+    "name": "__hls_fptosi_float_i32",
+    "total_instructions": 169
+  },
+  "38": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 3,
+    "name": "read<2, nullptr>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "39": {
+    "basicblocks": 59,
+    "calls": "4 31 31",
+    "file": "xf_stereo_pipeline.hpp",
+    "fileloc": 150,
+    "instructions": 252,
+    "loads": {
+      "L": 11
+    },
+    "name": "xFInitUndistortRectifyMapInverseKernel<600, 800, 9, ap_fixed<32, 12, AP_TRN, AP_WRAP, 0>, 5, 7, 1, 2, 2, ap_uint<32> >",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 1449
+  },
+  "4": {
+    "basicblocks": 659,
+    "calls": "34",
+    "file": "xf_stereo_pipeline.hpp",
+    "fileloc": 85,
+    "instructions": 1141,
+    "loads": {
+      "L": 32
+    },
+    "name": "xFComputeUndistortCoordinates<ap_fixed<32, 12, AP_TRN, AP_WRAP, 0>, ap_fixed<32, 12, AP_TRN, AP_WRAP, 0>, ap_uint<11>, ap_uint<11>, ap_fixed<17, 12, AP_RND, AP_SAT, 0>, ap_fixed<17, 12, AP_RND, AP_SAT, 0>, ap_fixed<32, 12, AP_TRN, AP_WRAP, 0>, 9, 5>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 1173
+  },
+  "40": {
+    "basicblocks": 58,
+    "calls": "35 7 45 45 8",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 123,
+    "loads": {
+      "L": 3
+    },
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, float>",
+    "total_instructions": 165
+  },
+  "41": {
+    "basicblocks": 1,
+    "calls": "36",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 54,
+    "instructions": 2,
+    "name": "__hls_fptosi_double_i16",
+    "total_instructions": 163
+  },
+  "42": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 93,
+    "instructions": 12,
+    "name": "xFSBMState",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 12
+  },
+  "43": {
+    "basicblocks": 17,
+    "calls": "26",
+    "file": "xf_infra.hpp",
+    "fileloc": 180,
+    "instructions": 89,
+    "loads": {
+      "L": 5
+    },
+    "name": "xfMat2AXIvideo<8, 0, 600, 800, 1, 2>",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 92
+  },
+  "44": {
+    "basicblocks": 26,
+    "calls": "16 49 18 16 49 18 21 5",
+    "file": "xf_stereolbm.hpp",
+    "fileloc": 789,
+    "instructions": 222,
+    "loads": {
+      "L": 2
+    },
+    "name": "xFFindStereoCorrespondenceLBMNO<600, 800, 0, 2, 1, 2, 2, 2, 15, 128, 16, 8, false>",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 16825
+  },
+  "45": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 345,
+    "instructions": 6,
+    "loads": {
+      "L": 1
+    },
+    "name": "expv",
+    "total_instructions": 6
+  },
+  "46": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 485,
+    "instructions": 4,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 4
+  },
+  "47": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "xf_utility.hpp",
+    "fileloc": 337,
+    "instructions": 7,
+    "loads": {
+      "L": 1
+    },
+    "name": "xfExtractPixels<1, 1, 0>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 7
+  },
+  "48": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_sobel.hpp",
+    "fileloc": 44,
+    "instructions": 48,
+    "loads": {
+      "L": 6
+    },
+    "name": "xFGradientX3x3<0, 4>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 48
+  },
+  "49": {
+    "basicblocks": 18,
+    "calls": "38 2",
+    "file": "xf_stereolbm.hpp",
+    "fileloc": 617,
+    "instructions": 64,
+    "loads": {
+      "L": 4
+    },
+    "name": "xFImageClip<600, 800, 1, 2, 4, 0, 3, 0, 800>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 82
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 552,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "write<2, nullptr>",
+    "total_instructions": 3
+  },
+  "50": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 552,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "write<2, nullptr>",
+    "total_instructions": 3
+  },
+  "51": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 514,
+    "instructions": 6,
+    "loads": {
+      "L": 1
+    },
+    "name": "expv",
+    "total_instructions": 6
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "40",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<int, float>",
+    "total_instructions": 167
+  },
+  "7": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 369,
+    "instructions": 12,
+    "loads": {
+      "L": 1
+    },
+    "name": "mantissa",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 12
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 378,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "__signbit",
+    "total_instructions": 3
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "44",
+    "file": "xf_stereolbm.hpp",
+    "fileloc": 869,
+    "instructions": 2,
+    "name": "xFFindStereoCorrespondenceLBM<600, 800, 0, 2, 1, 2, 2, 2, 15, 128, 16, false>",
+    "total_instructions": 16827
+  }
+}

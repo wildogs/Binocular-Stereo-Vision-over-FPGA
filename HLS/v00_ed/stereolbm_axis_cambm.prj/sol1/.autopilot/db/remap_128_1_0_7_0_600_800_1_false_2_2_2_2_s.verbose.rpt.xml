@@ -1,0 +1,142 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'remap_128_1_0_7_0_600_800_1_false_2_2_2_2_s'" level="0">
+<item name = "Date">Tue Jun 24 19:15:21 2025
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">stereolbm_axis_cambm.prj</item>
+<item name = "Solution">sol1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.143 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1546, 599282, 15.460 us, 5.993 ms, 1546, 599282, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc_U0">remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_U0">xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_s, 1545, 599281, 15.450 us, 5.993 ms, 1545, 599281, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 14, -</column>
+<column name="FIFO">-, -, 198, 136, -</column>
+<column name="Instance">66, 10, 2805, 4443, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 18, -</column>
+<column name="Register">-, -, 2, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">23, 4, 2, 8, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc_U0">remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc, 0, 0, 34, 47, 0</column>
+<column name="xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_U0">xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_s, 66, 10, 2771, 4396, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="cols_loc_channel_U">0, 99, 0, -, 2, 16, 32</column>
+<column name="rows_loc_channel_U">0, 99, 0, -, 2, 16, 32</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_channel_done_cols_loc_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_rows_loc_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_cols_loc_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_rows_loc_channel">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_channel_write_cols_loc_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_rows_loc_channel">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_channel_write_cols_loc_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_rows_loc_channel">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="p_src_mat_rows_dout">in, 32, ap_fifo, p_src_mat_rows, pointer</column>
+<column name="p_src_mat_rows_empty_n">in, 1, ap_fifo, p_src_mat_rows, pointer</column>
+<column name="p_src_mat_rows_read">out, 1, ap_fifo, p_src_mat_rows, pointer</column>
+<column name="p_src_mat_cols_dout">in, 32, ap_fifo, p_src_mat_cols, pointer</column>
+<column name="p_src_mat_cols_empty_n">in, 1, ap_fifo, p_src_mat_cols, pointer</column>
+<column name="p_src_mat_cols_read">out, 1, ap_fifo, p_src_mat_cols, pointer</column>
+<column name="imgR_in_data_dout">in, 8, ap_fifo, imgR_in_data, pointer</column>
+<column name="imgR_in_data_empty_n">in, 1, ap_fifo, imgR_in_data, pointer</column>
+<column name="imgR_in_data_read">out, 1, ap_fifo, imgR_in_data, pointer</column>
+<column name="rightRemappedMat_data_din">out, 8, ap_fifo, rightRemappedMat_data, pointer</column>
+<column name="rightRemappedMat_data_full_n">in, 1, ap_fifo, rightRemappedMat_data, pointer</column>
+<column name="rightRemappedMat_data_write">out, 1, ap_fifo, rightRemappedMat_data, pointer</column>
+<column name="mapxRMat_data_dout">in, 32, ap_fifo, mapxRMat_data, pointer</column>
+<column name="mapxRMat_data_empty_n">in, 1, ap_fifo, mapxRMat_data, pointer</column>
+<column name="mapxRMat_data_read">out, 1, ap_fifo, mapxRMat_data, pointer</column>
+<column name="mapyRMat_data_dout">in, 32, ap_fifo, mapyRMat_data, pointer</column>
+<column name="mapyRMat_data_empty_n">in, 1, ap_fifo, mapyRMat_data, pointer</column>
+<column name="mapyRMat_data_read">out, 1, ap_fifo, mapyRMat_data, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, remap&lt;128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, remap&lt;128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, remap&lt;128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, remap&lt;128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, remap&lt;128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, remap&lt;128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2&gt;, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, remap&lt;128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2&gt;, return value</column>
+</table>
+</item>
+</section>
+</profile>

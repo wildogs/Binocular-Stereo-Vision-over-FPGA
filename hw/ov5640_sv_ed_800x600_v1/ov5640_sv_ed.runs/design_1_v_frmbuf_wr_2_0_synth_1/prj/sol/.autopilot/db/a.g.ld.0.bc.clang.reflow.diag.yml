@@ -1,0 +1,781 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_axi_io.h', 
+                   Line: 71, Column: 2 }
+Function:        _ZN3hls15AXIGetBitFieldsILi24E7ap_uintILi8EEEEvNS_4axisIS1_IXT_EELm1ELm1ELm1EEEiiRT0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<24, ap_uint<8> >(ap_uint<24>, int, int, ap_uint<8>&)'
+    DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_axi_io.h', 
+                       Line: 46, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void hls::AXIGetBitFields<24, ap_uint<8> >(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, int, int, ap_uint<8>&)'
+    DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_axi_io.h', 
+                       Line: 69, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 182, Column: 18 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_video_core.h', 
+                       Line: 182, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 176, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 233, Column: 6 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<24, ap_uint<8> >(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, int, int, ap_uint<8>&)'
+    DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_axi_io.h', 
+                       Line: 69, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 176, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 231, Column: 6 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<24, ap_uint<8> >(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, int, int, ap_uint<8>&)'
+    DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_axi_io.h', 
+                       Line: 69, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 176, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 229, Column: 2 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<24, ap_uint<8> >(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, int, int, ap_uint<8>&)'
+    DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_axi_io.h', 
+                       Line: 69, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 176, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 273, Column: 18 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_video_core.h', 
+                       Line: 182, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 271, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_video_core.h', 
+                   Line: 184, Column: 9 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_video_core.h', 
+                   Line: 184, Column: 9 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 50, Column: 9 }
+Function:        _ZL19FrmbufWrHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEER13HW_STRUCT_REGRtRhS9_S9_S9_S9_
+Args:            
+  - String:          'Adding '''
+  - Name:            bytePlanes
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_video_core.h', 
+                   Line: 184, Column: 9 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/src/hls/hls_video_core.h', 
+                   Line: 184, Column: 9 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 50, Column: 9 }
+Function:        _ZL19FrmbufWrHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEER13HW_STRUCT_REGRtRhS9_S9_S9_S9_
+Args:            
+  - String:          'Adding '''
+  - Name:            bytePlanes
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 182, Column: 18 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 273, Column: 18 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 35, Column: 16 }
+Function:        _ZL19FrmbufWrHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEER13HW_STRUCT_REGRtRhS9_S9_S9_S9_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            bytePlanes
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 932, Column: 20 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_932_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 936, Column: 24 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_936_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 224, Column: 22 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_224_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 225, Column: 23 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_225_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 271, Column: 0 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_932_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:932:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2Bytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 271, Column: 0 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_936_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:936:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2Bytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 271, Column: 0 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_936_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:936:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2Bytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 271, Column: 0 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_936_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:936:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2Bytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 271, Column: 0 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_936_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:936:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2Bytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 271, Column: 0 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_936_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:936:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2Bytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 271, Column: 0 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_936_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:936:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2Bytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 271, Column: 0 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_936_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:936:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2Bytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 271, Column: 0 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_936_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:936:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2Bytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 176, Column: 0 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_224_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:224:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AXIvideo2MultiPixStream
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 176, Column: 0 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_225_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:225:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AXIvideo2MultiPixStream
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 34, Column: 18 }
+Function:        _ZL19FrmbufWrHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEER13HW_STRUCT_REGRtRhS9_S9_S9_S9_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            img
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '24'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 195, Column: 23 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        loop_wait_for_start
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:195:23'
+  - String:          ' '
+  - Function:        'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 176, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 249, Column: 22 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        loop_wait_for_eol
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:249:22'
+  - String:          ' '
+  - Function:        'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 176, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 1086, Column: 21 }
+Function:        _ZL16Bytes2AXIMMvideoR13STREAM_PLANESRP7ap_uintILi64EES4_S4_RtS5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       dstImg
+  - String:          ' '
+  - BundleName:      mm_video
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1086_1
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086:21'
+  - String:          ' '
+  - Function:        'Bytes2AXIMMvideo(STREAM_PLANES&, ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 1075, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 1090, Column: 31 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.8
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 1086, Column: 21 }
+Function:        _ZL16Bytes2AXIMMvideoR13STREAM_PLANESRP7ap_uintILi64EES4_S4_RtS5_S5_S5_
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 1086, Column: 21 }
+  - OrigDirection:   write
+  - OrigID:          scevgepseq
+  - ArrayName:       dstImg
+  - String:          ' '
+  - BundleName:      mm_video
+  - String:          ' '
+  - LoopName:        loop_Bytes2AXIMMvideo_1plane
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1082:5'
+  - String:          ' '
+  - Function:        'Bytes2AXIMMvideo(STREAM_PLANES&, ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 1075, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 1086, Column: 21 }
+Function:        _ZL16Bytes2AXIMMvideoR13STREAM_PLANESRP7ap_uintILi64EES4_S4_RtS5_S5_S5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i64
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 1086, Column: 21 }
+  - OrigDirection:   write
+  - OrigID:          scevgepseq
+  - ArrayName:       dstImg
+  - String:          ' '
+  - BundleName:      mm_video
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1086_1
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086:21'
+  - String:          ' '
+  - Function:        'Bytes2AXIMMvideo(STREAM_PLANES&, ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 1075, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 249, Column: 22 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        loop_wait_for_eol
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:249:22'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 195, Column: 23 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi8EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        loop_wait_for_start
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:195:23'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 935, Column: 16 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then104
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_930_1
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930:20'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 935, Column: 16 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then104.1
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_930_1
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930:20'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 935, Column: 16 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then104.2
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_930_1
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930:20'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 935, Column: 16 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then104.3
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_930_1
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930:20'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 935, Column: 16 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then104.4
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_930_1
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930:20'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 935, Column: 16 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then104.5
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_930_1
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930:20'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 935, Column: 16 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then104.6
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_930_1
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930:20'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 935, Column: 16 }
+Function:        _ZL20MultiPixStream2BytesRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEER13STREAM_PLANESRtS9_S9_S9_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.then104.7
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_930_1
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930:20'
+  - String:          ') .'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 1086, Column: 21 }
+Function:        _ZL16Bytes2AXIMMvideoR13STREAM_PLANESRP7ap_uintILi64EES4_S4_RtS5_S5_S5_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mm_video
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1086_1
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086:21'
+  - String:          ' '
+  - Function:        'Bytes2AXIMMvideo(STREAM_PLANES&, ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)'
+    DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                       Line: 1075, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: 'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp', 
+                   Line: 1086, Column: 21 }
+Function:        _ZL16Bytes2AXIMMvideoR13STREAM_PLANESRP7ap_uintILi64EES4_S4_RtS5_S5_S5_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_1086_1
+  - String:          '''('
+  - LoopLoc:         'C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086:21'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mm_video
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

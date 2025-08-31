@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vitis HLS Report for 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1262_1'
+================================================================
+* Date:           Tue Jun 24 20:46:55 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.141 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max   | min |  max  |   Type  |
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |        2|    65538|  20.000 ns|  0.655 ms|    2|  65538|       no|
+    +---------+---------+-----------+----------+-----+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_1262_1  |        0|    65536|         9|          8|          8|  0 ~ 8192|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    105|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    168|    -|
+|Register         |        -|    -|      88|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      88|    273|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |x_2_fu_191_p2                     |         +|   0|  0|  14|          13|           1|
+    |ap_block_pp0_stage0_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage1_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage2_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage3_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage4_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage5_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage6_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage7_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3_pp0_stage2_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage3_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state5_pp0_stage4_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state6_pp0_stage5_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state7_pp0_stage6_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state8_pp0_stage7_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state9_pp0_stage0_iter1  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op65_write_state3    |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op68_write_state4    |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op71_write_state5    |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op74_write_state6    |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op77_write_state7    |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op80_write_state8    |       and|   0|  0|   2|           1|           1|
+    |cmp122_fu_201_p2                  |      icmp|   0|  0|  17|          14|          14|
+    |icmp_ln1262_fu_185_p2             |      icmp|   0|  0|  14|          13|          13|
+    |ap_block_state2_pp0_stage1_iter0  |        or|   0|  0|   2|           1|           1|
+    |or_ln1278_1_fu_213_p2             |        or|   0|  0|   2|           1|           1|
+    |or_ln1278_2_fu_219_p2             |        or|   0|  0|   2|           1|           1|
+    |or_ln1278_3_fu_225_p2             |        or|   0|  0|   2|           1|           1|
+    |or_ln1278_4_fu_231_p2             |        or|   0|  0|   2|           1|           1|
+    |or_ln1278_5_fu_237_p2             |        or|   0|  0|   2|           1|           1|
+    |or_ln1278_6_fu_243_p2             |        or|   0|  0|   2|           1|           1|
+    |or_ln1278_fu_207_p2               |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 105|          70|          59|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  48|          9|    1|          9|
+    |ap_done_int                  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0      |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0_reg  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |   9|          2|    1|          2|
+    |ap_sig_allocacmp_x_1         |   9|          2|   13|         26|
+    |bytePlanes_blk_n             |   9|          2|    1|          2|
+    |img_blk_n                    |   9|          2|    1|          2|
+    |img_din                      |  48|          9|   24|        216|
+    |x_fu_102                     |   9|          2|   13|         26|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 168|         34|   57|        289|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+----+----+-----+-----------+
+    |             Name            | FF | LUT| Bits| Const Bits|
+    +-----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                    |   8|   0|    8|          0|
+    |ap_done_reg                  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1      |   1|   0|    1|          0|
+    |icmp_ln1262_reg_400          |   1|   0|    1|          0|
+    |or_ln1278_1_reg_408          |   1|   0|    1|          0|
+    |or_ln1278_2_reg_412          |   1|   0|    1|          0|
+    |or_ln1278_3_reg_416          |   1|   0|    1|          0|
+    |or_ln1278_4_reg_420          |   1|   0|    1|          0|
+    |or_ln1278_5_reg_424          |   1|   0|    1|          0|
+    |or_ln1278_6_reg_428          |   1|   0|    1|          0|
+    |or_ln1278_reg_404            |   1|   0|    1|          0|
+    |tmp_1_reg_437                |   8|   0|    8|          0|
+    |tmp_2_reg_442                |   8|   0|    8|          0|
+    |tmp_3_reg_447                |   8|   0|    8|          0|
+    |tmp_4_reg_452                |   8|   0|    8|          0|
+    |tmp_5_reg_457                |   8|   0|    8|          0|
+    |tmp_6_reg_462                |   8|   0|    8|          0|
+    |tmp_s_reg_432                |   8|   0|    8|          0|
+    |x_fu_102                     |  13|   0|   13|          0|
+    +-----------------------------+----+----+-----+-----------+
+    |Total                        |  88|   0|   88|          0|
+    +-----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+-------------------------------------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |                  Source Object                  |    C Type    |
++---------------------------+-----+-----+------------+-------------------------------------------------+--------------+
+|ap_clk                     |   in|    1|  ap_ctrl_hs|  Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1262_1|  return value|
+|ap_rst                     |   in|    1|  ap_ctrl_hs|  Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1262_1|  return value|
+|ap_start                   |   in|    1|  ap_ctrl_hs|  Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1262_1|  return value|
+|ap_done                    |  out|    1|  ap_ctrl_hs|  Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1262_1|  return value|
+|ap_idle                    |  out|    1|  ap_ctrl_hs|  Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1262_1|  return value|
+|ap_ready                   |  out|    1|  ap_ctrl_hs|  Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1262_1|  return value|
+|img_din                    |  out|   24|     ap_fifo|                                              img|       pointer|
+|img_num_data_valid         |   in|    2|     ap_fifo|                                              img|       pointer|
+|img_fifo_cap               |   in|    2|     ap_fifo|                                              img|       pointer|
+|img_full_n                 |   in|    1|     ap_fifo|                                              img|       pointer|
+|img_write                  |  out|    1|     ap_fifo|                                              img|       pointer|
+|trunc_ln1249_1             |   in|   13|     ap_none|                                   trunc_ln1249_1|        scalar|
+|icmp_ln1252                |   in|    1|     ap_none|                                      icmp_ln1252|        scalar|
+|cmp125_6                   |   in|    1|     ap_none|                                         cmp125_6|        scalar|
+|cmp125_5                   |   in|    1|     ap_none|                                         cmp125_5|        scalar|
+|cmp125_4                   |   in|    1|     ap_none|                                         cmp125_4|        scalar|
+|cmp125_3                   |   in|    1|     ap_none|                                         cmp125_3|        scalar|
+|cmp125_2                   |   in|    1|     ap_none|                                         cmp125_2|        scalar|
+|bytePlanes_dout            |   in|   64|     ap_fifo|                                       bytePlanes|       pointer|
+|bytePlanes_num_data_valid  |   in|   11|     ap_fifo|                                       bytePlanes|       pointer|
+|bytePlanes_fifo_cap        |   in|   11|     ap_fifo|                                       bytePlanes|       pointer|
+|bytePlanes_empty_n         |   in|    1|     ap_fifo|                                       bytePlanes|       pointer|
+|bytePlanes_read            |  out|    1|     ap_fifo|                                       bytePlanes|       pointer|
+|sub121_cast3               |   in|   13|     ap_none|                                     sub121_cast3|        scalar|
+|cmp125_1                   |   in|    1|     ap_none|                                         cmp125_1|        scalar|
++---------------------------+-----+-----+------------+-------------------------------------------------+--------------+
+

@@ -1,0 +1,247 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_s'
+================================================================
+* Date:           Tue Jun 24 19:14:47 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.143 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min    |    max   |  min |   max  |   Type  |
+    +---------+---------+-----------+----------+------+--------+---------+
+    |     1545|   599281|  15.450 us|  5.993 ms|  1545|  599281|       no|
+    +---------+---------+-----------+----------+------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- loop_height  |     1408|   599144|  22 ~ 823|          -|          -|  64 ~ 728|        no|
+        +---------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 8 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.71>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 11 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (3.63ns)   --->   "%p_read_5 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read1"   --->   Operation 12 'read' 'p_read_5' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 13 [1/1] (3.63ns)   --->   "%p_read104 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read"   --->   Operation 13 'read' 'p_read104' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%r1 = alloca i64 1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:224->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 14 'alloca' 'r1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%r2 = alloca i64 1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:225->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 15 'alloca' 'r2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln0 = call void @xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_1, i17 %r1"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln0 = call void @xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_2, i17 %r2"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%rows_cast_i = zext i16 %p_read104"   --->   Operation 18 'zext' 'rows_cast_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%cols_cast_i = zext i16 %p_read_5"   --->   Operation 19 'zext' 'cols_cast_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (2.07ns)   --->   "%sub284_i = add i17 %rows_cast_i, i17 131071"   --->   Operation 20 'add' 'sub284_i' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (2.07ns)   --->   "%sub300_i = add i17 %cols_cast_i, i17 131071"   --->   Operation 21 'add' 'sub300_i' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (1.58ns)   --->   "%store_ln249 = store i17 0, i17 %i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 22 'store' 'store_ln249' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 6.41>
+ST_2 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln0 = call void @xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_1, i17 %r1"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 24 [1/2] (0.00ns)   --->   "%call_ln0 = call void @xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_2, i17 %r2"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%conv3_i108 = sext i17 %sub284_i"   --->   Operation 25 'sext' 'conv3_i108' <Predicate = true> <Delay = 0.00>
+ST_2 : [1/1] (1.58ns)   --->   Input mux for Operation 26 '%conv3_i = sitofp i32 %conv3_i108'
+ST_2 : Operation 26 [6/6] (4.82ns)   --->   "%conv3_i = sitofp i32 %conv3_i108"   --->   Operation 26 'sitofp' 'conv3_i' <Predicate = true> <Delay = 4.82> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%conv4_i109 = sext i17 %sub300_i"   --->   Operation 27 'sext' 'conv4_i109' <Predicate = true> <Delay = 0.00>
+ST_2 : [1/1] (1.58ns)   --->   Input mux for Operation 28 '%conv4_i = sitofp i32 %conv4_i109'
+ST_2 : Operation 28 [6/6] (4.82ns)   --->   "%conv4_i = sitofp i32 %conv4_i109"   --->   Operation 28 'sitofp' 'conv4_i' <Predicate = true> <Delay = 4.82> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.41>
+ST_3 : Operation 29 [5/6] (6.41ns)   --->   "%conv3_i = sitofp i32 %conv3_i108"   --->   Operation 29 'sitofp' 'conv3_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_3 : Operation 30 [5/6] (6.41ns)   --->   "%conv4_i = sitofp i32 %conv4_i109"   --->   Operation 30 'sitofp' 'conv4_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.41>
+ST_4 : Operation 31 [4/6] (6.41ns)   --->   "%conv3_i = sitofp i32 %conv3_i108"   --->   Operation 31 'sitofp' 'conv3_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_4 : Operation 32 [4/6] (6.41ns)   --->   "%conv4_i = sitofp i32 %conv4_i109"   --->   Operation 32 'sitofp' 'conv4_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.41>
+ST_5 : Operation 33 [3/6] (6.41ns)   --->   "%conv3_i = sitofp i32 %conv3_i108"   --->   Operation 33 'sitofp' 'conv3_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_5 : Operation 34 [3/6] (6.41ns)   --->   "%conv4_i = sitofp i32 %conv4_i109"   --->   Operation 34 'sitofp' 'conv4_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.41>
+ST_6 : Operation 35 [2/6] (6.41ns)   --->   "%conv3_i = sitofp i32 %conv3_i108"   --->   Operation 35 'sitofp' 'conv3_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_6 : Operation 36 [2/6] (6.41ns)   --->   "%conv4_i = sitofp i32 %conv4_i109"   --->   Operation 36 'sitofp' 'conv4_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.41>
+ST_7 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapxRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapyRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %rightRemappedMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %imgR_in_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 41 [1/1] (2.07ns)   --->   "%add_i = add i17 %rows_cast_i, i17 64"   --->   Operation 41 'add' 'add_i' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 42 [1/1] (2.07ns)   --->   "%add106_i = add i17 %cols_cast_i, i17 1"   --->   Operation 42 'add' 'add106_i' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 43 [1/6] (6.41ns)   --->   "%conv3_i = sitofp i32 %conv3_i108"   --->   Operation 43 'sitofp' 'conv3_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 44 [1/6] (6.41ns)   --->   "%conv4_i = sitofp i32 %conv4_i109"   --->   Operation 44 'sitofp' 'conv4_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 45 [1/1] (0.00ns)   --->   "%bitcast_ln347 = bitcast i32 %conv3_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:347->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 45 'bitcast' 'bitcast_ln347' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln347 = trunc i32 %bitcast_ln347" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:347->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 46 'trunc' 'trunc_ln347' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 47 [1/1] (0.00ns)   --->   "%trunc_ln347_2 = trunc i32 %bitcast_ln347" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:347->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 47 'trunc' 'trunc_ln347_2' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 48 [1/1] (0.00ns)   --->   "%bitcast_ln348 = bitcast i32 %conv4_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:348->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 48 'bitcast' 'bitcast_ln348' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 49 [1/1] (0.00ns)   --->   "%trunc_ln348 = trunc i32 %bitcast_ln348" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:348->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 49 'trunc' 'trunc_ln348' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln348_2 = trunc i32 %bitcast_ln348" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:348->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 50 'trunc' 'trunc_ln348_2' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 51 [1/1] (0.00ns)   --->   "%br_ln249 = br void %loop_width.i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 51 'br' 'br_ln249' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 4.52>
+ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%i_5 = load i17 %i"   --->   Operation 52 'load' 'i_5' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%trunc_ln249 = trunc i17 %i_5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 53 'trunc' 'trunc_ln249' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 54 [1/1] (0.00ns)   --->   "%trunc_ln249_2 = trunc i17 %i_5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 54 'trunc' 'trunc_ln249_2' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 55 [1/1] (2.10ns)   --->   "%icmp_ln249 = icmp_eq  i17 %i_5, i17 %add_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 55 'icmp' 'icmp_ln249' <Predicate = true> <Delay = 2.10> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 56 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 728, i64 364"   --->   Operation 56 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 57 [1/1] (2.10ns)   --->   "%i_6 = add i17 %i_5, i17 1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 57 'add' 'i_6' <Predicate = true> <Delay = 2.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln249 = br i1 %icmp_ln249, void %loop_width.split.i, void %xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 58 'br' 'br_ln249' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 59 [1/1] (2.10ns)   --->   "%cmp111_i = icmp_ult  i17 %i_5, i17 %rows_cast_i"   --->   Operation 59 'icmp' 'cmp111_i' <Predicate = (!icmp_ln249)> <Delay = 2.10> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 60 [1/1] (0.00ns)   --->   "%div228_i = partselect i6 @_ssdm_op_PartSelect.i6.i17.i32.i32, i17 %i_5, i32 1, i32 6"   --->   Operation 60 'partselect' 'div228_i' <Predicate = (!icmp_ln249)> <Delay = 0.00>
+ST_8 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln314 = zext i6 %div228_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:314->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 61 'zext' 'zext_ln314' <Predicate = (!icmp_ln249)> <Delay = 0.00>
+ST_8 : Operation 62 [1/1] (4.52ns)   --->   "%mul_ln314 = mul i15 %zext_ln314, i15 401" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:314->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 62 'mul' 'mul_ln314' <Predicate = (!icmp_ln249)> <Delay = 4.52> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 63 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 63 'wait' 'empty' <Predicate = (!icmp_ln249)> <Delay = 0.00>
+ST_8 : Operation 64 [1/1] (1.58ns)   --->   "%store_ln249 = store i17 %i_6, i17 %i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 64 'store' 'store_ln249' <Predicate = (!icmp_ln249)> <Delay = 1.58>
+ST_8 : Operation 65 [1/1] (0.00ns)   --->   "%ret_ln491 = ret" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 65 'ret' 'ret_ln491' <Predicate = (icmp_ln249)> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 6.99>
+ST_9 : Operation 66 [1/1] (0.00ns)   --->   "%tmp = partselect i11 @_ssdm_op_PartSelect.i11.i17.i32.i32, i17 %i_5, i32 6, i32 16"   --->   Operation 66 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 67 [1/1] (1.63ns)   --->   "%icmp = icmp_ne  i11 %tmp, i11 0"   --->   Operation 67 'icmp' 'icmp' <Predicate = true> <Delay = 1.63> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 68 [2/2] (5.36ns)   --->   "%call_ln249 = call void @xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_loop_width, i17 %r2, i7 %trunc_ln249_2, i17 %r1, i17 %add106_i, i17 %i_5, i1 %icmp, i15 %mul_ln314, i1 %trunc_ln249, i16 %p_read_5, i1 %cmp111_i, i8 %imgR_in_data, i32 %mapxRMat_data, i32 %mapyRMat_data, i31 %trunc_ln347, i23 %trunc_ln347_2, i32 %conv3_i, i31 %trunc_ln348, i23 %trunc_ln348_2, i32 %conv4_i, i8 %rightRemappedMat_data" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 68 'call' 'call_ln249' <Predicate = true> <Delay = 5.36> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 69 [1/1] (0.00ns)   --->   "%specloopname_ln249 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 69 'specloopname' 'specloopname_ln249' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln249 = call void @xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_loop_width, i17 %r2, i7 %trunc_ln249_2, i17 %r1, i17 %add106_i, i17 %i_5, i1 %icmp, i15 %mul_ln314, i1 %trunc_ln249, i16 %p_read_5, i1 %cmp111_i, i8 %imgR_in_data, i32 %mapxRMat_data, i32 %mapyRMat_data, i31 %trunc_ln347, i23 %trunc_ln347_2, i32 %conv3_i, i31 %trunc_ln348, i23 %trunc_ln348_2, i32 %conv4_i, i8 %rightRemappedMat_data" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 70 'call' 'call_ln249' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln249 = br void %loop_width.i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 71 'br' 'br_ln249' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.711ns
+The critical path consists of the following:
+	wire read operation ('p_read104') on port 'p_read' [9]  (3.634 ns)
+	'add' operation ('sub284_i') [22]  (2.077 ns)
+
+ <State 2>: 6.413ns
+The critical path consists of the following:
+	multiplexor before operation 'sitofp' with delay (1.588 ns)
+'sitofp' operation ('conv3_i') [24]  (4.825 ns)
+
+ <State 3>: 6.413ns
+The critical path consists of the following:
+	'sitofp' operation ('conv3_i') [24]  (6.413 ns)
+
+ <State 4>: 6.413ns
+The critical path consists of the following:
+	'sitofp' operation ('conv3_i') [24]  (6.413 ns)
+
+ <State 5>: 6.413ns
+The critical path consists of the following:
+	'sitofp' operation ('conv3_i') [24]  (6.413 ns)
+
+ <State 6>: 6.413ns
+The critical path consists of the following:
+	'sitofp' operation ('conv3_i') [24]  (6.413 ns)
+
+ <State 7>: 6.413ns
+The critical path consists of the following:
+	'sitofp' operation ('conv3_i') [24]  (6.413 ns)
+
+ <State 8>: 4.520ns
+The critical path consists of the following:
+	'load' operation ('i') on local variable 'i' [37]  (0.000 ns)
+	'mul' operation ('mul_ln314', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:314->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491) [49]  (4.520 ns)
+
+ <State 9>: 7.000ns
+The critical path consists of the following:
+	'icmp' operation ('icmp') [51]  (1.639 ns)
+	'call' operation ('call_ln249', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:249->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491) to 'xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_loop_width' [53]  (5.361 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

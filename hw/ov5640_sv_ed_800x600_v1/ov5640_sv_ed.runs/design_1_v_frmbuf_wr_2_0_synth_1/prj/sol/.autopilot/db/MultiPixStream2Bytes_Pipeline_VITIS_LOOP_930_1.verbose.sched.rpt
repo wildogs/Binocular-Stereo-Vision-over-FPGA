@@ -1,0 +1,263 @@
+
+
+================================================================
+== Vitis HLS Report for 'MultiPixStream2Bytes_Pipeline_VITIS_LOOP_930_1'
+================================================================
+* Date:           Tue Jun 24 20:47:00 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.634 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max   | min |  max  |   Type  |
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |        2|    65539|  20.000 ns|  0.655 ms|    2|  65539|       no|
+    +---------+---------+-----------+----------+-----+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_930_1  |        0|    65537|        10|          8|          8|  0 ~ 8192|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 8, depth = 10
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 1
+  Pipeline-0 : II = 8, D = 10, States = { 1 2 3 4 5 6 7 8 9 10 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.26>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%x = alloca i32 1"   --->   Operation 13 'alloca' 'x' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%cmp103_1_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cmp103_1"   --->   Operation 14 'read' 'cmp103_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%sub100_cast3_read = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %sub100_cast3"   --->   Operation 15 'read' 'sub100_cast3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%cmp103_2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cmp103_2"   --->   Operation 16 'read' 'cmp103_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%cmp103_3_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cmp103_3"   --->   Operation 17 'read' 'cmp103_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%cmp103_4_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cmp103_4"   --->   Operation 18 'read' 'cmp103_4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%cmp103_5_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cmp103_5"   --->   Operation 19 'read' 'cmp103_5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%cmp103_6_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cmp103_6"   --->   Operation 20 'read' 'cmp103_6_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%icmp_ln920_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln920"   --->   Operation 21 'read' 'icmp_ln920_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln915_1_read = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %trunc_ln915_1"   --->   Operation 22 'read' 'trunc_ln915_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%sub100_cast3_cast = sext i13 %sub100_cast3_read"   --->   Operation 23 'sext' 'sub100_cast3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %bytePlanes, i64 666, i64 8, i64 18446744073709551615"   --->   Operation 24 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %img, void @empty_3, i32 0, i32 0, void @empty_14, i32 0, i32 0, void @empty_14, void @empty_14, void @empty_14, i32 0, i32 0, i32 0, i32 0, void @empty_14, void @empty_14, i32 4294967295, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %bytePlanes, void @empty_3, i32 0, i32 0, void @empty_14, i32 0, i32 0, void @empty_14, void @empty_14, void @empty_14, i32 0, i32 0, i32 0, i32 0, void @empty_14, void @empty_14, i32 4294967295, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (1.58ns)   --->   "%store_ln0 = store i13 0, i13 %x"   --->   Operation 27 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body99"   --->   Operation 28 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%x_1 = load i13 %x" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930]   --->   Operation 29 'load' 'x_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 8192, i64 8191"   --->   Operation 30 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (1.67ns)   --->   "%icmp_ln930 = icmp_eq  i13 %x_1, i13 %trunc_ln915_1_read" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930]   --->   Operation 31 'icmp' 'icmp_ln930' <Predicate = true> <Delay = 1.67> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (1.67ns)   --->   "%x_2 = add i13 %x_1, i13 1" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930]   --->   Operation 32 'add' 'x_2' <Predicate = true> <Delay = 1.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln930 = br i1 %icmp_ln930, void %for.body99.split, void %for.inc126.loopexit.exitStub" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930]   --->   Operation 33 'br' 'br_ln930' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%x_cast = zext i13 %x_1" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930]   --->   Operation 34 'zext' 'x_cast' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (1.67ns)   --->   "%cmp101 = icmp_slt  i14 %x_cast, i14 %sub100_cast3_cast" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930]   --->   Operation 35 'icmp' 'cmp101' <Predicate = (!icmp_ln930)> <Delay = 1.67> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (1.58ns)   --->   "%store_ln930 = store i13 %x_2, i13 %x" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930]   --->   Operation 36 'store' 'store_ln930' <Predicate = (!icmp_ln930)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 3.63>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%specpipeline_ln931 = specpipeline void @_ssdm_op_SpecPipeline, i32 8, i32 0, i32 0, i32 0, void @empty_14" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:931]   --->   Operation 37 'specpipeline' 'specpipeline_ln931' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln930 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930]   --->   Operation 38 'specloopname' 'specloopname_ln930' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (3.63ns)   --->   "%img_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 39 'read' 'img_read' <Predicate = (!icmp_ln930)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%in_pix = trunc i24 %img_read" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 40 'trunc' 'in_pix' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.97ns)   --->   "%or_ln934 = or i1 %cmp101, i1 %cmp103_1_read" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 41 'or' 'or_ln934' <Predicate = (!icmp_ln930)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 42 [1/1] (1.58ns)   --->   "%br_ln934 = br i1 %or_ln934, void %for.inc.1, void %if.then104.1" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 42 'br' 'br_ln934' <Predicate = (!icmp_ln930)> <Delay = 1.58>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 86 'ret' 'ret_ln0' <Predicate = (icmp_ln930)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.63>
+ST_3 : Operation 43 [1/1] (3.63ns)   --->   "%img_read_1 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 43 'read' 'img_read_1' <Predicate = (!icmp_ln930 & or_ln934)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%trunc_ln935 = trunc i24 %img_read_1" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 44 'trunc' 'trunc_ln935' <Predicate = (!icmp_ln930 & or_ln934)> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (1.58ns)   --->   "%br_ln935 = br void %for.inc.1" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 45 'br' 'br_ln935' <Predicate = (!icmp_ln930 & or_ln934)> <Delay = 1.58>
+ST_3 : Operation 46 [1/1] (0.97ns)   --->   "%or_ln934_1 = or i1 %cmp101, i1 %cmp103_2_read" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 46 'or' 'or_ln934_1' <Predicate = (!icmp_ln930)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 3.63>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%in_pix_1 = phi i8 %trunc_ln935, void %if.then104.1, i8 %in_pix, void %for.body99.split"   --->   Operation 47 'phi' 'in_pix_1' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (1.58ns)   --->   "%br_ln934 = br i1 %or_ln934_1, void %for.inc.2, void %if.then104.2" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 48 'br' 'br_ln934' <Predicate = (!icmp_ln930)> <Delay = 1.58>
+ST_4 : Operation 49 [1/1] (3.63ns)   --->   "%img_read_2 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 49 'read' 'img_read_2' <Predicate = (!icmp_ln930 & or_ln934_1)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln935_1 = trunc i24 %img_read_2" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 50 'trunc' 'trunc_ln935_1' <Predicate = (!icmp_ln930 & or_ln934_1)> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (1.58ns)   --->   "%br_ln935 = br void %for.inc.2" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 51 'br' 'br_ln935' <Predicate = (!icmp_ln930 & or_ln934_1)> <Delay = 1.58>
+ST_4 : Operation 52 [1/1] (0.97ns)   --->   "%or_ln934_2 = or i1 %cmp101, i1 %cmp103_3_read" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 52 'or' 'or_ln934_2' <Predicate = (!icmp_ln930)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 3.63>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%in_pix_2 = phi i8 %trunc_ln935_1, void %if.then104.2, i8 %in_pix_1, void %for.inc.1"   --->   Operation 53 'phi' 'in_pix_2' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (1.58ns)   --->   "%br_ln934 = br i1 %or_ln934_2, void %for.inc.3, void %if.then104.3" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 54 'br' 'br_ln934' <Predicate = (!icmp_ln930)> <Delay = 1.58>
+ST_5 : Operation 55 [1/1] (3.63ns)   --->   "%img_read_3 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 55 'read' 'img_read_3' <Predicate = (!icmp_ln930 & or_ln934_2)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%trunc_ln935_2 = trunc i24 %img_read_3" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 56 'trunc' 'trunc_ln935_2' <Predicate = (!icmp_ln930 & or_ln934_2)> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (1.58ns)   --->   "%br_ln935 = br void %for.inc.3" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 57 'br' 'br_ln935' <Predicate = (!icmp_ln930 & or_ln934_2)> <Delay = 1.58>
+ST_5 : Operation 58 [1/1] (0.97ns)   --->   "%or_ln934_3 = or i1 %cmp101, i1 %cmp103_4_read" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 58 'or' 'or_ln934_3' <Predicate = (!icmp_ln930)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 59 [1/1] (0.97ns)   --->   "%or_ln934_4 = or i1 %cmp101, i1 %cmp103_5_read" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 59 'or' 'or_ln934_4' <Predicate = (!icmp_ln930)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 60 [1/1] (0.97ns)   --->   "%or_ln934_5 = or i1 %cmp101, i1 %cmp103_6_read" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 60 'or' 'or_ln934_5' <Predicate = (!icmp_ln930)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 61 [1/1] (0.97ns)   --->   "%or_ln934_6 = or i1 %cmp101, i1 %icmp_ln920_read" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 61 'or' 'or_ln934_6' <Predicate = (!icmp_ln930)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 3.63>
+ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%in_pix_3 = phi i8 %trunc_ln935_2, void %if.then104.3, i8 %in_pix_2, void %for.inc.2"   --->   Operation 62 'phi' 'in_pix_3' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_6 : Operation 63 [1/1] (1.58ns)   --->   "%br_ln934 = br i1 %or_ln934_3, void %for.inc.4, void %if.then104.4" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 63 'br' 'br_ln934' <Predicate = (!icmp_ln930)> <Delay = 1.58>
+ST_6 : Operation 64 [1/1] (3.63ns)   --->   "%img_read_4 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 64 'read' 'img_read_4' <Predicate = (!icmp_ln930 & or_ln934_3)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_6 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln935_3 = trunc i24 %img_read_4" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 65 'trunc' 'trunc_ln935_3' <Predicate = (!icmp_ln930 & or_ln934_3)> <Delay = 0.00>
+ST_6 : Operation 66 [1/1] (1.58ns)   --->   "%br_ln935 = br void %for.inc.4" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 66 'br' 'br_ln935' <Predicate = (!icmp_ln930 & or_ln934_3)> <Delay = 1.58>
+
+State 7 <SV = 6> <Delay = 3.63>
+ST_7 : Operation 67 [1/1] (0.00ns)   --->   "%in_pix_4 = phi i8 %trunc_ln935_3, void %if.then104.4, i8 %in_pix_3, void %for.inc.3"   --->   Operation 67 'phi' 'in_pix_4' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_7 : Operation 68 [1/1] (1.58ns)   --->   "%br_ln934 = br i1 %or_ln934_4, void %for.inc.5, void %if.then104.5" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 68 'br' 'br_ln934' <Predicate = (!icmp_ln930)> <Delay = 1.58>
+ST_7 : Operation 69 [1/1] (3.63ns)   --->   "%img_read_5 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 69 'read' 'img_read_5' <Predicate = (!icmp_ln930 & or_ln934_4)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_7 : Operation 70 [1/1] (0.00ns)   --->   "%trunc_ln935_4 = trunc i24 %img_read_5" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 70 'trunc' 'trunc_ln935_4' <Predicate = (!icmp_ln930 & or_ln934_4)> <Delay = 0.00>
+ST_7 : Operation 71 [1/1] (1.58ns)   --->   "%br_ln935 = br void %for.inc.5" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 71 'br' 'br_ln935' <Predicate = (!icmp_ln930 & or_ln934_4)> <Delay = 1.58>
+
+State 8 <SV = 7> <Delay = 3.63>
+ST_8 : Operation 72 [1/1] (0.00ns)   --->   "%in_pix_5 = phi i8 %trunc_ln935_4, void %if.then104.5, i8 %in_pix_4, void %for.inc.4"   --->   Operation 72 'phi' 'in_pix_5' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_8 : Operation 73 [1/1] (1.58ns)   --->   "%br_ln934 = br i1 %or_ln934_5, void %for.inc.6, void %if.then104.6" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 73 'br' 'br_ln934' <Predicate = (!icmp_ln930)> <Delay = 1.58>
+ST_8 : Operation 74 [1/1] (3.63ns)   --->   "%img_read_6 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 74 'read' 'img_read_6' <Predicate = (!icmp_ln930 & or_ln934_5)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_8 : Operation 75 [1/1] (0.00ns)   --->   "%trunc_ln935_5 = trunc i24 %img_read_6" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 75 'trunc' 'trunc_ln935_5' <Predicate = (!icmp_ln930 & or_ln934_5)> <Delay = 0.00>
+ST_8 : Operation 76 [1/1] (1.58ns)   --->   "%br_ln935 = br void %for.inc.6" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 76 'br' 'br_ln935' <Predicate = (!icmp_ln930 & or_ln934_5)> <Delay = 1.58>
+
+State 9 <SV = 8> <Delay = 3.63>
+ST_9 : Operation 77 [1/1] (0.00ns)   --->   "%in_pix_6 = phi i8 %trunc_ln935_5, void %if.then104.6, i8 %in_pix_5, void %for.inc.5"   --->   Operation 77 'phi' 'in_pix_6' <Predicate = (!icmp_ln930)> <Delay = 0.00>
+ST_9 : Operation 78 [1/1] (1.58ns)   --->   "%br_ln934 = br i1 %or_ln934_6, void %for.inc.7, void %if.then104.7" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:934]   --->   Operation 78 'br' 'br_ln934' <Predicate = (!icmp_ln930)> <Delay = 1.58>
+ST_9 : Operation 79 [1/1] (3.63ns)   --->   "%img_read_7 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 79 'read' 'img_read_7' <Predicate = (!icmp_ln930 & or_ln934_6)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_9 : Operation 80 [1/1] (0.00ns)   --->   "%trunc_ln935_6 = trunc i24 %img_read_7" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 80 'trunc' 'trunc_ln935_6' <Predicate = (!icmp_ln930 & or_ln934_6)> <Delay = 0.00>
+ST_9 : Operation 81 [1/1] (1.58ns)   --->   "%br_ln935 = br void %for.inc.7" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935]   --->   Operation 81 'br' 'br_ln935' <Predicate = (!icmp_ln930 & or_ln934_6)> <Delay = 1.58>
+
+State 10 <SV = 9> <Delay = 3.50>
+ST_10 : Operation 82 [1/1] (0.00ns)   --->   "%in_pix_7 = phi i8 %trunc_ln935_6, void %if.then104.7, i8 %in_pix_6, void %for.inc.6"   --->   Operation 82 'phi' 'in_pix_7' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 83 [1/1] (0.00ns)   --->   "%out_pix = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i8.i8.i8.i8.i8.i8.i8.i8, i8 %in_pix_7, i8 %in_pix_6, i8 %in_pix_5, i8 %in_pix_4, i8 %in_pix_3, i8 %in_pix_2, i8 %in_pix_1, i8 %in_pix" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:941]   --->   Operation 83 'bitconcatenate' 'out_pix' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 84 [1/1] (3.50ns)   --->   "%write_ln943 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %bytePlanes, i64 %out_pix" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:943]   --->   Operation 84 'write' 'write_ln943' <Predicate = true> <Delay = 3.50> <CoreInst = "FIFO_BRAM">   --->   Core 79 'FIFO_BRAM' <Latency = 0> <II = 1> <Delay = 3.50> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 1024> <FIFO>
+ST_10 : Operation 85 [1/1] (0.00ns)   --->   "%br_ln930 = br void %for.body99" [C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930]   --->   Operation 85 'br' 'br_ln930' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.268ns
+The critical path consists of the following:
+	'alloca' operation ('x') [12]  (0.000 ns)
+	'load' operation ('x', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930) on local variable 'x' [29]  (0.000 ns)
+	'add' operation ('x', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930) [32]  (1.679 ns)
+	'store' operation ('store_ln930', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930) of variable 'x', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:930 on local variable 'x' [99]  (1.588 ns)
+
+ <State 2>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('img_read', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) on port 'img' (C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) [39]  (3.634 ns)
+
+ <State 3>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('img_read_1', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) on port 'img' (C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) [44]  (3.634 ns)
+
+ <State 4>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('img_read_2', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) on port 'img' (C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) [52]  (3.634 ns)
+
+ <State 5>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('img_read_3', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) on port 'img' (C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) [60]  (3.634 ns)
+
+ <State 6>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('img_read_4', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) on port 'img' (C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) [68]  (3.634 ns)
+
+ <State 7>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('img_read_5', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) on port 'img' (C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) [76]  (3.634 ns)
+
+ <State 8>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('img_read_6', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) on port 'img' (C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) [84]  (3.634 ns)
+
+ <State 9>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('img_read_7', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) on port 'img' (C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) [92]  (3.634 ns)
+
+ <State 10>: 3.507ns
+The critical path consists of the following:
+	'phi' operation ('in_pix') with incoming values : ('in_pix', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) ('trunc_ln935', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) ('trunc_ln935_1', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) ('trunc_ln935_2', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) ('trunc_ln935_3', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) ('trunc_ln935_4', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) ('trunc_ln935_5', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) ('trunc_ln935_6', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:935) [96]  (0.000 ns)
+	fifo write operation ('write_ln943', C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:943) on port 'bytePlanes' (C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:943) [98]  (3.507 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

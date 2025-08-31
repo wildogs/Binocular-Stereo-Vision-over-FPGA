@@ -1,0 +1,207 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1'
+================================================================
+* Date:           Tue Jun 24 19:14:43 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.323 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       11|       11|  0.110 us|  0.110 us|   11|   11|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_171_1  |        9|        9|         2|          1|          1|     9|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.32>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS = alloca i32 1"   --->   Operation 6 'alloca' 'iRnewCameraMatrixHLS' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_1 = alloca i32 1"   --->   Operation 7 'alloca' 'iRnewCameraMatrixHLS_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%cameraMatrixHLS_1 = alloca i32 1"   --->   Operation 8 'alloca' 'cameraMatrixHLS_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_2 = alloca i32 1"   --->   Operation 9 'alloca' 'iRnewCameraMatrixHLS_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%cameraMatrixHLS_2 = alloca i32 1"   --->   Operation 10 'alloca' 'cameraMatrixHLS_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_3 = alloca i32 1"   --->   Operation 11 'alloca' 'iRnewCameraMatrixHLS_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_4 = alloca i32 1"   --->   Operation 12 'alloca' 'iRnewCameraMatrixHLS_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%cameraMatrixHLS_3 = alloca i32 1"   --->   Operation 13 'alloca' 'cameraMatrixHLS_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_5 = alloca i32 1"   --->   Operation 14 'alloca' 'iRnewCameraMatrixHLS_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_6 = alloca i32 1"   --->   Operation 15 'alloca' 'iRnewCameraMatrixHLS_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%cameraMatrixHLS_4 = alloca i32 1"   --->   Operation 16 'alloca' 'cameraMatrixHLS_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_7 = alloca i32 1"   --->   Operation 17 'alloca' 'iRnewCameraMatrixHLS_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_8 = alloca i32 1"   --->   Operation 18 'alloca' 'iRnewCameraMatrixHLS_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.58ns)   --->   "%store_ln0 = store i4 0, i4 %i"   --->   Operation 19 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 20 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%i_10 = load i4 %i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171]   --->   Operation 21 'load' 'i_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (1.73ns)   --->   "%icmp_ln171 = icmp_eq  i4 %i_10, i4 9" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171]   --->   Operation 22 'icmp' 'icmp_ln171' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (1.73ns)   --->   "%add_ln171 = add i4 %i_10, i4 1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171]   --->   Operation 23 'add' 'add_ln171' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln171 = br i1 %icmp_ln171, void %for.inc.split, void %for.inc32.preheader.exitStub" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171]   --->   Operation 24 'br' 'br_ln171' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln171 = zext i4 %i_10" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171]   --->   Operation 25 'zext' 'zext_ln171' <Predicate = (!icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%cameraMatrix_addr = getelementptr i32 %cameraMatrix, i64 0, i64 %zext_ln171" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175]   --->   Operation 26 'getelementptr' 'cameraMatrix_addr' <Predicate = (!icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 27 [2/2] (2.32ns)   --->   "%cameraMatrixHLS = load i4 %cameraMatrix_addr" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175]   --->   Operation 27 'load' 'cameraMatrixHLS' <Predicate = (!icmp_ln171)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%ir_addr = getelementptr i32 %ir, i64 0, i64 %zext_ln171" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 28 'getelementptr' 'ir_addr' <Predicate = (!icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 29 [2/2] (2.32ns)   --->   "%ir_load = load i4 %ir_addr" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 29 'load' 'ir_load' <Predicate = (!icmp_ln171)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_1 : Operation 30 [1/1] (1.88ns)   --->   "%switch_ln175 = switch i4 %i_10, void %arrayidx22.case.8, i4 0, void %for.inc.split.arrayidx22.exit_crit_edge1, i4 1, void %arrayidx22.case.1, i4 2, void %arrayidx22.case.2, i4 3, void %arrayidx22.case.3, i4 4, void %arrayidx22.case.4, i4 5, void %arrayidx22.case.5, i4 6, void %arrayidx22.case.6, i4 7, void %for.inc.split.arrayidx22.exit_crit_edge" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175]   --->   Operation 30 'switch' 'switch_ln175' <Predicate = (!icmp_ln171)> <Delay = 1.88>
+ST_1 : Operation 31 [1/1] (1.58ns)   --->   "%store_ln171 = store i4 %add_ln171, i4 %i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171]   --->   Operation 31 'store' 'store_ln171' <Predicate = (!icmp_ln171)> <Delay = 1.58>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln171 = br void %for.inc" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171]   --->   Operation 32 'br' 'br_ln171' <Predicate = (!icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_load = load i32 %iRnewCameraMatrixHLS"   --->   Operation 60 'load' 'iRnewCameraMatrixHLS_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_1_load = load i32 %iRnewCameraMatrixHLS_1"   --->   Operation 61 'load' 'iRnewCameraMatrixHLS_1_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%cameraMatrixHLS_1_load = load i32 %cameraMatrixHLS_1"   --->   Operation 62 'load' 'cameraMatrixHLS_1_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_2_load = load i32 %iRnewCameraMatrixHLS_2"   --->   Operation 63 'load' 'iRnewCameraMatrixHLS_2_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%cameraMatrixHLS_2_load = load i32 %cameraMatrixHLS_2"   --->   Operation 64 'load' 'cameraMatrixHLS_2_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_3_load = load i32 %iRnewCameraMatrixHLS_3"   --->   Operation 65 'load' 'iRnewCameraMatrixHLS_3_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_4_load = load i32 %iRnewCameraMatrixHLS_4"   --->   Operation 66 'load' 'iRnewCameraMatrixHLS_4_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%cameraMatrixHLS_3_load = load i32 %cameraMatrixHLS_3"   --->   Operation 67 'load' 'cameraMatrixHLS_3_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_5_load = load i32 %iRnewCameraMatrixHLS_5"   --->   Operation 68 'load' 'iRnewCameraMatrixHLS_5_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_6_load = load i32 %iRnewCameraMatrixHLS_6"   --->   Operation 69 'load' 'iRnewCameraMatrixHLS_6_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%cameraMatrixHLS_4_load = load i32 %cameraMatrixHLS_4"   --->   Operation 70 'load' 'cameraMatrixHLS_4_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_7_load = load i32 %iRnewCameraMatrixHLS_7"   --->   Operation 71 'load' 'iRnewCameraMatrixHLS_7_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%iRnewCameraMatrixHLS_8_load = load i32 %iRnewCameraMatrixHLS_8"   --->   Operation 72 'load' 'iRnewCameraMatrixHLS_8_load' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010442_out, i32 %iRnewCameraMatrixHLS_8_load"   --->   Operation 73 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010440_out, i32 %iRnewCameraMatrixHLS_7_load"   --->   Operation 74 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010538_out, i32 %cameraMatrixHLS_4_load"   --->   Operation 75 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010436_out, i32 %iRnewCameraMatrixHLS_6_load"   --->   Operation 76 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010434_out, i32 %iRnewCameraMatrixHLS_5_load"   --->   Operation 77 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010532_out, i32 %cameraMatrixHLS_3_load"   --->   Operation 78 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010430_out, i32 %iRnewCameraMatrixHLS_4_load"   --->   Operation 79 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010428_out, i32 %iRnewCameraMatrixHLS_3_load"   --->   Operation 80 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010526_out, i32 %cameraMatrixHLS_2_load"   --->   Operation 81 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010424_out, i32 %iRnewCameraMatrixHLS_2_load"   --->   Operation 82 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010522_out, i32 %cameraMatrixHLS_1_load"   --->   Operation 83 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010420_out, i32 %iRnewCameraMatrixHLS_1_load"   --->   Operation 84 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010418_out, i32 %iRnewCameraMatrixHLS_load"   --->   Operation 85 'write' 'write_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 86 'ret' 'ret_ln0' <Predicate = (icmp_ln171)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.32>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%specpipeline_ln173 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_84" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:173]   --->   Operation 33 'specpipeline' 'specpipeline_ln173' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%speclooptripcount_ln171 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 9, i64 9, i64 9" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171]   --->   Operation 34 'speclooptripcount' 'speclooptripcount_ln171' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%specloopname_ln171 = specloopname void @_ssdm_op_SpecLoopName, void @empty_44" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171]   --->   Operation 35 'specloopname' 'specloopname_ln171' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/2] (2.32ns)   --->   "%cameraMatrixHLS = load i4 %cameraMatrix_addr" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175]   --->   Operation 36 'load' 'cameraMatrixHLS' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_2 : Operation 37 [1/2] (2.32ns)   --->   "%ir_load = load i4 %ir_addr" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 37 'load' 'ir_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%store_ln175 = store i32 %ir_load, i32 %iRnewCameraMatrixHLS" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175]   --->   Operation 38 'store' 'store_ln175' <Predicate = (i_10 == 7)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln175 = br void %arrayidx22.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175]   --->   Operation 39 'br' 'br_ln175' <Predicate = (i_10 == 7)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %ir_load, i32 %iRnewCameraMatrixHLS_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 40 'store' 'store_ln176' <Predicate = (i_10 == 6)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln176 = br void %arrayidx22.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 41 'br' 'br_ln176' <Predicate = (i_10 == 6)> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %ir_load, i32 %iRnewCameraMatrixHLS_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 42 'store' 'store_ln176' <Predicate = (i_10 == 5)> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %cameraMatrixHLS, i32 %cameraMatrixHLS_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 43 'store' 'store_ln176' <Predicate = (i_10 == 5)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln176 = br void %arrayidx22.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 44 'br' 'br_ln176' <Predicate = (i_10 == 5)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %ir_load, i32 %iRnewCameraMatrixHLS_3" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 45 'store' 'store_ln176' <Predicate = (i_10 == 4)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %cameraMatrixHLS, i32 %cameraMatrixHLS_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 46 'store' 'store_ln176' <Predicate = (i_10 == 4)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln176 = br void %arrayidx22.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 47 'br' 'br_ln176' <Predicate = (i_10 == 4)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %ir_load, i32 %iRnewCameraMatrixHLS_4" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 48 'store' 'store_ln176' <Predicate = (i_10 == 3)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%br_ln176 = br void %arrayidx22.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 49 'br' 'br_ln176' <Predicate = (i_10 == 3)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %ir_load, i32 %iRnewCameraMatrixHLS_5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 50 'store' 'store_ln176' <Predicate = (i_10 == 2)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %cameraMatrixHLS, i32 %cameraMatrixHLS_3" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 51 'store' 'store_ln176' <Predicate = (i_10 == 2)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln176 = br void %arrayidx22.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 52 'br' 'br_ln176' <Predicate = (i_10 == 2)> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %ir_load, i32 %iRnewCameraMatrixHLS_6" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 53 'store' 'store_ln176' <Predicate = (i_10 == 1)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln176 = br void %arrayidx22.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 54 'br' 'br_ln176' <Predicate = (i_10 == 1)> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%store_ln175 = store i32 %ir_load, i32 %iRnewCameraMatrixHLS_7" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175]   --->   Operation 55 'store' 'store_ln175' <Predicate = (i_10 == 0)> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%store_ln175 = store i32 %cameraMatrixHLS, i32 %cameraMatrixHLS_4" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175]   --->   Operation 56 'store' 'store_ln175' <Predicate = (i_10 == 0)> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln175 = br void %arrayidx22.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175]   --->   Operation 57 'br' 'br_ln175' <Predicate = (i_10 == 0)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%store_ln176 = store i32 %ir_load, i32 %iRnewCameraMatrixHLS_8" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 58 'store' 'store_ln176' <Predicate = (i_10 != 0 & i_10 != 1 & i_10 != 2 & i_10 != 3 & i_10 != 4 & i_10 != 5 & i_10 != 6 & i_10 != 7)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln176 = br void %arrayidx22.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176]   --->   Operation 59 'br' 'br_ln176' <Predicate = (i_10 != 0 & i_10 != 1 & i_10 != 2 & i_10 != 3 & i_10 != 4 & i_10 != 5 & i_10 != 6 & i_10 != 7)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.323ns
+The critical path consists of the following:
+	'alloca' operation ('i') [16]  (0.000 ns)
+	'load' operation ('i', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171) on local variable 'i' [33]  (0.000 ns)
+	'add' operation ('add_ln171', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171) [35]  (1.735 ns)
+	'store' operation ('store_ln171', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171) of variable 'add_ln171', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:171 on local variable 'i' [79]  (1.588 ns)
+
+ <State 2>: 2.322ns
+The critical path consists of the following:
+	'load' operation ('ir_load', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176) on array 'ir' [45]  (2.322 ns)
+	'store' operation ('store_ln175', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:175) of variable 'ir_load', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:176 on local variable 'iRnewCameraMatrixHLS' [48]  (0.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

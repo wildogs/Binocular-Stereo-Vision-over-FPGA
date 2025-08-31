@@ -1,0 +1,711 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFSobel3x3_1_1_0_4_s'
+================================================================
+* Date:           Tue Jun 24 19:15:22 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.672 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        1|  10.000 ns|  10.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------+----------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                            |                      |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                  Instance                  |        Module        |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +--------------------------------------------+----------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |GradientvaluesX_xFGradientX3x3_0_4_s_fu_72  |xFGradientX3x3_0_4_s  |        0|        0|       0 ns|       0 ns|    1|    1|      yes|
+        |grp_xFGradientY3x3_0_4_s_fu_88              |xFGradientY3x3_0_4_s  |        1|        1|  10.000 ns|  10.000 ns|    1|    1|      yes|
+        +--------------------------------------------+----------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       -|      -|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|      39|    140|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     28|    -|
+|Register         |        -|    -|      44|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      83|    168|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------+----------------------+---------+----+----+----+-----+
+    |                  Instance                  |        Module        | BRAM_18K| DSP| FF | LUT| URAM|
+    +--------------------------------------------+----------------------+---------+----+----+----+-----+
+    |GradientvaluesX_xFGradientX3x3_0_4_s_fu_72  |xFGradientX3x3_0_4_s  |        0|   0|   0|  63|    0|
+    |grp_xFGradientY3x3_0_4_s_fu_88              |xFGradientY3x3_0_4_s  |        0|   0|  39|  77|    0|
+    +--------------------------------------------+----------------------+---------+----+----+----+-----+
+    |Total                                       |                      |        0|   0|  39| 140|    0|
+    +--------------------------------------------+----------------------+---------+----+----+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-------------+----+-----------+-----+-----------+
+    |     Name    | LUT| Input Size| Bits| Total Bits|
+    +-------------+----+-----------+-----+-----------+
+    |ap_return_0  |  14|          3|   16|         48|
+    |ap_return_1  |  14|          3|   16|         48|
+    +-------------+----+-----------+-----+-----------+
+    |Total        |  28|          6|   32|         96|
+    +-------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |GradientvaluesX_reg_123  |  11|   0|   11|          0|
+    |ap_ce_reg                |   1|   0|    1|          0|
+    |ap_return_0_int_reg      |  16|   0|   16|          0|
+    |ap_return_1_int_reg      |  16|   0|   16|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  44|   0|   44|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+------------------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++----------------+-----+-----+------------+------------------------+--------------+
+|ap_clk          |   in|    1|  ap_ctrl_hs|  xFSobel3x3<1, 1, 0, 4>|  return value|
+|ap_rst          |   in|    1|  ap_ctrl_hs|  xFSobel3x3<1, 1, 0, 4>|  return value|
+|ap_return_0     |  out|   16|  ap_ctrl_hs|  xFSobel3x3<1, 1, 0, 4>|  return value|
+|ap_return_1     |  out|   16|  ap_ctrl_hs|  xFSobel3x3<1, 1, 0, 4>|  return value|
+|ap_ce           |   in|    1|  ap_ctrl_hs|  xFSobel3x3<1, 1, 0, 4>|  return value|
+|src_buf1_0_val  |   in|    8|     ap_none|          src_buf1_0_val|        scalar|
+|src_buf1_1_val  |   in|    8|     ap_none|          src_buf1_1_val|        scalar|
+|src_buf1_2_val  |   in|    8|     ap_none|          src_buf1_2_val|        scalar|
+|src_buf2_0_val  |   in|    8|     ap_none|          src_buf2_0_val|        scalar|
+|src_buf2_2_val  |   in|    8|     ap_none|          src_buf2_2_val|        scalar|
+|src_buf3_0_val  |   in|    8|     ap_none|          src_buf3_0_val|        scalar|
+|src_buf3_1_val  |   in|    8|     ap_none|          src_buf3_1_val|        scalar|
+|src_buf3_2_val  |   in|    8|     ap_none|          src_buf3_2_val|        scalar|
++----------------+-----+-----+------------+------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 1
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.67>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%src_buf3_2_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf3_2_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 3 'read' 'src_buf3_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%src_buf3_1_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf3_1_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 4 'read' 'src_buf3_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%src_buf3_0_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf3_0_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 5 'read' 'src_buf3_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%src_buf2_2_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf2_2_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 6 'read' 'src_buf2_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%src_buf2_0_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf2_0_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 7 'read' 'src_buf2_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%src_buf1_2_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf1_2_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 8 'read' 'src_buf1_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%src_buf1_1_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf1_1_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 9 'read' 'src_buf1_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%src_buf1_0_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf1_0_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 10 'read' 'src_buf1_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (5.67ns)   --->   "%GradientvaluesX = call i11 @xFGradientX3x3<0, 4>, i8 %src_buf1_0_val_read, i8 %src_buf1_2_val_read, i8 %src_buf2_0_val_read, i8 %src_buf2_2_val_read, i8 %src_buf3_0_val_read, i8 %src_buf3_2_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 11 'call' 'GradientvaluesX' <Predicate = true> <Delay = 5.67> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 12 [2/2] (3.73ns)   --->   "%ref_tmp = call i11 @xFGradientY3x3<0, 4>, i8 %src_buf1_0_val_read, i8 %src_buf1_1_val_read, i8 %src_buf1_2_val_read, i8 %src_buf3_0_val_read, i8 %src_buf3_1_val_read, i8 %src_buf3_2_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:166]   --->   Operation 12 'call' 'ref_tmp' <Predicate = true> <Delay = 3.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 3.75>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%sext_ln166 = sext i11 %GradientvaluesX" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:166]   --->   Operation 13 'sext' 'sext_ln166' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/2] (3.75ns)   --->   "%ref_tmp = call i11 @xFGradientY3x3<0, 4>, i8 %src_buf1_0_val_read, i8 %src_buf1_1_val_read, i8 %src_buf1_2_val_read, i8 %src_buf3_0_val_read, i8 %src_buf3_1_val_read, i8 %src_buf3_2_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:166]   --->   Operation 14 'call' 'ref_tmp' <Predicate = true> <Delay = 3.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%sext_ln175 = sext i11 %ref_tmp" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:175]   --->   Operation 15 'sext' 'sext_ln175' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%mrv = insertvalue i32 <undef>, i16 %sext_ln166" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:175]   --->   Operation 16 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i32 %mrv, i16 %sext_ln175" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:175]   --->   Operation 17 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%ret_ln175 = ret i32 %mrv_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:175]   --->   Operation 18 'ret' 'ret_ln175' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 1
+- Is pipelined: 1
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ src_buf1_0_val]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ src_buf1_1_val]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ src_buf1_2_val]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ src_buf2_0_val]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ src_buf2_2_val]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ src_buf3_0_val]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ src_buf3_1_val]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ src_buf3_2_val]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+src_buf3_2_val_read (read       ) [ 000]
+src_buf3_1_val_read (read       ) [ 000]
+src_buf3_0_val_read (read       ) [ 000]
+src_buf2_2_val_read (read       ) [ 000]
+src_buf2_0_val_read (read       ) [ 000]
+src_buf1_2_val_read (read       ) [ 000]
+src_buf1_1_val_read (read       ) [ 000]
+src_buf1_0_val_read (read       ) [ 000]
+GradientvaluesX     (call       ) [ 011]
+sext_ln166          (sext       ) [ 000]
+ref_tmp             (call       ) [ 000]
+sext_ln175          (sext       ) [ 000]
+mrv                 (insertvalue) [ 000]
+mrv_1               (insertvalue) [ 000]
+ret_ln175           (ret        ) [ 000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="src_buf1_0_val">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="src_buf1_0_val"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="src_buf1_1_val">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="src_buf1_1_val"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="src_buf1_2_val">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="src_buf1_2_val"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="src_buf2_0_val">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="src_buf2_0_val"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="src_buf2_2_val">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="src_buf2_2_val"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="src_buf3_0_val">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="src_buf3_0_val"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="src_buf3_1_val">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="src_buf3_1_val"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="src_buf3_2_val">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="src_buf3_2_val"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="xFGradientX3x3<0, 4>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="xFGradientY3x3<0, 4>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1004" name="src_buf3_2_val_read_read_fu_24">
+<pin_list>
+<pin id="25" dir="0" index="0" bw="8" slack="0"/>
+<pin id="26" dir="0" index="1" bw="8" slack="0"/>
+<pin id="27" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="src_buf3_2_val_read/1 "/>
+</bind>
+</comp>
+
+<comp id="30" class="1004" name="src_buf3_1_val_read_read_fu_30">
+<pin_list>
+<pin id="31" dir="0" index="0" bw="8" slack="0"/>
+<pin id="32" dir="0" index="1" bw="8" slack="0"/>
+<pin id="33" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="src_buf3_1_val_read/1 "/>
+</bind>
+</comp>
+
+<comp id="36" class="1004" name="src_buf3_0_val_read_read_fu_36">
+<pin_list>
+<pin id="37" dir="0" index="0" bw="8" slack="0"/>
+<pin id="38" dir="0" index="1" bw="8" slack="0"/>
+<pin id="39" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="src_buf3_0_val_read/1 "/>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="src_buf2_2_val_read_read_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="8" slack="0"/>
+<pin id="44" dir="0" index="1" bw="8" slack="0"/>
+<pin id="45" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="src_buf2_2_val_read/1 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="src_buf2_0_val_read_read_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="8" slack="0"/>
+<pin id="50" dir="0" index="1" bw="8" slack="0"/>
+<pin id="51" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="src_buf2_0_val_read/1 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="src_buf1_2_val_read_read_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="8" slack="0"/>
+<pin id="56" dir="0" index="1" bw="8" slack="0"/>
+<pin id="57" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="src_buf1_2_val_read/1 "/>
+</bind>
+</comp>
+
+<comp id="60" class="1004" name="src_buf1_1_val_read_read_fu_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="8" slack="0"/>
+<pin id="62" dir="0" index="1" bw="8" slack="0"/>
+<pin id="63" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="src_buf1_1_val_read/1 "/>
+</bind>
+</comp>
+
+<comp id="66" class="1004" name="src_buf1_0_val_read_read_fu_66">
+<pin_list>
+<pin id="67" dir="0" index="0" bw="8" slack="0"/>
+<pin id="68" dir="0" index="1" bw="8" slack="0"/>
+<pin id="69" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="src_buf1_0_val_read/1 "/>
+</bind>
+</comp>
+
+<comp id="72" class="1004" name="GradientvaluesX_xFGradientX3x3_0_4_s_fu_72">
+<pin_list>
+<pin id="73" dir="0" index="0" bw="11" slack="0"/>
+<pin id="74" dir="0" index="1" bw="8" slack="0"/>
+<pin id="75" dir="0" index="2" bw="8" slack="0"/>
+<pin id="76" dir="0" index="3" bw="8" slack="0"/>
+<pin id="77" dir="0" index="4" bw="8" slack="0"/>
+<pin id="78" dir="0" index="5" bw="8" slack="0"/>
+<pin id="79" dir="0" index="6" bw="8" slack="0"/>
+<pin id="80" dir="1" index="7" bw="11" slack="1"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="GradientvaluesX/1 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="grp_xFGradientY3x3_0_4_s_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="11" slack="0"/>
+<pin id="90" dir="0" index="1" bw="8" slack="0"/>
+<pin id="91" dir="0" index="2" bw="8" slack="0"/>
+<pin id="92" dir="0" index="3" bw="8" slack="0"/>
+<pin id="93" dir="0" index="4" bw="8" slack="0"/>
+<pin id="94" dir="0" index="5" bw="8" slack="0"/>
+<pin id="95" dir="0" index="6" bw="8" slack="0"/>
+<pin id="96" dir="1" index="7" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="ref_tmp/1 "/>
+</bind>
+</comp>
+
+<comp id="104" class="1004" name="sext_ln166_fu_104">
+<pin_list>
+<pin id="105" dir="0" index="0" bw="11" slack="1"/>
+<pin id="106" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="sext_ln166/2 "/>
+</bind>
+</comp>
+
+<comp id="107" class="1004" name="sext_ln175_fu_107">
+<pin_list>
+<pin id="108" dir="0" index="0" bw="11" slack="0"/>
+<pin id="109" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="sext_ln175/2 "/>
+</bind>
+</comp>
+
+<comp id="111" class="1004" name="mrv_fu_111">
+<pin_list>
+<pin id="112" dir="0" index="0" bw="32" slack="0"/>
+<pin id="113" dir="0" index="1" bw="11" slack="0"/>
+<pin id="114" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv/2 "/>
+</bind>
+</comp>
+
+<comp id="117" class="1004" name="mrv_1_fu_117">
+<pin_list>
+<pin id="118" dir="0" index="0" bw="32" slack="0"/>
+<pin id="119" dir="0" index="1" bw="11" slack="0"/>
+<pin id="120" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_1/2 "/>
+</bind>
+</comp>
+
+<comp id="123" class="1005" name="GradientvaluesX_reg_123">
+<pin_list>
+<pin id="124" dir="0" index="0" bw="11" slack="1"/>
+<pin id="125" dir="1" index="1" bw="11" slack="1"/>
+</pin_list>
+<bind>
+<opset="GradientvaluesX "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="28"><net_src comp="16" pin="0"/><net_sink comp="24" pin=0"/></net>
+
+<net id="29"><net_src comp="14" pin="0"/><net_sink comp="24" pin=1"/></net>
+
+<net id="34"><net_src comp="16" pin="0"/><net_sink comp="30" pin=0"/></net>
+
+<net id="35"><net_src comp="12" pin="0"/><net_sink comp="30" pin=1"/></net>
+
+<net id="40"><net_src comp="16" pin="0"/><net_sink comp="36" pin=0"/></net>
+
+<net id="41"><net_src comp="10" pin="0"/><net_sink comp="36" pin=1"/></net>
+
+<net id="46"><net_src comp="16" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="47"><net_src comp="8" pin="0"/><net_sink comp="42" pin=1"/></net>
+
+<net id="52"><net_src comp="16" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="53"><net_src comp="6" pin="0"/><net_sink comp="48" pin=1"/></net>
+
+<net id="58"><net_src comp="16" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="59"><net_src comp="4" pin="0"/><net_sink comp="54" pin=1"/></net>
+
+<net id="64"><net_src comp="16" pin="0"/><net_sink comp="60" pin=0"/></net>
+
+<net id="65"><net_src comp="2" pin="0"/><net_sink comp="60" pin=1"/></net>
+
+<net id="70"><net_src comp="16" pin="0"/><net_sink comp="66" pin=0"/></net>
+
+<net id="71"><net_src comp="0" pin="0"/><net_sink comp="66" pin=1"/></net>
+
+<net id="81"><net_src comp="18" pin="0"/><net_sink comp="72" pin=0"/></net>
+
+<net id="82"><net_src comp="66" pin="2"/><net_sink comp="72" pin=1"/></net>
+
+<net id="83"><net_src comp="54" pin="2"/><net_sink comp="72" pin=2"/></net>
+
+<net id="84"><net_src comp="48" pin="2"/><net_sink comp="72" pin=3"/></net>
+
+<net id="85"><net_src comp="42" pin="2"/><net_sink comp="72" pin=4"/></net>
+
+<net id="86"><net_src comp="36" pin="2"/><net_sink comp="72" pin=5"/></net>
+
+<net id="87"><net_src comp="24" pin="2"/><net_sink comp="72" pin=6"/></net>
+
+<net id="97"><net_src comp="20" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="98"><net_src comp="66" pin="2"/><net_sink comp="88" pin=1"/></net>
+
+<net id="99"><net_src comp="60" pin="2"/><net_sink comp="88" pin=2"/></net>
+
+<net id="100"><net_src comp="54" pin="2"/><net_sink comp="88" pin=3"/></net>
+
+<net id="101"><net_src comp="36" pin="2"/><net_sink comp="88" pin=4"/></net>
+
+<net id="102"><net_src comp="30" pin="2"/><net_sink comp="88" pin=5"/></net>
+
+<net id="103"><net_src comp="24" pin="2"/><net_sink comp="88" pin=6"/></net>
+
+<net id="110"><net_src comp="88" pin="7"/><net_sink comp="107" pin=0"/></net>
+
+<net id="115"><net_src comp="22" pin="0"/><net_sink comp="111" pin=0"/></net>
+
+<net id="116"><net_src comp="104" pin="1"/><net_sink comp="111" pin=1"/></net>
+
+<net id="121"><net_src comp="111" pin="2"/><net_sink comp="117" pin=0"/></net>
+
+<net id="122"><net_src comp="107" pin="1"/><net_sink comp="117" pin=1"/></net>
+
+<net id="126"><net_src comp="72" pin="7"/><net_sink comp="123" pin=0"/></net>
+
+<net id="127"><net_src comp="123" pin="1"/><net_sink comp="104" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: src_buf1_0_val | {}
+	Port: src_buf1_1_val | {}
+	Port: src_buf1_2_val | {}
+	Port: src_buf2_0_val | {}
+	Port: src_buf2_2_val | {}
+	Port: src_buf3_0_val | {}
+	Port: src_buf3_1_val | {}
+	Port: src_buf3_2_val | {}
+ - Input state : 
+	Port: xFSobel3x3<1, 1, 0, 4> : src_buf1_0_val | {1 }
+	Port: xFSobel3x3<1, 1, 0, 4> : src_buf1_1_val | {1 }
+	Port: xFSobel3x3<1, 1, 0, 4> : src_buf1_2_val | {1 }
+	Port: xFSobel3x3<1, 1, 0, 4> : src_buf2_0_val | {1 }
+	Port: xFSobel3x3<1, 1, 0, 4> : src_buf2_2_val | {1 }
+	Port: xFSobel3x3<1, 1, 0, 4> : src_buf3_0_val | {1 }
+	Port: xFSobel3x3<1, 1, 0, 4> : src_buf3_1_val | {1 }
+	Port: xFSobel3x3<1, 1, 0, 4> : src_buf3_2_val | {1 }
+  - Chain level:
+	State 1
+	State 2
+		sext_ln175 : 1
+		mrv : 1
+		mrv_1 : 2
+		ret_ln175 : 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|--------------------------------------------|---------|---------|
+| Operation|               Functional Unit              |    FF   |   LUT   |
+|----------|--------------------------------------------|---------|---------|
+|   call   | GradientvaluesX_xFGradientX3x3_0_4_s_fu_72 |    0    |    65   |
+|          |       grp_xFGradientY3x3_0_4_s_fu_88       |    27   |    65   |
+|----------|--------------------------------------------|---------|---------|
+|          |       src_buf3_2_val_read_read_fu_24       |    0    |    0    |
+|          |       src_buf3_1_val_read_read_fu_30       |    0    |    0    |
+|          |       src_buf3_0_val_read_read_fu_36       |    0    |    0    |
+|   read   |       src_buf2_2_val_read_read_fu_42       |    0    |    0    |
+|          |       src_buf2_0_val_read_read_fu_48       |    0    |    0    |
+|          |       src_buf1_2_val_read_read_fu_54       |    0    |    0    |
+|          |       src_buf1_1_val_read_read_fu_60       |    0    |    0    |
+|          |       src_buf1_0_val_read_read_fu_66       |    0    |    0    |
+|----------|--------------------------------------------|---------|---------|
+|   sext   |              sext_ln166_fu_104             |    0    |    0    |
+|          |              sext_ln175_fu_107             |    0    |    0    |
+|----------|--------------------------------------------|---------|---------|
+|insertvalue|                 mrv_fu_111                 |    0    |    0    |
+|          |                mrv_1_fu_117                |    0    |    0    |
+|----------|--------------------------------------------|---------|---------|
+|   Total  |                                            |    27   |   130   |
+|----------|--------------------------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-----------------------+--------+
+|                       |   FF   |
++-----------------------+--------+
+|GradientvaluesX_reg_123|   11   |
++-----------------------+--------+
+|         Total         |   11   |
++-----------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+
+|           |   FF   |   LUT  |
++-----------+--------+--------+
+|  Function |   27   |   130  |
+|   Memory  |    -   |    -   |
+|Multiplexer|    -   |    -   |
+|  Register |   11   |    -   |
++-----------+--------+--------+
+|   Total   |   38   |   130  |
++-----------+--------+--------+

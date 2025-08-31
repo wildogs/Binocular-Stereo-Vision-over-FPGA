@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13'
+================================================================
+* Date:           Tue Jun 24 19:15:39 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.268 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |   Interval   | Pipeline|
+    |   min   |   max   |    min    |    max   | min |   max  |   Type  |
+    +---------+---------+-----------+----------+-----+--------+---------+
+    |        6|   480005|  60.000 ns|  4.800 ms|    6|  480005|       no|
+    +---------+---------+-----------+----------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+-----------+----------+-----+--------+---------+
+        |                                                                                            |                                                                                  |  Latency (cycles) |  Latency (absolute)  |   Interval   | Pipeline|
+        |                                          Instance                                          |                                      Module                                      |   min   |   max   |    min    |    max   | min |   max  |   Type  |
+        +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+-----------+----------+-----+--------+---------+
+        |grp_xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13_Pipeline_VITIS_LOOP_fu_46  |xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13_Pipeline_VITIS_LOOP  |        3|   480002|  30.000 ns|  4.800 ms|    3|  480002|       no|
+        +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+-----------+----------+-----+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    1|      34|    143|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     70|    -|
+|Register         |        -|    -|      70|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    1|     104|    215|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   ~0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |                                          Instance                                          |                                      Module                                      | BRAM_18K| DSP| FF | LUT | URAM|
+    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |mul_16s_16s_32_1_1_U519                                                                     |mul_16s_16s_32_1_1                                                                |        0|   1|   0|    6|    0|
+    |grp_xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13_Pipeline_VITIS_LOOP_fu_46  |xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13_Pipeline_VITIS_LOOP  |        0|   0|  34|  137|    0|
+    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |Total                                                                                       |                                                                                  |        0|   1|  34|  143|    0|
+    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm               |  25|          5|    1|          5|
+    |ap_done                 |   9|          2|    1|          2|
+    |height_blk_n            |   9|          2|    1|          2|
+    |img_disp16u_data_write  |   9|          2|    1|          2|
+    |p_disp_strm_read        |   9|          2|    1|          2|
+    |width_blk_n             |   9|          2|    1|          2|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   |  70|         15|    6|         15|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                                   Name                                                  | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                                                |   4|   0|    4|          0|
+    |ap_done_reg                                                                                              |   1|   0|    1|          0|
+    |grp_xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13_Pipeline_VITIS_LOOP_fu_46_ap_start_reg  |   1|   0|    1|          0|
+    |height_read_reg_72                                                                                       |  16|   0|   16|          0|
+    |mul_reg_77                                                                                               |  32|   0|   32|          0|
+    |width_read_reg_67                                                                                        |  16|   0|   16|          0|
+    +---------------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                                                    |  70|   0|   70|          0|
+    +---------------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+--------------------------------------------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |                         Source Object                        |    C Type    |
++---------------------------------+-----+-----+------------+--------------------------------------------------------------+--------------+
+|ap_clk                           |   in|    1|  ap_ctrl_hs|  xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13|  return value|
+|ap_rst                           |   in|    1|  ap_ctrl_hs|  xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13|  return value|
+|ap_start                         |   in|    1|  ap_ctrl_hs|  xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13|  return value|
+|ap_done                          |  out|    1|  ap_ctrl_hs|  xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13|  return value|
+|ap_continue                      |   in|    1|  ap_ctrl_hs|  xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13|  return value|
+|ap_idle                          |  out|    1|  ap_ctrl_hs|  xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13|  return value|
+|ap_ready                         |  out|    1|  ap_ctrl_hs|  xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13|  return value|
+|width_dout                       |   in|   16|     ap_fifo|                                                         width|       pointer|
+|width_num_data_valid             |   in|    2|     ap_fifo|                                                         width|       pointer|
+|width_fifo_cap                   |   in|    2|     ap_fifo|                                                         width|       pointer|
+|width_empty_n                    |   in|    1|     ap_fifo|                                                         width|       pointer|
+|width_read                       |  out|    1|     ap_fifo|                                                         width|       pointer|
+|height_dout                      |   in|   16|     ap_fifo|                                                        height|       pointer|
+|height_num_data_valid            |   in|    2|     ap_fifo|                                                        height|       pointer|
+|height_fifo_cap                  |   in|    2|     ap_fifo|                                                        height|       pointer|
+|height_empty_n                   |   in|    1|     ap_fifo|                                                        height|       pointer|
+|height_read                      |  out|    1|     ap_fifo|                                                        height|       pointer|
+|p_disp_strm_dout                 |   in|   16|     ap_fifo|                                                   p_disp_strm|       pointer|
+|p_disp_strm_num_data_valid       |   in|    2|     ap_fifo|                                                   p_disp_strm|       pointer|
+|p_disp_strm_fifo_cap             |   in|    2|     ap_fifo|                                                   p_disp_strm|       pointer|
+|p_disp_strm_empty_n              |   in|    1|     ap_fifo|                                                   p_disp_strm|       pointer|
+|p_disp_strm_read                 |  out|    1|     ap_fifo|                                                   p_disp_strm|       pointer|
+|img_disp16u_data_din             |  out|   16|     ap_fifo|                                              img_disp16u_data|       pointer|
+|img_disp16u_data_num_data_valid  |   in|    2|     ap_fifo|                                              img_disp16u_data|       pointer|
+|img_disp16u_data_fifo_cap        |   in|    2|     ap_fifo|                                              img_disp16u_data|       pointer|
+|img_disp16u_data_full_n          |   in|    1|     ap_fifo|                                              img_disp16u_data|       pointer|
+|img_disp16u_data_write           |  out|    1|     ap_fifo|                                              img_disp16u_data|       pointer|
++---------------------------------+-----+-----+------------+--------------------------------------------------------------+--------------+
+

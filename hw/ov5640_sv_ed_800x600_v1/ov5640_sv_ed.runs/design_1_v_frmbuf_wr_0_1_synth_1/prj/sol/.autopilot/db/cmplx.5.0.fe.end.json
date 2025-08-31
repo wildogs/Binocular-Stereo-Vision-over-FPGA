@@ -1,0 +1,182 @@
+{
+    "0": {
+        "name": "v_frmbuf_wr",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "73",
+        "instructions": "53",
+        "total_instructions": "480",
+        "calls": "11",
+        "basicblocks": "1",
+        "loads": {
+            "G": "2"
+        }
+    },
+    "1": {
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_width",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "54",
+        "total_instructions": "54",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "Bytes2AXIMMvideo",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "44",
+        "total_instructions": "66",
+        "calls": "5",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "AXIvideo2MultiPixStream",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "54",
+        "total_instructions": "168",
+        "calls": "6 6 9 2 1",
+        "basicblocks": "6",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1086_1",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "reg<unsigned short>",
+        "file": "x_hls_utils.h",
+        "fileloc": "248",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "entry_proc",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_930_1",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "74",
+        "total_instructions": "74",
+        "calls": "",
+        "basicblocks": "18",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "MultiPixStream2Bytes",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "60",
+        "total_instructions": "134",
+        "calls": "8",
+        "basicblocks": "21",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "FrmbufWrHlsDataFlow",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "45",
+        "total_instructions": "427",
+        "calls": "7 4 10 3",
+        "basicblocks": "1"
+    }
+}

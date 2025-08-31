@@ -1,0 +1,390 @@
+
+
+================================================================
+== Vitis HLS Report for 'stereolbm_axis_cambm'
+================================================================
+* Date:           Tue Jun 24 19:15:13 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.570 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline |
+    |   min   |   max   |    min    |    max    |   min   |   max   |   Type   |
+    +---------+---------+-----------+-----------+---------+---------+----------+
+    |  3998490|  3998490|  39.985 ms|  39.985 ms|  3998427|  3998427|  dataflow|
+    +---------+---------+-----------+-----------+---------+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 18
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 18, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 19 [1/1] (1.00ns)   --->   "%textureThreshold_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %textureThreshold" [xf_stereolbm_accel.cpp:106]   --->   Operation 19 'read' 'textureThreshold_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 20 [1/1] (1.00ns)   --->   "%uniquenessRatio_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %uniquenessRatio" [xf_stereolbm_accel.cpp:106]   --->   Operation 20 'read' 'uniquenessRatio_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 21 [1/1] (1.00ns)   --->   "%preFilterCap_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %preFilterCap" [xf_stereolbm_accel.cpp:106]   --->   Operation 21 'read' 'preFilterCap_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 22 [1/1] (1.00ns)   --->   "%cols_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %cols" [xf_stereolbm_accel.cpp:106]   --->   Operation 22 'read' 'cols_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 23 [1/1] (1.00ns)   --->   "%rows_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %rows" [xf_stereolbm_accel.cpp:106]   --->   Operation 23 'read' 'rows_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%imgR_in_cols_c = alloca i64 1" [xf_stereolbm_accel.cpp:106]   --->   Operation 24 'alloca' 'imgR_in_cols_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%imgR_in_rows_c = alloca i64 1" [xf_stereolbm_accel.cpp:106]   --->   Operation 25 'alloca' 'imgR_in_rows_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%imgL_in_cols_c = alloca i64 1" [xf_stereolbm_accel.cpp:106]   --->   Operation 26 'alloca' 'imgL_in_cols_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%imgL_in_rows_c = alloca i64 1" [xf_stereolbm_accel.cpp:106]   --->   Operation 27 'alloca' 'imgL_in_rows_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%mapxLMat_data = alloca i64 1" [xf_stereolbm_accel.cpp:92]   --->   Operation 28 'alloca' 'mapxLMat_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%mapyLMat_data = alloca i64 1" [xf_stereolbm_accel.cpp:93]   --->   Operation 29 'alloca' 'mapyLMat_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%mapxRMat_data = alloca i64 1" [xf_stereolbm_accel.cpp:94]   --->   Operation 30 'alloca' 'mapxRMat_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%mapyRMat_data = alloca i64 1" [xf_stereolbm_accel.cpp:95]   --->   Operation 31 'alloca' 'mapyRMat_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%leftRemappedMat_data = alloca i64 1" [xf_stereolbm_accel.cpp:96]   --->   Operation 32 'alloca' 'leftRemappedMat_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%rightRemappedMat_data = alloca i64 1" [xf_stereolbm_accel.cpp:97]   --->   Operation 33 'alloca' 'rightRemappedMat_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%imgL_in_data = alloca i64 1" [xf_stereolbm_accel.cpp:99]   --->   Operation 34 'alloca' 'imgL_in_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%imgR_in_data = alloca i64 1" [xf_stereolbm_accel.cpp:100]   --->   Operation 35 'alloca' 'imgR_in_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%img_disp16u_data = alloca i64 1" [xf_stereolbm_accel.cpp:101]   --->   Operation 36 'alloca' 'img_disp16u_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%img_disp8u_data = alloca i64 1" [xf_stereolbm_accel.cpp:132]   --->   Operation 37 'alloca' 'img_disp8u_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%img_disp8u_erode_data = alloca i64 1" [xf_stereolbm_accel.cpp:137]   --->   Operation 38 'alloca' 'img_disp8u_erode_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%img_disp8u_dilate_data = alloca i64 1" [xf_stereolbm_accel.cpp:142]   --->   Operation 39 'alloca' 'img_disp8u_dilate_data' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%cameraMA_l_fix = alloca i64 1" [xf_stereolbm_accel.cpp:42]   --->   Operation 40 'alloca' 'cameraMA_l_fix' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%cameraMA_r_fix = alloca i64 1" [xf_stereolbm_accel.cpp:42]   --->   Operation 41 'alloca' 'cameraMA_r_fix' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%distC_l_fix = alloca i64 1" [xf_stereolbm_accel.cpp:43]   --->   Operation 42 'alloca' 'distC_l_fix' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%distC_r_fix = alloca i64 1" [xf_stereolbm_accel.cpp:43]   --->   Operation 43 'alloca' 'distC_r_fix' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%irA_l_fix = alloca i64 1" [xf_stereolbm_accel.cpp:44]   --->   Operation 44 'alloca' 'irA_l_fix' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%irA_r_fix = alloca i64 1" [xf_stereolbm_accel.cpp:44]   --->   Operation 45 'alloca' 'irA_r_fix' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.26>
+ST_2 : Operation 46 [2/2] (0.00ns)   --->   "%call_ln0 = call void @Loop_VITIS_LOOP_46_1_proc, i32 %irA_r_fix, i32 %irA_l_fix, i32 %cameraMA_r_fix, i32 %cameraMA_l_fix, i32 %cameraMA_l, i32 %cameraMA_r, i32 %irA_l, i32 %irA_r"   --->   Operation 46 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln0 = call void @Loop_VITIS_LOOP_55_2_proc, i32 %distC_r_fix, i32 %distC_l_fix, i32 %distC_l, i32 %distC_r"   --->   Operation 47 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%call_ret = call i480 @Block_for.end72_proc, i32 %preFilterCap_read, i32 %uniquenessRatio_read, i32 %textureThreshold_read, i32 %rows_read, i32 %cols_read" [xf_stereolbm_accel.cpp:106]   --->   Operation 48 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%mapxLMat_rows = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 49 'extractvalue' 'mapxLMat_rows' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%mapxLMat_cols = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 50 'extractvalue' 'mapxLMat_cols' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%mapxRMat_rows = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 51 'extractvalue' 'mapxRMat_rows' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%mapxRMat_cols = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 52 'extractvalue' 'mapxRMat_cols' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%imgL_in_rows_c59_channel = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 53 'extractvalue' 'imgL_in_rows_c59_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%imgL_in_cols_c60_channel = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 54 'extractvalue' 'imgL_in_cols_c60_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%imgR_in_rows_c61_channel = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 55 'extractvalue' 'imgR_in_rows_c61_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%imgR_in_cols_c62_channel = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 56 'extractvalue' 'imgR_in_cols_c62_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%bmState_preFilterCap = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 57 'extractvalue' 'bmState_preFilterCap' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%bmState_uniquenessRatio = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 58 'extractvalue' 'bmState_uniquenessRatio' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%bmState_textureThreshold = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 59 'extractvalue' 'bmState_textureThreshold' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%leftRemappedMat_rows = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 60 'extractvalue' 'leftRemappedMat_rows' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%leftRemappedMat_cols = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 61 'extractvalue' 'leftRemappedMat_cols' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%rightRemappedMat_rows = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 62 'extractvalue' 'rightRemappedMat_rows' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%rightRemappedMat_cols = extractvalue i480 %call_ret" [xf_stereolbm_accel.cpp:106]   --->   Operation 63 'extractvalue' 'rightRemappedMat_cols' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 64 [2/2] (7.26ns)   --->   "%call_ln110 = call void @AXIvideo2xfMat<8, 0, 600, 800, 1, 2>.1, i8 %vid_inL_V_data_V, i1 %vid_inL_V_keep_V, i1 %vid_inL_V_strb_V, i1 %vid_inL_V_user_V, i1 %vid_inL_V_last_V, i1 %vid_inL_V_id_V, i1 %vid_inL_V_dest_V, i32 %imgL_in_rows_c59_channel, i32 %imgL_in_cols_c60_channel, i8 %imgL_in_data, i32 %imgL_in_rows_c, i32 %imgL_in_cols_c" [xf_stereolbm_accel.cpp:110]   --->   Operation 64 'call' 'call_ln110' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 65 [2/2] (7.26ns)   --->   "%call_ln111 = call void @AXIvideo2xfMat<8, 0, 600, 800, 1, 2>, i8 %vid_inR_V_data_V, i1 %vid_inR_V_keep_V, i1 %vid_inR_V_strb_V, i1 %vid_inR_V_user_V, i1 %vid_inR_V_last_V, i1 %vid_inR_V_id_V, i1 %vid_inR_V_dest_V, i32 %imgR_in_rows_c61_channel, i32 %imgR_in_cols_c62_channel, i8 %imgR_in_data, i32 %imgR_in_rows_c, i32 %imgR_in_cols_c" [xf_stereolbm_accel.cpp:111]   --->   Operation 65 'call' 'call_ln111' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 66 [1/2] (0.00ns)   --->   "%call_ln0 = call void @Loop_VITIS_LOOP_46_1_proc, i32 %irA_r_fix, i32 %irA_l_fix, i32 %cameraMA_r_fix, i32 %cameraMA_l_fix, i32 %cameraMA_l, i32 %cameraMA_r, i32 %irA_l, i32 %irA_r"   --->   Operation 66 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 67 [1/2] (0.00ns)   --->   "%call_ln0 = call void @Loop_VITIS_LOOP_55_2_proc, i32 %distC_r_fix, i32 %distC_l_fix, i32 %distC_l, i32 %distC_r"   --->   Operation 67 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 68 [1/2] (0.00ns)   --->   "%call_ln110 = call void @AXIvideo2xfMat<8, 0, 600, 800, 1, 2>.1, i8 %vid_inL_V_data_V, i1 %vid_inL_V_keep_V, i1 %vid_inL_V_strb_V, i1 %vid_inL_V_user_V, i1 %vid_inL_V_last_V, i1 %vid_inL_V_id_V, i1 %vid_inL_V_dest_V, i32 %imgL_in_rows_c59_channel, i32 %imgL_in_cols_c60_channel, i8 %imgL_in_data, i32 %imgL_in_rows_c, i32 %imgL_in_cols_c" [xf_stereolbm_accel.cpp:110]   --->   Operation 68 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 69 [1/2] (0.00ns)   --->   "%call_ln111 = call void @AXIvideo2xfMat<8, 0, 600, 800, 1, 2>, i8 %vid_inR_V_data_V, i1 %vid_inR_V_keep_V, i1 %vid_inR_V_strb_V, i1 %vid_inR_V_user_V, i1 %vid_inR_V_last_V, i1 %vid_inR_V_id_V, i1 %vid_inR_V_dest_V, i32 %imgR_in_rows_c61_channel, i32 %imgR_in_cols_c62_channel, i8 %imgR_in_data, i32 %imgR_in_rows_c, i32 %imgR_in_cols_c" [xf_stereolbm_accel.cpp:111]   --->   Operation 69 'call' 'call_ln111' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 3.63>
+ST_4 : Operation 70 [2/2] (3.63ns)   --->   "%call_ln114 = call void @InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>, i32 %cameraMA_l_fix, i32 %distC_l_fix, i32 %irA_l_fix, i32 %mapxLMat_rows, i32 %mapxLMat_cols, i32 %mapxLMat_data, i32 %mapyLMat_data" [xf_stereolbm_accel.cpp:114]   --->   Operation 70 'call' 'call_ln114' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 71 [2/2] (3.63ns)   --->   "%call_ln121 = call void @InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7, i32 %cameraMA_r_fix, i32 %distC_r_fix, i32 %irA_r_fix, i32 %mapxRMat_rows, i32 %mapxRMat_cols, i32 %mapxRMat_data, i32 %mapyRMat_data" [xf_stereolbm_accel.cpp:121]   --->   Operation 71 'call' 'call_ln121' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 72 [1/2] (0.00ns)   --->   "%call_ln114 = call void @InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>, i32 %cameraMA_l_fix, i32 %distC_l_fix, i32 %irA_l_fix, i32 %mapxLMat_rows, i32 %mapxLMat_cols, i32 %mapxLMat_data, i32 %mapyLMat_data" [xf_stereolbm_accel.cpp:114]   --->   Operation 72 'call' 'call_ln114' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 73 [1/2] (0.00ns)   --->   "%call_ln121 = call void @InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7, i32 %cameraMA_r_fix, i32 %distC_r_fix, i32 %irA_r_fix, i32 %mapxRMat_rows, i32 %mapxRMat_cols, i32 %mapxRMat_data, i32 %mapyRMat_data" [xf_stereolbm_accel.cpp:121]   --->   Operation 73 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 74 [2/2] (0.00ns)   --->   "%call_ln117 = call void @remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>.2, i32 %imgL_in_rows_c, i32 %imgL_in_cols_c, i8 %imgL_in_data, i8 %leftRemappedMat_data, i32 %mapxLMat_data, i32 %mapyLMat_data" [xf_stereolbm_accel.cpp:117]   --->   Operation 74 'call' 'call_ln117' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 75 [2/2] (0.00ns)   --->   "%call_ln124 = call void @remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>, i32 %imgR_in_rows_c, i32 %imgR_in_cols_c, i8 %imgR_in_data, i8 %rightRemappedMat_data, i32 %mapxRMat_data, i32 %mapyRMat_data" [xf_stereolbm_accel.cpp:124]   --->   Operation 75 'call' 'call_ln124' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 76 [1/2] (0.00ns)   --->   "%call_ln117 = call void @remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>.2, i32 %imgL_in_rows_c, i32 %imgL_in_cols_c, i8 %imgL_in_data, i8 %leftRemappedMat_data, i32 %mapxLMat_data, i32 %mapyLMat_data" [xf_stereolbm_accel.cpp:117]   --->   Operation 76 'call' 'call_ln117' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 77 [1/2] (0.00ns)   --->   "%call_ln124 = call void @remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>, i32 %imgR_in_rows_c, i32 %imgR_in_cols_c, i8 %imgR_in_data, i8 %rightRemappedMat_data, i32 %mapxRMat_data, i32 %mapyRMat_data" [xf_stereolbm_accel.cpp:124]   --->   Operation 77 'call' 'call_ln124' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 3.63>
+ST_8 : Operation 78 [2/2] (3.63ns)   --->   "%call_ln130 = call void @StereoBM<15, 128, 16, 0, 2, 600, 800, 1, false, 2, 2, 2>, i32 %leftRemappedMat_rows, i32 %leftRemappedMat_cols, i8 %leftRemappedMat_data, i32 %rightRemappedMat_rows, i32 %rightRemappedMat_cols, i8 %rightRemappedMat_data, i16 %img_disp16u_data, i32 %bmState_preFilterCap, i32 %bmState_textureThreshold, i32 %bmState_uniquenessRatio" [xf_stereolbm_accel.cpp:130]   --->   Operation 78 'call' 'call_ln130' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 79 [1/2] (0.00ns)   --->   "%call_ln130 = call void @StereoBM<15, 128, 16, 0, 2, 600, 800, 1, false, 2, 2, 2>, i32 %leftRemappedMat_rows, i32 %leftRemappedMat_cols, i8 %leftRemappedMat_data, i32 %rightRemappedMat_rows, i32 %rightRemappedMat_cols, i8 %rightRemappedMat_data, i16 %img_disp16u_data, i32 %bmState_preFilterCap, i32 %bmState_textureThreshold, i32 %bmState_uniquenessRatio" [xf_stereolbm_accel.cpp:130]   --->   Operation 79 'call' 'call_ln130' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 80 [2/2] (0.00ns)   --->   "%call_ln134 = call void @ConvertShiftAbs, i16 %img_disp16u_data, i8 %img_disp8u_data" [xf_stereolbm_accel.cpp:134]   --->   Operation 80 'call' 'call_ln134' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 81 [1/2] (0.00ns)   --->   "%call_ln134 = call void @ConvertShiftAbs, i16 %img_disp16u_data, i8 %img_disp8u_data" [xf_stereolbm_accel.cpp:134]   --->   Operation 81 'call' 'call_ln134' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 3.63>
+ST_12 : Operation 82 [1/1] (0.00ns)   --->   "%call_ret1 = call i64 @Block_for.end7235_proc, i32 %rows_read, i32 %cols_read" [xf_stereolbm_accel.cpp:106]   --->   Operation 82 'call' 'call_ret1' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 83 [1/1] (0.00ns)   --->   "%img_disp8u_rows = extractvalue i64 %call_ret1" [xf_stereolbm_accel.cpp:106]   --->   Operation 83 'extractvalue' 'img_disp8u_rows' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_12 : Operation 84 [1/1] (0.00ns)   --->   "%img_disp8u_cols = extractvalue i64 %call_ret1" [xf_stereolbm_accel.cpp:106]   --->   Operation 84 'extractvalue' 'img_disp8u_cols' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_12 : Operation 85 [2/2] (3.63ns)   --->   "%call_ln138 = call void @erode<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>, i32 %img_disp8u_rows, i32 %img_disp8u_cols, i8 %img_disp8u_data, i8 %img_disp8u_erode_data" [xf_stereolbm_accel.cpp:138]   --->   Operation 85 'call' 'call_ln138' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 86 [1/2] (0.00ns)   --->   "%call_ln138 = call void @erode<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>, i32 %img_disp8u_rows, i32 %img_disp8u_cols, i8 %img_disp8u_data, i8 %img_disp8u_erode_data" [xf_stereolbm_accel.cpp:138]   --->   Operation 86 'call' 'call_ln138' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 3.63>
+ST_14 : Operation 87 [1/1] (0.00ns)   --->   "%call_ret2 = call i64 @Block_for.end7237_proc, i32 %rows_read, i32 %cols_read" [xf_stereolbm_accel.cpp:106]   --->   Operation 87 'call' 'call_ret2' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 88 [1/1] (0.00ns)   --->   "%img_disp8u_erode_rows = extractvalue i64 %call_ret2" [xf_stereolbm_accel.cpp:106]   --->   Operation 88 'extractvalue' 'img_disp8u_erode_rows' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_14 : Operation 89 [1/1] (0.00ns)   --->   "%img_disp8u_erode_cols = extractvalue i64 %call_ret2" [xf_stereolbm_accel.cpp:106]   --->   Operation 89 'extractvalue' 'img_disp8u_erode_cols' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_14 : Operation 90 [2/2] (3.63ns)   --->   "%call_ln143 = call void @dilate<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>, i32 %img_disp8u_erode_rows, i32 %img_disp8u_erode_cols, i8 %img_disp8u_erode_data, i8 %img_disp8u_dilate_data" [xf_stereolbm_accel.cpp:143]   --->   Operation 90 'call' 'call_ln143' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 91 [1/2] (0.00ns)   --->   "%call_ln143 = call void @dilate<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>, i32 %img_disp8u_erode_rows, i32 %img_disp8u_erode_cols, i8 %img_disp8u_erode_data, i8 %img_disp8u_dilate_data" [xf_stereolbm_accel.cpp:143]   --->   Operation 91 'call' 'call_ln143' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 6.18>
+ST_16 : Operation 92 [1/1] (0.00ns)   --->   "%call_ret3 = call i64 @Block_for.end7239_proc, i32 %rows_read, i32 %cols_read" [xf_stereolbm_accel.cpp:106]   --->   Operation 92 'call' 'call_ret3' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 93 [1/1] (0.00ns)   --->   "%img_disp8u_dilate_rows = extractvalue i64 %call_ret3" [xf_stereolbm_accel.cpp:106]   --->   Operation 93 'extractvalue' 'img_disp8u_dilate_rows' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_16 : Operation 94 [1/1] (0.00ns)   --->   "%img_disp8u_dilate_cols = extractvalue i64 %call_ret3" [xf_stereolbm_accel.cpp:106]   --->   Operation 94 'extractvalue' 'img_disp8u_dilate_cols' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_16 : Operation 95 [2/2] (6.18ns)   --->   "%call_ln148 = call void @xfMat2AXIvideo<8, 0, 600, 800, 1, 2>, i32 %img_disp8u_dilate_rows, i32 %img_disp8u_dilate_cols, i8 %img_disp8u_dilate_data, i8 %vid_out_V_data_V, i1 %vid_out_V_keep_V, i1 %vid_out_V_strb_V, i1 %vid_out_V_user_V, i1 %vid_out_V_last_V, i1 %vid_out_V_id_V, i1 %vid_out_V_dest_V" [xf_stereolbm_accel.cpp:148]   --->   Operation 95 'call' 'call_ln148' <Predicate = true> <Delay = 6.18> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 96 [1/2] (0.00ns)   --->   "%call_ln148 = call void @xfMat2AXIvideo<8, 0, 600, 800, 1, 2>, i32 %img_disp8u_dilate_rows, i32 %img_disp8u_dilate_cols, i8 %img_disp8u_dilate_data, i8 %vid_out_V_data_V, i1 %vid_out_V_keep_V, i1 %vid_out_V_strb_V, i1 %vid_out_V_user_V, i1 %vid_out_V_last_V, i1 %vid_out_V_id_V, i1 %vid_out_V_dest_V" [xf_stereolbm_accel.cpp:148]   --->   Operation 96 'call' 'call_ln148' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 97 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @imgR_in_OC_cols_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %imgR_in_cols_c, i32 %imgR_in_cols_c" [xf_stereolbm_accel.cpp:106]   --->   Operation 97 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 98 [1/1] (0.00ns)   --->   "%specinterface_ln106 = specinterface void @_ssdm_op_SpecInterface, i32 %imgR_in_cols_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [xf_stereolbm_accel.cpp:106]   --->   Operation 98 'specinterface' 'specinterface_ln106' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 99 [1/1] (0.00ns)   --->   "%empty_182 = specchannel i32 @_ssdm_op_SpecChannel, void @imgR_in_OC_rows_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %imgR_in_rows_c, i32 %imgR_in_rows_c" [xf_stereolbm_accel.cpp:106]   --->   Operation 99 'specchannel' 'empty_182' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 100 [1/1] (0.00ns)   --->   "%specinterface_ln106 = specinterface void @_ssdm_op_SpecInterface, i32 %imgR_in_rows_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [xf_stereolbm_accel.cpp:106]   --->   Operation 100 'specinterface' 'specinterface_ln106' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 101 [1/1] (0.00ns)   --->   "%empty_183 = specchannel i32 @_ssdm_op_SpecChannel, void @imgL_in_OC_cols_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %imgL_in_cols_c, i32 %imgL_in_cols_c" [xf_stereolbm_accel.cpp:106]   --->   Operation 101 'specchannel' 'empty_183' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 102 [1/1] (0.00ns)   --->   "%specinterface_ln106 = specinterface void @_ssdm_op_SpecInterface, i32 %imgL_in_cols_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [xf_stereolbm_accel.cpp:106]   --->   Operation 102 'specinterface' 'specinterface_ln106' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 103 [1/1] (0.00ns)   --->   "%empty_184 = specchannel i32 @_ssdm_op_SpecChannel, void @imgL_in_OC_rows_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %imgL_in_rows_c, i32 %imgL_in_rows_c" [xf_stereolbm_accel.cpp:106]   --->   Operation 103 'specchannel' 'empty_184' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 104 [1/1] (0.00ns)   --->   "%specinterface_ln106 = specinterface void @_ssdm_op_SpecInterface, i32 %imgL_in_rows_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [xf_stereolbm_accel.cpp:106]   --->   Operation 104 'specinterface' 'specinterface_ln106' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 105 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln106 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_84" [xf_stereolbm_accel.cpp:106]   --->   Operation 105 'specdataflowpipeline' 'specdataflowpipeline_ln106' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 106 [1/1] (0.00ns)   --->   "%spectopmodule_ln23 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_13" [xf_stereolbm_accel.cpp:23]   --->   Operation 106 'spectopmodule' 'spectopmodule_ln23' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 107 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %vid_inL_V_data_V, i1 %vid_inL_V_keep_V, i1 %vid_inL_V_strb_V, i1 %vid_inL_V_user_V, i1 %vid_inL_V_last_V, i1 %vid_inL_V_id_V, i1 %vid_inL_V_dest_V, void @empty_82, i32 1, i32 1, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 107 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 108 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %vid_inL_V_data_V"   --->   Operation 108 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 109 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inL_V_keep_V"   --->   Operation 109 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 110 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inL_V_strb_V"   --->   Operation 110 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 111 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inL_V_user_V"   --->   Operation 111 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 112 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inL_V_last_V"   --->   Operation 112 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 113 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inL_V_id_V"   --->   Operation 113 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 114 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inL_V_dest_V"   --->   Operation 114 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 115 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %vid_inR_V_data_V, i1 %vid_inR_V_keep_V, i1 %vid_inR_V_strb_V, i1 %vid_inR_V_user_V, i1 %vid_inR_V_last_V, i1 %vid_inR_V_id_V, i1 %vid_inR_V_dest_V, void @empty_82, i32 1, i32 1, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 115 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 116 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %vid_inR_V_data_V"   --->   Operation 116 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 117 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inR_V_keep_V"   --->   Operation 117 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 118 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inR_V_strb_V"   --->   Operation 118 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 119 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inR_V_user_V"   --->   Operation 119 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 120 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inR_V_last_V"   --->   Operation 120 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 121 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inR_V_id_V"   --->   Operation 121 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 122 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_inR_V_dest_V"   --->   Operation 122 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 123 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %vid_out_V_data_V, i1 %vid_out_V_keep_V, i1 %vid_out_V_strb_V, i1 %vid_out_V_user_V, i1 %vid_out_V_last_V, i1 %vid_out_V_id_V, i1 %vid_out_V_dest_V, void @empty_82, i32 1, i32 1, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 123 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 124 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %vid_out_V_data_V"   --->   Operation 124 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 125 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_out_V_keep_V"   --->   Operation 125 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 126 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_out_V_strb_V"   --->   Operation 126 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 127 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_out_V_user_V"   --->   Operation 127 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 128 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_out_V_last_V"   --->   Operation 128 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 129 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_out_V_id_V"   --->   Operation 129 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 130 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %vid_out_V_dest_V"   --->   Operation 130 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 131 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %rows"   --->   Operation 131 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 132 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rows, void @empty, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_0, void @empty_1, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 132 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 133 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rows, void @empty_2, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 133 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 134 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %cols"   --->   Operation 134 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 135 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cols, void @empty, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_0, void @empty_3, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 135 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 136 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cols, void @empty_2, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 136 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 137 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %preFilterCap"   --->   Operation 137 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 138 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %preFilterCap, void @empty, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_0, void @empty_4, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 138 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 139 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %preFilterCap, void @empty_2, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 139 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 140 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %uniquenessRatio"   --->   Operation 140 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 141 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %uniquenessRatio, void @empty, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_0, void @empty_5, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 141 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 142 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %uniquenessRatio, void @empty_2, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 142 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 143 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %textureThreshold"   --->   Operation 143 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 144 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %textureThreshold, void @empty, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_0, void @empty_6, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 144 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 145 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %textureThreshold, void @empty_2, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 145 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 146 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_0, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 146 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 147 [1/1] (0.00ns)   --->   "%empty_185 = specchannel i32 @_ssdm_op_SpecChannel, void @mapxLMat_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %mapxLMat_data, i32 %mapxLMat_data"   --->   Operation 147 'specchannel' 'empty_185' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 148 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapxLMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 148 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 149 [1/1] (0.00ns)   --->   "%empty_186 = specchannel i32 @_ssdm_op_SpecChannel, void @mapyLMat_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %mapyLMat_data, i32 %mapyLMat_data"   --->   Operation 149 'specchannel' 'empty_186' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 150 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapyLMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 150 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 151 [1/1] (0.00ns)   --->   "%empty_187 = specchannel i32 @_ssdm_op_SpecChannel, void @mapxRMat_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %mapxRMat_data, i32 %mapxRMat_data"   --->   Operation 151 'specchannel' 'empty_187' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 152 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapxRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 152 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 153 [1/1] (0.00ns)   --->   "%empty_188 = specchannel i32 @_ssdm_op_SpecChannel, void @mapyRMat_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %mapyRMat_data, i32 %mapyRMat_data"   --->   Operation 153 'specchannel' 'empty_188' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 154 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapyRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 154 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 155 [1/1] (0.00ns)   --->   "%empty_189 = specchannel i32 @_ssdm_op_SpecChannel, void @leftRemappedMat_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i8 %leftRemappedMat_data, i8 %leftRemappedMat_data"   --->   Operation 155 'specchannel' 'empty_189' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 156 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %leftRemappedMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 156 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 157 [1/1] (0.00ns)   --->   "%empty_190 = specchannel i32 @_ssdm_op_SpecChannel, void @rightRemappedMat_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i8 %rightRemappedMat_data, i8 %rightRemappedMat_data"   --->   Operation 157 'specchannel' 'empty_190' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 158 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %rightRemappedMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 158 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 159 [1/1] (0.00ns)   --->   "%empty_191 = specchannel i32 @_ssdm_op_SpecChannel, void @imgL_in_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i8 %imgL_in_data, i8 %imgL_in_data"   --->   Operation 159 'specchannel' 'empty_191' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 160 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %imgL_in_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 160 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 161 [1/1] (0.00ns)   --->   "%empty_192 = specchannel i32 @_ssdm_op_SpecChannel, void @imgR_in_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i8 %imgR_in_data, i8 %imgR_in_data"   --->   Operation 161 'specchannel' 'empty_192' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 162 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %imgR_in_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 162 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 163 [1/1] (0.00ns)   --->   "%empty_193 = specchannel i32 @_ssdm_op_SpecChannel, void @img_disp16u_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i16 %img_disp16u_data, i16 %img_disp16u_data"   --->   Operation 163 'specchannel' 'empty_193' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 164 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %img_disp16u_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 164 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 165 [1/1] (0.00ns)   --->   "%empty_194 = specchannel i32 @_ssdm_op_SpecChannel, void @img_disp8u_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i8 %img_disp8u_data, i8 %img_disp8u_data"   --->   Operation 165 'specchannel' 'empty_194' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 166 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_disp8u_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 166 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 167 [1/1] (0.00ns)   --->   "%empty_195 = specchannel i32 @_ssdm_op_SpecChannel, void @img_disp8u_erode_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i8 %img_disp8u_erode_data, i8 %img_disp8u_erode_data"   --->   Operation 167 'specchannel' 'empty_195' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 168 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_disp8u_erode_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 168 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 169 [1/1] (0.00ns)   --->   "%empty_196 = specchannel i32 @_ssdm_op_SpecChannel, void @img_disp8u_dilate_OC_data_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i8 %img_disp8u_dilate_data, i8 %img_disp8u_dilate_data"   --->   Operation 169 'specchannel' 'empty_196' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 170 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_disp8u_dilate_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 170 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 171 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln46 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i8 %vid_out_V_data_V, i1 %vid_out_V_keep_V, i1 %vid_out_V_strb_V, i1 %vid_out_V_user_V, i1 %vid_out_V_last_V, i1 %vid_out_V_id_V, i1 %vid_out_V_dest_V, void @empty_8" [xf_stereolbm_accel.cpp:46]   --->   Operation 171 'specaxissidechannel' 'specaxissidechannel_ln46' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 172 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln46 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i8 %vid_inL_V_data_V, i1 %vid_inL_V_keep_V, i1 %vid_inL_V_strb_V, i1 %vid_inL_V_user_V, i1 %vid_inL_V_last_V, i1 %vid_inL_V_id_V, i1 %vid_inL_V_dest_V, void @empty_9" [xf_stereolbm_accel.cpp:46]   --->   Operation 172 'specaxissidechannel' 'specaxissidechannel_ln46' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 173 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln46 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i8 %vid_inR_V_data_V, i1 %vid_inR_V_keep_V, i1 %vid_inR_V_strb_V, i1 %vid_inR_V_user_V, i1 %vid_inR_V_last_V, i1 %vid_inR_V_id_V, i1 %vid_inR_V_dest_V, void @empty_10" [xf_stereolbm_accel.cpp:46]   --->   Operation 173 'specaxissidechannel' 'specaxissidechannel_ln46' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 174 [1/1] (0.00ns)   --->   "%ret_ln152 = ret" [xf_stereolbm_accel.cpp:152]   --->   Operation 174 'ret' 'ret_ln152' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.000ns
+The critical path consists of the following:
+	s_axi read operation ('textureThreshold_read', xf_stereolbm_accel.cpp:106) on port 'textureThreshold' (xf_stereolbm_accel.cpp:106) [33]  (1.000 ns)
+
+ <State 2>: 7.268ns
+The critical path consists of the following:
+	'call' operation ('call_ret', xf_stereolbm_accel.cpp:106) to 'Block_for.end72_proc' [139]  (0.000 ns)
+	'call' operation ('call_ln110', xf_stereolbm_accel.cpp:110) to 'AXIvideo2xfMat<8, 0, 600, 800, 1, 2>.1' [155]  (7.268 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 3.634ns
+The critical path consists of the following:
+	'call' operation ('call_ln114', xf_stereolbm_accel.cpp:114) to 'InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>' [157]  (3.634 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 3.634ns
+The critical path consists of the following:
+	'call' operation ('call_ln130', xf_stereolbm_accel.cpp:130) to 'StereoBM<15, 128, 16, 0, 2, 600, 800, 1, false, 2, 2, 2>' [161]  (3.634 ns)
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 3.634ns
+The critical path consists of the following:
+	'call' operation ('call_ret1', xf_stereolbm_accel.cpp:106) to 'Block_for.end7235_proc' [162]  (0.000 ns)
+	'call' operation ('call_ln138', xf_stereolbm_accel.cpp:138) to 'erode<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>' [169]  (3.634 ns)
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 3.634ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', xf_stereolbm_accel.cpp:106) to 'Block_for.end7237_proc' [166]  (0.000 ns)
+	'call' operation ('call_ln143', xf_stereolbm_accel.cpp:143) to 'dilate<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>' [173]  (3.634 ns)
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 6.186ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', xf_stereolbm_accel.cpp:106) to 'Block_for.end7239_proc' [170]  (0.000 ns)
+	'call' operation ('call_ln148', xf_stereolbm_accel.cpp:148) to 'xfMat2AXIvideo<8, 0, 600, 800, 1, 2>' [174]  (6.186 ns)
+
+ <State 17>: 0.000ns
+The critical path consists of the following:
+
+ <State 18>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

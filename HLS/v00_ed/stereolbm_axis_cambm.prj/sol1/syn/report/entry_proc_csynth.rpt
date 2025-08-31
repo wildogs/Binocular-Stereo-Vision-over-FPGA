@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vitis HLS Report for 'entry_proc'
+================================================================
+* Date:           Tue Jun 24 19:15:22 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.634 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    126|    -|
+|Register         |        -|    -|       3|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       3|    128|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+----+-----------+-----+-----------+
+    |                Name               | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |ap_done                            |   9|          2|    1|          2|
+    |height_c21_blk_n                   |   9|          2|    1|          2|
+    |height_c22_blk_n                   |   9|          2|    1|          2|
+    |height_c23_blk_n                   |   9|          2|    1|          2|
+    |height_c24_blk_n                   |   9|          2|    1|          2|
+    |real_start                         |   9|          2|    1|          2|
+    |sbmstate_preFilterCap_c18_blk_n    |   9|          2|    1|          2|
+    |sbmstate_preFilterCap_c19_blk_n    |   9|          2|    1|          2|
+    |sbmstate_textureThreshold_c_blk_n  |   9|          2|    1|          2|
+    |sbmstate_uniquenessRatio_c_blk_n   |   9|          2|    1|          2|
+    |width_c26_blk_n                    |   9|          2|    1|          2|
+    |width_c27_blk_n                    |   9|          2|    1|          2|
+    |width_c28_blk_n                    |   9|          2|    1|          2|
+    |width_c29_blk_n                    |   9|          2|    1|          2|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |Total                              | 126|         28|   14|         28|
+    +-----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------------------+-----+-----+------------+-----------------------------+--------------+
+|                  RTL Ports                 | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++--------------------------------------------+-----+-----+------------+-----------------------------+--------------+
+|ap_clk                                      |   in|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|ap_rst                                      |   in|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|ap_start                                    |   in|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|start_full_n                                |   in|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|ap_done                                     |  out|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|ap_continue                                 |   in|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|ap_idle                                     |  out|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|ap_ready                                    |  out|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|start_out                                   |  out|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|start_write                                 |  out|    1|  ap_ctrl_hs|                   entry_proc|  return value|
+|p_read                                      |   in|   32|     ap_none|                       p_read|        scalar|
+|sbmstate_preFilterCap_c18_din               |  out|   32|     ap_fifo|    sbmstate_preFilterCap_c18|       pointer|
+|sbmstate_preFilterCap_c18_num_data_valid    |   in|    3|     ap_fifo|    sbmstate_preFilterCap_c18|       pointer|
+|sbmstate_preFilterCap_c18_fifo_cap          |   in|    3|     ap_fifo|    sbmstate_preFilterCap_c18|       pointer|
+|sbmstate_preFilterCap_c18_full_n            |   in|    1|     ap_fifo|    sbmstate_preFilterCap_c18|       pointer|
+|sbmstate_preFilterCap_c18_write             |  out|    1|     ap_fifo|    sbmstate_preFilterCap_c18|       pointer|
+|sbmstate_preFilterCap_c19_din               |  out|   32|     ap_fifo|    sbmstate_preFilterCap_c19|       pointer|
+|sbmstate_preFilterCap_c19_num_data_valid    |   in|    3|     ap_fifo|    sbmstate_preFilterCap_c19|       pointer|
+|sbmstate_preFilterCap_c19_fifo_cap          |   in|    3|     ap_fifo|    sbmstate_preFilterCap_c19|       pointer|
+|sbmstate_preFilterCap_c19_full_n            |   in|    1|     ap_fifo|    sbmstate_preFilterCap_c19|       pointer|
+|sbmstate_preFilterCap_c19_write             |  out|    1|     ap_fifo|    sbmstate_preFilterCap_c19|       pointer|
+|p_read1                                     |   in|   32|     ap_none|                      p_read1|        scalar|
+|sbmstate_textureThreshold_c_din             |  out|   32|     ap_fifo|  sbmstate_textureThreshold_c|       pointer|
+|sbmstate_textureThreshold_c_num_data_valid  |   in|    3|     ap_fifo|  sbmstate_textureThreshold_c|       pointer|
+|sbmstate_textureThreshold_c_fifo_cap        |   in|    3|     ap_fifo|  sbmstate_textureThreshold_c|       pointer|
+|sbmstate_textureThreshold_c_full_n          |   in|    1|     ap_fifo|  sbmstate_textureThreshold_c|       pointer|
+|sbmstate_textureThreshold_c_write           |  out|    1|     ap_fifo|  sbmstate_textureThreshold_c|       pointer|
+|p_read2                                     |   in|   32|     ap_none|                      p_read2|        scalar|
+|sbmstate_uniquenessRatio_c_din              |  out|   32|     ap_fifo|   sbmstate_uniquenessRatio_c|       pointer|
+|sbmstate_uniquenessRatio_c_num_data_valid   |   in|    3|     ap_fifo|   sbmstate_uniquenessRatio_c|       pointer|
+|sbmstate_uniquenessRatio_c_fifo_cap         |   in|    3|     ap_fifo|   sbmstate_uniquenessRatio_c|       pointer|
+|sbmstate_uniquenessRatio_c_full_n           |   in|    1|     ap_fifo|   sbmstate_uniquenessRatio_c|       pointer|
+|sbmstate_uniquenessRatio_c_write            |  out|    1|     ap_fifo|   sbmstate_uniquenessRatio_c|       pointer|
+|height                                      |   in|   16|     ap_none|                       height|        scalar|
+|height_c21_din                              |  out|   16|     ap_fifo|                   height_c21|       pointer|
+|height_c21_num_data_valid                   |   in|    3|     ap_fifo|                   height_c21|       pointer|
+|height_c21_fifo_cap                         |   in|    3|     ap_fifo|                   height_c21|       pointer|
+|height_c21_full_n                           |   in|    1|     ap_fifo|                   height_c21|       pointer|
+|height_c21_write                            |  out|    1|     ap_fifo|                   height_c21|       pointer|
+|height_c22_din                              |  out|   16|     ap_fifo|                   height_c22|       pointer|
+|height_c22_num_data_valid                   |   in|    3|     ap_fifo|                   height_c22|       pointer|
+|height_c22_fifo_cap                         |   in|    3|     ap_fifo|                   height_c22|       pointer|
+|height_c22_full_n                           |   in|    1|     ap_fifo|                   height_c22|       pointer|
+|height_c22_write                            |  out|    1|     ap_fifo|                   height_c22|       pointer|
+|height_c23_din                              |  out|   16|     ap_fifo|                   height_c23|       pointer|
+|height_c23_num_data_valid                   |   in|    3|     ap_fifo|                   height_c23|       pointer|
+|height_c23_fifo_cap                         |   in|    3|     ap_fifo|                   height_c23|       pointer|
+|height_c23_full_n                           |   in|    1|     ap_fifo|                   height_c23|       pointer|
+|height_c23_write                            |  out|    1|     ap_fifo|                   height_c23|       pointer|
+|height_c24_din                              |  out|   16|     ap_fifo|                   height_c24|       pointer|
+|height_c24_num_data_valid                   |   in|    3|     ap_fifo|                   height_c24|       pointer|
+|height_c24_fifo_cap                         |   in|    3|     ap_fifo|                   height_c24|       pointer|
+|height_c24_full_n                           |   in|    1|     ap_fifo|                   height_c24|       pointer|
+|height_c24_write                            |  out|    1|     ap_fifo|                   height_c24|       pointer|
+|width                                       |   in|   16|     ap_none|                        width|        scalar|
+|width_c26_din                               |  out|   16|     ap_fifo|                    width_c26|       pointer|
+|width_c26_num_data_valid                    |   in|    3|     ap_fifo|                    width_c26|       pointer|
+|width_c26_fifo_cap                          |   in|    3|     ap_fifo|                    width_c26|       pointer|
+|width_c26_full_n                            |   in|    1|     ap_fifo|                    width_c26|       pointer|
+|width_c26_write                             |  out|    1|     ap_fifo|                    width_c26|       pointer|
+|width_c27_din                               |  out|   16|     ap_fifo|                    width_c27|       pointer|
+|width_c27_num_data_valid                    |   in|    3|     ap_fifo|                    width_c27|       pointer|
+|width_c27_fifo_cap                          |   in|    3|     ap_fifo|                    width_c27|       pointer|
+|width_c27_full_n                            |   in|    1|     ap_fifo|                    width_c27|       pointer|
+|width_c27_write                             |  out|    1|     ap_fifo|                    width_c27|       pointer|
+|width_c28_din                               |  out|   16|     ap_fifo|                    width_c28|       pointer|
+|width_c28_num_data_valid                    |   in|    3|     ap_fifo|                    width_c28|       pointer|
+|width_c28_fifo_cap                          |   in|    3|     ap_fifo|                    width_c28|       pointer|
+|width_c28_full_n                            |   in|    1|     ap_fifo|                    width_c28|       pointer|
+|width_c28_write                             |  out|    1|     ap_fifo|                    width_c28|       pointer|
+|width_c29_din                               |  out|   16|     ap_fifo|                    width_c29|       pointer|
+|width_c29_num_data_valid                    |   in|    3|     ap_fifo|                    width_c29|       pointer|
+|width_c29_fifo_cap                          |   in|    3|     ap_fifo|                    width_c29|       pointer|
+|width_c29_full_n                            |   in|    1|     ap_fifo|                    width_c29|       pointer|
+|width_c29_write                             |  out|    1|     ap_fifo|                    width_c29|       pointer|
++--------------------------------------------+-----+-----+------------+-----------------------------+--------------+
+

@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vitis HLS Report for 'InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7'
+================================================================
+* Date:           Tue Jun 24 19:15:19 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.972 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+    +---------+---------+----------+----------+-----+--------+---------+
+    |       47|   480046|  0.470 us|  4.800 ms|   47|  480046|       no|
+    +---------+---------+----------+----------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------+----------------------------------------+---------+---------+----------+----------+-----+--------+---------+
+        |                                                  |                                        |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+        |                     Instance                     |                 Module                 |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+        +--------------------------------------------------+----------------------------------------+---------+---------+----------+----------+-----+--------+---------+
+        |grp_xFInitUndistortRectifyMapInverseKernel_fu_40  |xFInitUndistortRectifyMapInverseKernel  |       45|   480044|  0.450 us|  4.800 ms|   45|  480044|       no|
+        +--------------------------------------------------+----------------------------------------+---------+---------+----------+----------+-----+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|   77|    7811|   4964|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     47|    -|
+|Register         |        -|    -|      37|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|   77|    7848|   5013|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   35|       7|      9|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------+----------------------------------------+---------+----+------+------+-----+
+    |                     Instance                     |                 Module                 | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +--------------------------------------------------+----------------------------------------+---------+----+------+------+-----+
+    |grp_xFInitUndistortRectifyMapInverseKernel_fu_40  |xFInitUndistortRectifyMapInverseKernel  |        0|  77|  7811|  4964|    0|
+    +--------------------------------------------------+----------------------------------------+---------+----+------+------+-----+
+    |Total                                             |                                        |        0|  77|  7811|  4964|    0|
+    +--------------------------------------------------+----------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------+----+-----------+-----+-----------+
+    |         Name        | LUT| Input Size| Bits| Total Bits|
+    +---------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm            |  20|          4|    1|          4|
+    |ap_done              |   9|          2|    1|          2|
+    |mapxRMat_data_write  |   9|          2|    1|          2|
+    |mapyRMat_data_write  |   9|          2|    1|          2|
+    +---------------------+----+-----------+-----+-----------+
+    |Total                |  47|         10|    4|         10|
+    +---------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------+----+----+-----+-----------+
+    |                              Name                             | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                      |   3|   0|    3|          0|
+    |ap_done_reg                                                    |   1|   0|    1|          0|
+    |grp_xFInitUndistortRectifyMapInverseKernel_fu_40_ap_start_reg  |   1|   0|    1|          0|
+    |trunc_ln249_3_reg_69                                           |  16|   0|   16|          0|
+    |trunc_ln249_reg_64                                             |  16|   0|   16|          0|
+    +---------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                          |  37|   0|   37|          0|
+    +---------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+--------------------------------------------------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |                         Source Object                        |    C Type    |
++------------------------------+-----+-----+------------+--------------------------------------------------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|  InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|  InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|  InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|  InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7|  return value|
+|ap_continue                   |   in|    1|  ap_ctrl_hs|  InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|  InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|  InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7|  return value|
+|cameraMatrix_address0         |  out|    4|   ap_memory|                                                  cameraMatrix|         array|
+|cameraMatrix_ce0              |  out|    1|   ap_memory|                                                  cameraMatrix|         array|
+|cameraMatrix_q0               |   in|   32|   ap_memory|                                                  cameraMatrix|         array|
+|distCoeffs_address0           |  out|    3|   ap_memory|                                                    distCoeffs|         array|
+|distCoeffs_ce0                |  out|    1|   ap_memory|                                                    distCoeffs|         array|
+|distCoeffs_q0                 |   in|   32|   ap_memory|                                                    distCoeffs|         array|
+|ir_address0                   |  out|    4|   ap_memory|                                                            ir|         array|
+|ir_ce0                        |  out|    1|   ap_memory|                                                            ir|         array|
+|ir_q0                         |   in|   32|   ap_memory|                                                            ir|         array|
+|p_read                        |   in|   32|     ap_none|                                                        p_read|        scalar|
+|p_read1                       |   in|   32|     ap_none|                                                       p_read1|        scalar|
+|mapxRMat_data_din             |  out|   32|     ap_fifo|                                                 mapxRMat_data|       pointer|
+|mapxRMat_data_num_data_valid  |   in|    2|     ap_fifo|                                                 mapxRMat_data|       pointer|
+|mapxRMat_data_fifo_cap        |   in|    2|     ap_fifo|                                                 mapxRMat_data|       pointer|
+|mapxRMat_data_full_n          |   in|    1|     ap_fifo|                                                 mapxRMat_data|       pointer|
+|mapxRMat_data_write           |  out|    1|     ap_fifo|                                                 mapxRMat_data|       pointer|
+|mapyRMat_data_din             |  out|   32|     ap_fifo|                                                 mapyRMat_data|       pointer|
+|mapyRMat_data_num_data_valid  |   in|    2|     ap_fifo|                                                 mapyRMat_data|       pointer|
+|mapyRMat_data_fifo_cap        |   in|    2|     ap_fifo|                                                 mapyRMat_data|       pointer|
+|mapyRMat_data_full_n          |   in|    1|     ap_fifo|                                                 mapyRMat_data|       pointer|
+|mapyRMat_data_write           |  out|    1|     ap_fifo|                                                 mapyRMat_data|       pointer|
++------------------------------+-----+-----+------------+--------------------------------------------------------------+--------------+
+

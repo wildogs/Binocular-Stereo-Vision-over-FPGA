@@ -1,0 +1,7 @@
+In file included from xf_stereolbm_accel.cpp:2:
+In file included from ./xf_config_params.h:23:
+In file included from C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_utility.hpp:23:
+C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_video_mem.hpp:759:47: warning: 'factor' in '#pragma HLS array_reshape' is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_RESHAPE variable=val factor=RESHAPE_FACTOR dim=1
+                                              ^
+1 warning generated.

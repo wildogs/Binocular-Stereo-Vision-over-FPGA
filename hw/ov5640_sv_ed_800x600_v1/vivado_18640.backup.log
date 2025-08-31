@@ -1,0 +1,486 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Jun 24 20:36:31 2025
+# Process ID: 18640
+# Current directory: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18112 C:\Users\Santiago\OneDrive\Escritorio\ov5640_sv_ed_800x600_v1\ov5640_sv_ed.xpr
+# Log file: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/vivado.log
+# Journal file: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1\vivado.jou
+# Running On: DESKTOP-FS2AEQ7, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34252 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_spipeline_800x600/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 2518.387 ; gain = 470.625
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:v_frmbuf_wr:2.4 - v_frmbuf_wr_0
+Adding component instance block -- xilinx.com:ip:v_frmbuf_rd:2.4 - v_frmbuf_rd_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:5.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:user:ov5640_capture_yuv:1.0 - ov5640_capture_yuv_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:user:ov5640_capture_yuv:1.0 - ov5640_capture_yuv_1
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:5.0 - v_vid_in_axi4s_1
+Adding component instance block -- xilinx.com:ip:v_frmbuf_wr:2.4 - v_frmbuf_wr_1
+Adding component instance block -- xilinx.com:ip:v_frmbuf_rd:2.4 - v_frmbuf_rd_1
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_2
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_3
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_4
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:v_frmbuf_wr:2.4 - v_frmbuf_wr_2
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_5
+Adding component instance block -- xilinx.com:ip:v_frmbuf_rd:2.4 - v_frmbuf_rd_2
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_6
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:hls:stereolbm_axis_cambm:1.0 - stereolbm_axis_cambm_0
+Successfully read diagram <design_1> from block design file <C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2679.523 ; gain = 123.910
+delete_bd_objs [get_bd_intf_nets axis_subset_converter_3_M_AXIS] [get_bd_intf_nets ps7_0_axi_periph_1_M00_AXI] [get_bd_intf_nets axis_subset_converter_4_M_AXIS] [get_bd_intf_nets stereolbm_axis_cambm_0_vid_out] [get_bd_cells stereolbm_axis_cambm_0]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets axis_subset_converter_3_M_AXIS] [get_bd_intf_nets ps7_0_axi_periph_1_M00_AXI] [get_bd_intf_nets axis_subset_converter_4_M_AXIS] [get_bd_intf_nets stereolbm_axis_cambm_0_vid_out] [get_bd_cells stereolbm_axis_cambm_0]'
+delete_bd_objs [get_bd_intf_nets axis_subset_converter_3_M_AXIS] [get_bd_intf_nets ps7_0_axi_periph_1_M00_AXI] [get_bd_intf_nets axis_subset_converter_4_M_AXIS] [get_bd_intf_nets stereolbm_axis_cambm_0_vid_out] [get_bd_cells stereolbm_axis_cambm_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:stereolbm_axis_cambm:1.0 stereolbm_axis_cambm_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axis_subset_converter_4/M_AXIS] [get_bd_intf_pins stereolbm_axis_cambm_0/vid_inR]
+connect_bd_intf_net [get_bd_intf_pins axis_subset_converter_3/M_AXIS] [get_bd_intf_pins stereolbm_axis_cambm_0/vid_inL]
+connect_bd_intf_net [get_bd_intf_pins stereolbm_axis_cambm_0/s_axi_Ctrl] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph_1/M00_AXI]
+connect_bd_intf_net [get_bd_intf_pins stereolbm_axis_cambm_0/vid_out] [get_bd_intf_pins axis_subset_converter_5/S_AXIS]
+connect_bd_net [get_bd_pins stereolbm_axis_cambm_0/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK1]
+connect_bd_net [get_bd_pins stereolbm_axis_cambm_0/ap_rst_n] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+save_bd_design
+Wrote  : <C:\Users\Santiago\OneDrive\Escritorio\ov5640_sv_ed_800x600_v1\ov5640_sv_ed.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+assign_bd_address
+Slave segment '/stereolbm_axis_cambm_0/s_axi_Ctrl/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x8000_0000 [ 64K ]>.
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/ps7_0_axi_periph/M04_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /ps7_0_axi_periph/xbar/M04_AXI'
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2829.508 ; gain = 54.125
+reset_target all [get_files  C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+Wrote  : <C:\Users\Santiago\OneDrive\Escritorio\ov5640_sv_ed_800x600_v1\ov5640_sv_ed.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s02_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s02_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s02_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s02_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dynclk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_frmbuf_wr_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_frmbuf_wr_0 .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_frmbuf_rd_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_frmbuf_rd_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP1'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov5640_capture_yuv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov5640_capture_yuv_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_1 .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_frmbuf_wr_0_1.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_frmbuf_wr_1 .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_frmbuf_rd_0_1.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_frmbuf_rd_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_2_0/design_1_axis_subset_converter_2_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/design_1_axis_subset_converter_0_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_3 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_3_0/design_1_axis_subset_converter_3_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph_1/xbar .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_frmbuf_wr_2_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_frmbuf_wr_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_3_1/design_1_axis_subset_converter_3_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_5 .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_frmbuf_rd_2_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_frmbuf_rd_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_3_2/design_1_axis_subset_converter_3_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/xbar .
+WARNING: [IP_Flow 19-519] IP 'design_1_stereolbm_axis_cambm_0_1' detected a language mismatch between 'Verilog Simulation Wrapper' and 'VHDL Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block stereolbm_axis_cambm_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph_1/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/m00_couplers/auto_pc .
+Exporting to file c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 3198.789 ; gain = 369.281
+catch { config_ip_cache -export [get_ips -all design_1_v_tc_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_tc_0_0
+catch { config_ip_cache -export [get_ips -all design_1_v_axi4s_vid_out_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_axi4s_vid_out_0_0
+catch { config_ip_cache -export [get_ips -all design_1_rst_ps7_0_100M_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_rst_ps7_0_100M_0
+catch { config_ip_cache -export [get_ips -all design_1_rgb2dvi_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_rgb2dvi_0_1
+catch { config_ip_cache -export [get_ips -all design_1_axi_dynclk_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_dynclk_0_0
+catch { config_ip_cache -export [get_ips -all design_1_proc_sys_reset_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_proc_sys_reset_0_1
+catch { config_ip_cache -export [get_ips -all design_1_v_frmbuf_wr_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_wr_0_0
+catch { config_ip_cache -export [get_ips -all design_1_v_frmbuf_rd_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_rd_0_0
+catch { config_ip_cache -export [get_ips -all design_1_v_vid_in_axi4s_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_vid_in_axi4s_0_0
+catch { config_ip_cache -export [get_ips -all design_1_clk_wiz_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_clk_wiz_0_0
+catch { config_ip_cache -export [get_ips -all design_1_ov5640_capture_yuv_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ov5640_capture_yuv_0_0
+catch { config_ip_cache -export [get_ips -all design_1_ov5640_capture_yuv_1_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ov5640_capture_yuv_1_0
+catch { config_ip_cache -export [get_ips -all design_1_v_vid_in_axi4s_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_vid_in_axi4s_0_1
+catch { config_ip_cache -export [get_ips -all design_1_v_frmbuf_wr_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_wr_0_1
+catch { config_ip_cache -export [get_ips -all design_1_v_frmbuf_rd_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_rd_0_1
+catch { config_ip_cache -export [get_ips -all design_1_axis_subset_converter_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_0_0
+catch { config_ip_cache -export [get_ips -all design_1_axis_subset_converter_2_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_2_0
+catch { config_ip_cache -export [get_ips -all design_1_axis_subset_converter_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_0_1
+catch { config_ip_cache -export [get_ips -all design_1_axis_subset_converter_3_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_3_0
+catch { config_ip_cache -export [get_ips -all design_1_xbar_4] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_4
+catch { config_ip_cache -export [get_ips -all design_1_xbar_5] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_5
+catch { config_ip_cache -export [get_ips -all design_1_v_frmbuf_wr_2_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_wr_2_0
+catch { config_ip_cache -export [get_ips -all design_1_axis_subset_converter_3_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_3_1
+catch { config_ip_cache -export [get_ips -all design_1_v_frmbuf_rd_2_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_rd_2_0
+catch { config_ip_cache -export [get_ips -all design_1_axis_subset_converter_3_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_3_2
+catch { config_ip_cache -export [get_ips -all design_1_xbar_6] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_6
+catch { config_ip_cache -export [get_ips -all design_1_xbar_7] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_7
+catch { config_ip_cache -export [get_ips -all design_1_stereolbm_axis_cambm_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_stereolbm_axis_cambm_0_1
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_0
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_cc_0
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_cc_1
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_1
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_2
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_3
+export_ip_user_files -of_objects [get_files C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3198.789 ; gain = 0.000
+launch_runs design_1_auto_cc_0_synth_1 design_1_auto_cc_1_synth_1 design_1_auto_pc_0_synth_1 design_1_auto_pc_1_synth_1 design_1_auto_pc_2_synth_1 design_1_auto_pc_3_synth_1 design_1_axi_dynclk_0_0_synth_1 design_1_axis_subset_converter_0_0_synth_1 design_1_axis_subset_converter_0_1_synth_1 design_1_axis_subset_converter_2_0_synth_1 design_1_axis_subset_converter_3_0_synth_1 design_1_axis_subset_converter_3_1_synth_1 design_1_axis_subset_converter_3_2_synth_1 design_1_clk_wiz_0_0_synth_1 design_1_ov5640_capture_yuv_0_0_synth_1 design_1_ov5640_capture_yuv_1_0_synth_1 design_1_proc_sys_reset_0_1_synth_1 design_1_processing_system7_0_1_synth_1 design_1_rgb2dvi_0_1_synth_1 design_1_rst_ps7_0_100M_0_synth_1 design_1_stereolbm_axis_cambm_0_1_synth_1 design_1_v_axi4s_vid_out_0_0_synth_1 design_1_v_frmbuf_rd_0_0_synth_1 design_1_v_frmbuf_rd_0_1_synth_1 design_1_v_frmbuf_rd_2_0_synth_1 design_1_v_frmbuf_wr_0_0_synth_1 design_1_v_frmbuf_wr_0_1_synth_1 design_1_v_frmbuf_wr_2_0_synth_1 design_1_v_tc_0_0_synth_1 design_1_v_vid_in_axi4s_0_0_synth_1 design_1_v_vid_in_axi4s_0_1_synth_1 design_1_xbar_4_synth_1 design_1_xbar_5_synth_1 design_1_xbar_6_synth_1 design_1_xbar_7_synth_1 -jobs 12
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_cc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_cc_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_3
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_dynclk_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_2_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_3_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_3_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_3_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_clk_wiz_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ov5640_capture_yuv_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ov5640_capture_yuv_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_proc_sys_reset_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_rgb2dvi_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_rst_ps7_0_100M_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_stereolbm_axis_cambm_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_axi4s_vid_out_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_rd_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_rd_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_rd_2_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_wr_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_wr_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_frmbuf_wr_2_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_tc_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_vid_in_axi4s_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_v_vid_in_axi4s_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_5
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_6
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_7
+[Tue Jun 24 20:41:07 2025] Launched design_1_auto_cc_0_synth_1, design_1_auto_cc_1_synth_1, design_1_auto_pc_0_synth_1, design_1_auto_pc_1_synth_1, design_1_auto_pc_2_synth_1, design_1_auto_pc_3_synth_1, design_1_axi_dynclk_0_0_synth_1, design_1_axis_subset_converter_0_0_synth_1, design_1_axis_subset_converter_0_1_synth_1, design_1_axis_subset_converter_2_0_synth_1, design_1_axis_subset_converter_3_0_synth_1, design_1_axis_subset_converter_3_1_synth_1, design_1_axis_subset_converter_3_2_synth_1, design_1_clk_wiz_0_0_synth_1, design_1_ov5640_capture_yuv_0_0_synth_1, design_1_ov5640_capture_yuv_1_0_synth_1, design_1_proc_sys_reset_0_1_synth_1, design_1_processing_system7_0_1_synth_1, design_1_rgb2dvi_0_1_synth_1, design_1_rst_ps7_0_100M_0_synth_1, design_1_stereolbm_axis_cambm_0_1_synth_1, design_1_v_axi4s_vid_out_0_0_synth_1, design_1_v_frmbuf_rd_0_0_synth_1, design_1_v_frmbuf_rd_0_1_synth_1, design_1_v_frmbuf_rd_2_0_synth_1, design_1_v_frmbuf_wr_0_0_synth_1, design_1_v_frmbuf_wr_0_1_synth_1, design_1_v_frmbuf_wr_2_0_synth_1, design_1_v_tc_0_0_synth_1, design_1_v_vid_in_axi4s_0_0_synth_1, design_1_v_vid_in_axi4s_0_1_synth_1, design_1_xbar_4_synth_1, design_1_xbar_5_synth_1, design_1_xbar_6_synth_1, design_1_xbar_7_synth_1...
+Run output will be captured here:
+design_1_auto_cc_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_auto_cc_0_synth_1/runme.log
+design_1_auto_cc_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_auto_cc_1_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_auto_pc_2_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_auto_pc_2_synth_1/runme.log
+design_1_auto_pc_3_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_auto_pc_3_synth_1/runme.log
+design_1_axi_dynclk_0_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_axi_dynclk_0_0_synth_1/runme.log
+design_1_axis_subset_converter_0_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_axis_subset_converter_0_0_synth_1/runme.log
+design_1_axis_subset_converter_0_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_axis_subset_converter_0_1_synth_1/runme.log
+design_1_axis_subset_converter_2_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_axis_subset_converter_2_0_synth_1/runme.log
+design_1_axis_subset_converter_3_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_axis_subset_converter_3_0_synth_1/runme.log
+design_1_axis_subset_converter_3_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_axis_subset_converter_3_1_synth_1/runme.log
+design_1_axis_subset_converter_3_2_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_axis_subset_converter_3_2_synth_1/runme.log
+design_1_clk_wiz_0_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_ov5640_capture_yuv_0_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_ov5640_capture_yuv_0_0_synth_1/runme.log
+design_1_ov5640_capture_yuv_1_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_ov5640_capture_yuv_1_0_synth_1/runme.log
+design_1_proc_sys_reset_0_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_proc_sys_reset_0_1_synth_1/runme.log
+design_1_processing_system7_0_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_processing_system7_0_1_synth_1/runme.log
+design_1_rgb2dvi_0_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_rgb2dvi_0_1_synth_1/runme.log
+design_1_rst_ps7_0_100M_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_rst_ps7_0_100M_0_synth_1/runme.log
+design_1_stereolbm_axis_cambm_0_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_stereolbm_axis_cambm_0_1_synth_1/runme.log
+design_1_v_axi4s_vid_out_0_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_axi4s_vid_out_0_0_synth_1/runme.log
+design_1_v_frmbuf_rd_0_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_0_0_synth_1/runme.log
+design_1_v_frmbuf_rd_0_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_0_1_synth_1/runme.log
+design_1_v_frmbuf_rd_2_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_rd_2_0_synth_1/runme.log
+design_1_v_frmbuf_wr_0_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_0_0_synth_1/runme.log
+design_1_v_frmbuf_wr_0_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_0_1_synth_1/runme.log
+design_1_v_frmbuf_wr_2_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_frmbuf_wr_2_0_synth_1/runme.log
+design_1_v_tc_0_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_tc_0_0_synth_1/runme.log
+design_1_v_vid_in_axi4s_0_0_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_vid_in_axi4s_0_0_synth_1/runme.log
+design_1_v_vid_in_axi4s_0_1_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_v_vid_in_axi4s_0_1_synth_1/runme.log
+design_1_xbar_4_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_xbar_4_synth_1/runme.log
+design_1_xbar_5_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_xbar_5_synth_1/runme.log
+design_1_xbar_6_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_xbar_6_synth_1/runme.log
+design_1_xbar_7_synth_1: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/design_1_xbar_7_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3220.910 ; gain = 22.121
+export_simulation -of_objects [get_files C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.ip_user_files -ipstatic_source_dir C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.cache/compile_simlib/modelsim} {questa=C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.cache/compile_simlib/questa} {riviera=C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.cache/compile_simlib/riviera} {activehdl=C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_rd_0_0/design_1_v_frmbuf_rd_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/design_1_v_frmbuf_wr_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_rd_2_0/design_1_v_frmbuf_rd_2_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_rd_0_1/design_1_v_frmbuf_rd_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/design_1_v_frmbuf_wr_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/design_1_v_frmbuf_wr_2_0.xml. It will be created.
+make_wrapper -files [get_files C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/design_1.bd] -top
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jun 24 20:49:11 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/synth_1/runme.log
+[Tue Jun 24 20:49:11 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_1/design_1_rgb2dvi_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_axi_dynclk_0_0/design_1_axi_dynclk_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/design_1_v_frmbuf_wr_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_rd_0_0/design_1_v_frmbuf_rd_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_ov5640_capture_yuv_0_0/design_1_ov5640_capture_yuv_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/design_1_xlconcat_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_ov5640_capture_yuv_1_0/design_1_ov5640_capture_yuv_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/design_1_v_frmbuf_wr_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_rd_0_1/design_1_v_frmbuf_rd_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_2_0/design_1_axis_subset_converter_2_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/design_1_axis_subset_converter_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_3_0/design_1_axis_subset_converter_3_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_xbar_4/design_1_xbar_4.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_ps7_0_axi_periph_0/design_1_ps7_0_axi_periph_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_xbar_5/design_1_xbar_5.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_ps7_0_axi_periph_1_0/design_1_ps7_0_axi_periph_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_2_0/design_1_v_frmbuf_wr_2_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_3_1/design_1_axis_subset_converter_3_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_rd_2_0/design_1_v_frmbuf_rd_2_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_3_2/design_1_axis_subset_converter_3_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_xbar_6/design_1_xbar_6.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_0/design_1_axi_mem_intercon_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_xbar_7/design_1_xbar_7.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_1_0/design_1_axi_mem_intercon_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_stereolbm_axis_cambm_0_1/design_1_stereolbm_axis_cambm_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3.xml. It will be created.
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3622.277 ; gain = 2.598
+INFO: [Netlist 29-17] Analyzing 6658 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4678.133 ; gain = 91.688
+Restored from archive | CPU: 9.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4678.133 ; gain = 91.688
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 4678.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 37 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 7 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 14 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+  SRLC32E => SRL16E: 10 instances
+
+open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 5430.297 ; gain = 2110.258
+open_report: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 5688.312 ; gain = 244.547
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+write_hw_platform -fixed -include_bit -force -file C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed_800x600_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed_800x600_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/Santiago/OneDrive/Escritorio/ov5640_sv_ed_800x600_v1/ov5640_sv_ed_800x600_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2023.1/data/embeddedsw) loading 1 seconds
+write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 6069.535 ; gain = 309.164
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 24 21:12:24 2025...

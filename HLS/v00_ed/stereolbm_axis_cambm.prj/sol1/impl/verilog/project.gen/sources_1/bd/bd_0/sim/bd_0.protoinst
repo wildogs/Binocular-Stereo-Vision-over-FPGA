@@ -1,0 +1,81 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_0": {
+			"proto_instances": {
+				"/hls_inst/s_axi_Ctrl": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARADDR": { "actual": "s_axi_Ctrl_ARADDR"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"ARREADY": { "actual": "s_axi_Ctrl_ARREADY"},
+						"ARVALID": { "actual": "s_axi_Ctrl_ARVALID"},
+						"AWADDR": { "actual": "s_axi_Ctrl_AWADDR"},
+						"AWREADY": { "actual": "s_axi_Ctrl_AWREADY"},
+						"AWVALID": { "actual": "s_axi_Ctrl_AWVALID"},
+						"BREADY": { "actual": "s_axi_Ctrl_BREADY"},
+						"BRESP": { "actual": "s_axi_Ctrl_BRESP"},
+						"BVALID": { "actual": "s_axi_Ctrl_BVALID"},
+						"RDATA": { "actual": "s_axi_Ctrl_RDATA"},
+						"RREADY": { "actual": "s_axi_Ctrl_RREADY"},
+						"RRESP": { "actual": "s_axi_Ctrl_RRESP"},
+						"RVALID": { "actual": "s_axi_Ctrl_RVALID"},
+						"WDATA": { "actual": "s_axi_Ctrl_WDATA"},
+						"WREADY": { "actual": "s_axi_Ctrl_WREADY"},
+						"WSTRB": { "actual": "s_axi_Ctrl_WSTRB"},
+						"WVALID": { "actual": "s_axi_Ctrl_WVALID"}
+					}
+				},
+				"/hls_inst/vid_inL": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "vid_inL_TDATA"},
+						"TDEST": { "actual": "vid_inL_TDEST"},
+						"TID": { "actual": "vid_inL_TID"},
+						"TKEEP": { "actual": "vid_inL_TKEEP"},
+						"TLAST": { "actual": "vid_inL_TLAST"},
+						"TREADY": { "actual": "vid_inL_TREADY"},
+						"TSTRB": { "actual": "vid_inL_TSTRB"},
+						"TUSER": { "actual": "vid_inL_TUSER"},
+						"TVALID": { "actual": "vid_inL_TVALID"}
+					}
+				},
+				"/hls_inst/vid_inR": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "vid_inR_TDATA"},
+						"TDEST": { "actual": "vid_inR_TDEST"},
+						"TID": { "actual": "vid_inR_TID"},
+						"TKEEP": { "actual": "vid_inR_TKEEP"},
+						"TLAST": { "actual": "vid_inR_TLAST"},
+						"TREADY": { "actual": "vid_inR_TREADY"},
+						"TSTRB": { "actual": "vid_inR_TSTRB"},
+						"TUSER": { "actual": "vid_inR_TUSER"},
+						"TVALID": { "actual": "vid_inR_TVALID"}
+					}
+				},
+				"/hls_inst/vid_out": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "vid_out_TDATA"},
+						"TDEST": { "actual": "vid_out_TDEST"},
+						"TID": { "actual": "vid_out_TID"},
+						"TKEEP": { "actual": "vid_out_TKEEP"},
+						"TLAST": { "actual": "vid_out_TLAST"},
+						"TREADY": { "actual": "vid_out_TREADY"},
+						"TSTRB": { "actual": "vid_out_TSTRB"},
+						"TUSER": { "actual": "vid_out_TUSER"},
+						"TVALID": { "actual": "vid_out_TVALID"}
+					}
+				}
+			}
+		}
+	}
+}

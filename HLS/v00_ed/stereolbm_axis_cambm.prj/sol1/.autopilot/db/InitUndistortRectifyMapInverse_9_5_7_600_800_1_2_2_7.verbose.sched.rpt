@@ -1,0 +1,128 @@
+
+
+================================================================
+== Vitis HLS Report for 'InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7'
+================================================================
+* Date:           Tue Jun 24 19:14:46 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.972 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+    +---------+---------+----------+----------+-----+--------+---------+
+    |       47|   480046|  0.470 us|  4.800 ms|   47|  480046|       no|
+    +---------+---------+----------+----------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.63>
+ST_1 : Operation 4 [1/1] (3.63ns)   --->   "%p_read13 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:249]   --->   Operation 4 'read' 'p_read13' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (3.63ns)   --->   "%p_read_18 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:249]   --->   Operation 5 'read' 'p_read_18' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%trunc_ln249 = trunc i32 %p_read_18" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:249]   --->   Operation 6 'trunc' 'trunc_ln249' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%trunc_ln249_3 = trunc i32 %p_read13" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:249]   --->   Operation 7 'trunc' 'trunc_ln249_3' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 5.58>
+ST_2 : Operation 8 [2/2] (5.58ns)   --->   "%call_ln247 = call void @xFInitUndistortRectifyMapInverseKernel, i32 %cameraMatrix, i32 %distCoeffs, i32 %ir, i32 %mapxRMat_data, i32 %mapyRMat_data, i16 %trunc_ln249, i16 %trunc_ln249_3" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:247]   --->   Operation 8 'call' 'call_ln247' <Predicate = true> <Delay = 5.58> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapyRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapxRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/2] (0.00ns)   --->   "%call_ln247 = call void @xFInitUndistortRectifyMapInverseKernel, i32 %cameraMatrix, i32 %distCoeffs, i32 %ir, i32 %mapxRMat_data, i32 %mapyRMat_data, i16 %trunc_ln249, i16 %trunc_ln249_3" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:247]   --->   Operation 11 'call' 'call_ln247' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%ret_ln250 = ret" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:250]   --->   Operation 12 'ret' 'ret_ln250' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.634ns
+The critical path consists of the following:
+	wire read operation ('p_read13', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:249) on port 'p_read1' (C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:249) [10]  (3.634 ns)
+
+ <State 2>: 5.580ns
+The critical path consists of the following:
+	'call' operation ('call_ln247', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:247) to 'xFInitUndistortRectifyMapInverseKernel' [14]  (5.580 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

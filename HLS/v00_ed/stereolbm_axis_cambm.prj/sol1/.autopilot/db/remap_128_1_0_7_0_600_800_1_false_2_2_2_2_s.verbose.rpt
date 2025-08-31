@@ -1,0 +1,613 @@
+
+
+================================================================
+== Vitis HLS Report for 'remap_128_1_0_7_0_600_800_1_false_2_2_2_2_s'
+================================================================
+* Date:           Tue Jun 24 19:15:21 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.143 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+------+--------+----------+
+    |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline |
+    |   min   |   max   |    min    |    max   |  min |   max  |   Type   |
+    +---------+---------+-----------+----------+------+--------+----------+
+    |     1546|   599282|  15.460 us|  5.993 ms|  1546|  599282|  dataflow|
+    +---------+---------+-----------+----------+------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------------+-------------------------------------------------------------+---------+---------+-----------+----------+------+--------+---------+
+        |                                                                |                                                             |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
+        |                            Instance                            |                            Module                           |   min   |   max   |    min    |    max   |  min |   max  |   Type  |
+        +----------------------------------------------------------------+-------------------------------------------------------------+---------+---------+-----------+----------+------+--------+---------+
+        |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc_U0  |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc  |        0|        0|       0 ns|      0 ns|     0|       0|       no|
+        |xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_U0                |xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_s              |     1545|   599281|  15.450 us|  5.993 ms|  1545|  599281|       no|
+        +----------------------------------------------------------------+-------------------------------------------------------------+---------+---------+-----------+----------+------+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     14|    -|
+|FIFO             |        -|    -|     198|    136|    -|
+|Instance         |       66|   10|    2805|   4443|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     18|    -|
+|Register         |        -|    -|       2|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       66|   10|    3005|   4611|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       23|    4|       2|      8|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------------+-------------------------------------------------------------+---------+----+------+------+-----+
+    |                            Instance                            |                            Module                           | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +----------------------------------------------------------------+-------------------------------------------------------------+---------+----+------+------+-----+
+    |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc_U0  |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc  |        0|   0|    34|    47|    0|
+    |xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_U0                |xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_s              |       66|  10|  2771|  4396|    0|
+    +----------------------------------------------------------------+-------------------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                           |                                                             |       66|  10|  2805|  4443|    0|
+    +----------------------------------------------------------------+-------------------------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |        Name        | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |cols_loc_channel_U  |        0|  99|   0|    -|     2|   16|       32|
+    |rows_loc_channel_U  |        0|  99|   0|    -|     2|   16|       32|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |Total               |        0| 198|   0|    0|     4|   32|       64|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +----------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                                Variable Name                               | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |ap_channel_done_cols_loc_channel                                            |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_rows_loc_channel                                            |       and|   0|  0|   2|           1|           1|
+    |ap_idle                                                                     |       and|   0|  0|   2|           1|           1|
+    |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc_U0_ap_continue  |       and|   0|  0|   2|           1|           1|
+    |xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_U0_ap_start                   |       and|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_cols_loc_channel                                      |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_rows_loc_channel                                      |        or|   0|  0|   2|           1|           1|
+    +----------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                       |          |   0|  0|  14|           7|           7|
+    +----------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |                    Name                    | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_cols_loc_channel  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_rows_loc_channel  |   9|          2|    1|          2|
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |Total                                       |  18|          4|    2|          4|
+    +--------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------+---+----+-----+-----------+
+    |                    Name                    | FF| LUT| Bits| Const Bits|
+    +--------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_cols_loc_channel  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_rows_loc_channel  |  1|   0|    1|          0|
+    +--------------------------------------------+---+----+-----+-----------+
+    |Total                                       |  2|   0|    2|          0|
+    +--------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |                      Source Object                     |    C Type    |
++------------------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|p_src_mat_rows_dout           |   in|   32|     ap_fifo|                                          p_src_mat_rows|       pointer|
+|p_src_mat_rows_empty_n        |   in|    1|     ap_fifo|                                          p_src_mat_rows|       pointer|
+|p_src_mat_rows_read           |  out|    1|     ap_fifo|                                          p_src_mat_rows|       pointer|
+|p_src_mat_cols_dout           |   in|   32|     ap_fifo|                                          p_src_mat_cols|       pointer|
+|p_src_mat_cols_empty_n        |   in|    1|     ap_fifo|                                          p_src_mat_cols|       pointer|
+|p_src_mat_cols_read           |  out|    1|     ap_fifo|                                          p_src_mat_cols|       pointer|
+|imgR_in_data_dout             |   in|    8|     ap_fifo|                                            imgR_in_data|       pointer|
+|imgR_in_data_empty_n          |   in|    1|     ap_fifo|                                            imgR_in_data|       pointer|
+|imgR_in_data_read             |  out|    1|     ap_fifo|                                            imgR_in_data|       pointer|
+|rightRemappedMat_data_din     |  out|    8|     ap_fifo|                                   rightRemappedMat_data|       pointer|
+|rightRemappedMat_data_full_n  |   in|    1|     ap_fifo|                                   rightRemappedMat_data|       pointer|
+|rightRemappedMat_data_write   |  out|    1|     ap_fifo|                                   rightRemappedMat_data|       pointer|
+|mapxRMat_data_dout            |   in|   32|     ap_fifo|                                           mapxRMat_data|       pointer|
+|mapxRMat_data_empty_n         |   in|    1|     ap_fifo|                                           mapxRMat_data|       pointer|
+|mapxRMat_data_read            |  out|    1|     ap_fifo|                                           mapxRMat_data|       pointer|
+|mapyRMat_data_dout            |   in|   32|     ap_fifo|                                           mapyRMat_data|       pointer|
+|mapyRMat_data_empty_n         |   in|    1|     ap_fifo|                                           mapyRMat_data|       pointer|
+|mapyRMat_data_read            |  out|    1|     ap_fifo|                                           mapyRMat_data|       pointer|
+|ap_clk                        |   in|    1|  ap_ctrl_hs|  remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|  remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|  remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|  remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|  remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|  remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>|  return value|
+|ap_continue                   |   in|    1|  ap_ctrl_hs|  remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>|  return value|
++------------------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 3, States = { 1 2 3 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%call_ret = call i32 @remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>_Block_entry1_proc, i32 %p_src_mat_rows, i32 %p_src_mat_cols"   --->   Operation 4 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%rows_loc_channel = extractvalue i32 %call_ret"   --->   Operation 5 'extractvalue' 'rows_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%cols_loc_channel = extractvalue i32 %call_ret"   --->   Operation 6 'extractvalue' 'cols_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 5.71>
+ST_2 : Operation 7 [2/2] (5.71ns)   --->   "%call_ln491 = call void @xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>, i8 %imgR_in_data, i8 %rightRemappedMat_data, i32 %mapxRMat_data, i32 %mapyRMat_data, i16 %rows_loc_channel, i16 %cols_loc_channel" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 7 'call' 'call_ln491' <Predicate = true> <Delay = 5.71> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %p_src_mat_cols, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %p_src_mat_rows, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln464 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_84" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:464]   --->   Operation 10 'specdataflowpipeline' 'specdataflowpipeline_ln464' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %imgR_in_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %rightRemappedMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapyRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapxRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln491 = call void @xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>, i8 %imgR_in_data, i8 %rightRemappedMat_data, i32 %mapxRMat_data, i32 %mapyRMat_data, i16 %rows_loc_channel, i16 %cols_loc_channel" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:491]   --->   Operation 15 'call' 'call_ln491' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln501 = ret" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp:501]   --->   Operation 16 'ret' 'ret_ln501' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ p_src_mat_rows]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ p_src_mat_cols]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ imgR_in_data]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ rightRemappedMat_data]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ mapxRMat_data]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ mapyRMat_data]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+call_ret                   (call                ) [ 0000]
+rows_loc_channel           (extractvalue        ) [ 0011]
+cols_loc_channel           (extractvalue        ) [ 0011]
+specinterface_ln0          (specinterface       ) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+specdataflowpipeline_ln464 (specdataflowpipeline) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+call_ln491                 (call                ) [ 0000]
+ret_ln501                  (ret                 ) [ 0000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="p_src_mat_rows">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_src_mat_rows"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="p_src_mat_cols">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_src_mat_cols"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="imgR_in_data">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="imgR_in_data"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="rightRemappedMat_data">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rightRemappedMat_data"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="mapxRMat_data">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mapxRMat_data"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="mapyRMat_data">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mapyRMat_data"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>_Block_entry1_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ScalarProp_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_84"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1004" name="call_ret_remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc_fu_38">
+<pin_list>
+<pin id="39" dir="0" index="0" bw="32" slack="0"/>
+<pin id="40" dir="0" index="1" bw="32" slack="0"/>
+<pin id="41" dir="0" index="2" bw="32" slack="0"/>
+<pin id="42" dir="1" index="3" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret/1 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="grp_xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_s_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="0" slack="0"/>
+<pin id="48" dir="0" index="1" bw="8" slack="0"/>
+<pin id="49" dir="0" index="2" bw="8" slack="0"/>
+<pin id="50" dir="0" index="3" bw="32" slack="0"/>
+<pin id="51" dir="0" index="4" bw="32" slack="0"/>
+<pin id="52" dir="0" index="5" bw="16" slack="1"/>
+<pin id="53" dir="0" index="6" bw="16" slack="1"/>
+<pin id="54" dir="1" index="7" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln491/2 "/>
+</bind>
+</comp>
+
+<comp id="60" class="1004" name="rows_loc_channel_fu_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="32" slack="0"/>
+<pin id="62" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="rows_loc_channel/1 "/>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="cols_loc_channel_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="32" slack="0"/>
+<pin id="66" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="cols_loc_channel/1 "/>
+</bind>
+</comp>
+
+<comp id="68" class="1005" name="rows_loc_channel_reg_68">
+<pin_list>
+<pin id="69" dir="0" index="0" bw="16" slack="1"/>
+<pin id="70" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="rows_loc_channel "/>
+</bind>
+</comp>
+
+<comp id="73" class="1005" name="cols_loc_channel_reg_73">
+<pin_list>
+<pin id="74" dir="0" index="0" bw="16" slack="1"/>
+<pin id="75" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="cols_loc_channel "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="43"><net_src comp="12" pin="0"/><net_sink comp="38" pin=0"/></net>
+
+<net id="44"><net_src comp="0" pin="0"/><net_sink comp="38" pin=1"/></net>
+
+<net id="45"><net_src comp="2" pin="0"/><net_sink comp="38" pin=2"/></net>
+
+<net id="55"><net_src comp="14" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="56"><net_src comp="4" pin="0"/><net_sink comp="46" pin=1"/></net>
+
+<net id="57"><net_src comp="6" pin="0"/><net_sink comp="46" pin=2"/></net>
+
+<net id="58"><net_src comp="8" pin="0"/><net_sink comp="46" pin=3"/></net>
+
+<net id="59"><net_src comp="10" pin="0"/><net_sink comp="46" pin=4"/></net>
+
+<net id="63"><net_src comp="38" pin="3"/><net_sink comp="60" pin=0"/></net>
+
+<net id="67"><net_src comp="38" pin="3"/><net_sink comp="64" pin=0"/></net>
+
+<net id="71"><net_src comp="60" pin="1"/><net_sink comp="68" pin=0"/></net>
+
+<net id="72"><net_src comp="68" pin="1"/><net_sink comp="46" pin=5"/></net>
+
+<net id="76"><net_src comp="64" pin="1"/><net_sink comp="73" pin=0"/></net>
+
+<net id="77"><net_src comp="73" pin="1"/><net_sink comp="46" pin=6"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: rightRemappedMat_data | {2 3 }
+ - Input state : 
+	Port: remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2> : p_src_mat_rows | {1 }
+	Port: remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2> : p_src_mat_cols | {1 }
+	Port: remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2> : imgR_in_data | {2 3 }
+	Port: remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2> : mapxRMat_data | {2 3 }
+	Port: remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2> : mapyRMat_data | {2 3 }
+  - Chain level:
+	State 1
+		rows_loc_channel : 1
+		cols_loc_channel : 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+| Operation|                               Functional Unit                              |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|----------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   call   | call_ret_remap_128_1_0_7_0_600_800_1_false_2_2_2_2_Block_entry1_proc_fu_38 |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |          grp_xFRemapLI_0_0_1_7_128_600_800_1_2_2_2_2_false_s_fu_46         |    66   |    10   | 24.0586 |   1722  |   2931  |    0    |
+|----------|----------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|extractvalue|                           rows_loc_channel_fu_60                           |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                           cols_loc_channel_fu_64                           |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|----------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                                                                            |    66   |    10   | 24.0586 |   1722  |   2931  |    0    |
+|----------|----------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-----------------------+--------+
+|                       |   FF   |
++-----------------------+--------+
+|cols_loc_channel_reg_73|   16   |
+|rows_loc_channel_reg_68|   16   |
++-----------------------+--------+
+|         Total         |   32   |
++-----------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |   66   |   10   |   24   |  1722  |  2931  |    0   |
+|   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |   32   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |   66   |   10   |   24   |  1754  |  2931  |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

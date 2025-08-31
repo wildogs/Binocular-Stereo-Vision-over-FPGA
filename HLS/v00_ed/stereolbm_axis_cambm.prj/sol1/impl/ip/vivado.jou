@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Jun 24 19:16:11 2025
+# Process ID: 3448
+# Current directory: C:/Xilinx/HLS_800/v00_ed/stereolbm_axis_cambm.prj/sol1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Xilinx/HLS_800/v00_ed/stereolbm_axis_cambm.prj/sol1/impl/ip/vivado.log
+# Journal file: C:/Xilinx/HLS_800/v00_ed/stereolbm_axis_cambm.prj/sol1/impl/ip\vivado.jou
+# Running On: DESKTOP-FS2AEQ7, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34252 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

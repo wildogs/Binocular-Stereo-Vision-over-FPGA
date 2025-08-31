@@ -1,0 +1,1511 @@
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:6010:7: warning: Added loop label VITIS_LOOP_1213_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1213_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:6010:7: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:6984:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:6984:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:6998:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:6998:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:7012:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:7012:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:8611:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:8611:7: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12745:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12746:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12747:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12748:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12749:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12779:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12780:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12781:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12782:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12783:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12784:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12785:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12786:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12787:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12788:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12838:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12839:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12840:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12867:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12868:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12869:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12870:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12871:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12872:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12908:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:12909:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13183:5: warning: Added loop label VITIS_LOOP_87_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_87_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13183:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13229:5: warning: Added loop label VITIS_LOOP_143_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_143_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13229:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13392:9: warning: Added loop label VITIS_LOOP_315_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_315_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13392:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13544:9: warning: Added loop label VITIS_LOOP_475_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_475_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13544:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13724:5: warning: Added loop label VITIS_LOOP_655_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_655_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13724:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13728:5: warning: Added loop label VITIS_LOOP_659_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_659_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13728:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13838:5: warning: Added loop label VITIS_LOOP_769_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_769_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13838:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13928:7: warning: Added loop label VITIS_LOOP_866_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_866_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13928:7: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13947:7: warning: Added loop label VITIS_LOOP_885_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_885_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:13947:7: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14237:5: warning: Added loop label VITIS_LOOP_1199_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1199_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14237:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14320:5: warning: Added loop label VITIS_LOOP_1282_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1282_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14320:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14726:13: warning: Added loop label VITIS_LOOP_94_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_94_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14726:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14732:17: warning: Added loop label VITIS_LOOP_100_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_100_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14732:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14736:17: warning: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_104_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14736:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14784:13: warning: Added loop label VITIS_LOOP_171_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_171_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14784:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14790:17: warning: Added loop label VITIS_LOOP_177_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_177_5: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14790:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14794:17: warning: Added loop label VITIS_LOOP_181_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_181_6: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14794:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14809:9: warning: Added loop label VITIS_LOOP_196_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_196_7: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14809:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14817:17: warning: Added loop label VITIS_LOOP_204_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_204_8: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14817:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14882:13: warning: Added loop label VITIS_LOOP_269_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_269_9: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14882:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14888:17: warning: Added loop label VITIS_LOOP_275_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_275_10: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14888:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14892:17: warning: Added loop label VITIS_LOOP_279_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_279_11: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14892:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14907:9: warning: Added loop label VITIS_LOOP_294_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_294_12: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14907:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14915:17: warning: Added loop label VITIS_LOOP_302_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_302_13: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:14915:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15144:13: warning: Added loop label VITIS_LOOP_531_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_531_14: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15144:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15150:17: warning: Added loop label VITIS_LOOP_537_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_537_15: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15150:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15154:17: warning: Added loop label VITIS_LOOP_541_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_541_16: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15154:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15164:9: warning: Added loop label VITIS_LOOP_551_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_551_17: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15164:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15168:9: warning: Added loop label VITIS_LOOP_555_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_555_18: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15168:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15178:9: warning: Added loop label VITIS_LOOP_565_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_565_19: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15178:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15186:17: warning: Added loop label VITIS_LOOP_573_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_573_20: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15186:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15547:13: warning: Added loop label VITIS_LOOP_934_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_934_21: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15547:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15553:17: warning: Added loop label VITIS_LOOP_940_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_940_22: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15553:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15557:17: warning: Added loop label VITIS_LOOP_944_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_944_23: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15557:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15673:13: warning: Added loop label VITIS_LOOP_1060_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1060_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15673:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15679:17: warning: Added loop label VITIS_LOOP_1066_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1066_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15679:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15683:17: warning: Added loop label VITIS_LOOP_1070_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1070_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15683:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15770:13: warning: Added loop label VITIS_LOOP_1157_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1157_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15770:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15776:17: warning: Added loop label VITIS_LOOP_1163_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1163_5: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15776:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15780:17: warning: Added loop label VITIS_LOOP_1167_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1167_6: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15780:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15799:9: warning: Added loop label VITIS_LOOP_1186_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1186_7: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15799:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15806:17: warning: Added loop label VITIS_LOOP_1193_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1193_8: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15806:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15922:13: warning: Added loop label VITIS_LOOP_1309_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1309_9: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15922:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15928:17: warning: Added loop label VITIS_LOOP_1315_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1315_10: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15928:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15932:17: warning: Added loop label VITIS_LOOP_1319_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1319_11: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15932:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15952:9: warning: Added loop label VITIS_LOOP_1339_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1339_12: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15952:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15959:17: warning: Added loop label VITIS_LOOP_1346_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1346_13: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:15959:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16221:13: warning: Added loop label VITIS_LOOP_1608_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1608_14: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16221:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16227:17: warning: Added loop label VITIS_LOOP_1614_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1614_15: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16227:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16231:17: warning: Added loop label VITIS_LOOP_1618_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1618_16: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16231:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16255:9: warning: Added loop label VITIS_LOOP_1642_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1642_17: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16255:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16262:17: warning: Added loop label VITIS_LOOP_1649_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1649_18: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16262:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16692:13: warning: Added loop label VITIS_LOOP_2079_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2079_19: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16692:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16698:17: warning: Added loop label VITIS_LOOP_2085_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2085_20: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16698:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16702:17: warning: Added loop label VITIS_LOOP_2089_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2089_21: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16702:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16832:13: warning: Added loop label VITIS_LOOP_2219_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2219_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16832:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16839:17: warning: Added loop label VITIS_LOOP_2226_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2226_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16839:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16843:17: warning: Added loop label VITIS_LOOP_2230_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2230_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16843:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16890:13: warning: Added loop label VITIS_LOOP_2277_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2277_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16890:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16897:17: warning: Added loop label VITIS_LOOP_2284_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2284_5: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16897:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16901:17: warning: Added loop label VITIS_LOOP_2288_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2288_6: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16901:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16919:9: warning: Added loop label VITIS_LOOP_2306_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2306_7: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16919:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16974:13: warning: Added loop label VITIS_LOOP_2361_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2361_8: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16974:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16981:17: warning: Added loop label VITIS_LOOP_2368_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2368_9: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16981:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16985:17: warning: Added loop label VITIS_LOOP_2372_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2372_10: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:16985:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17003:9: warning: Added loop label VITIS_LOOP_2390_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2390_11: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17003:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17092:13: warning: Added loop label VITIS_LOOP_2479_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2479_12: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17092:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17099:17: warning: Added loop label VITIS_LOOP_2486_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2486_13: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17099:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17103:17: warning: Added loop label VITIS_LOOP_2490_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2490_14: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17103:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17113:9: warning: Added loop label VITIS_LOOP_2500_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2500_15: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17113:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17117:9: warning: Added loop label VITIS_LOOP_2504_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2504_16: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17117:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17128:9: warning: Added loop label VITIS_LOOP_2515_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2515_17: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17128:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17136:17: warning: Added loop label VITIS_LOOP_2523_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2523_18: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17136:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17461:13: warning: Added loop label VITIS_LOOP_2848_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2848_19: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17461:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17468:17: warning: Added loop label VITIS_LOOP_2855_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2855_20: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17468:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17472:17: warning: Added loop label VITIS_LOOP_2859_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2859_21: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17472:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17560:4: warning: Added loop label VITIS_LOOP_2947_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2947_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17560:4: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17567:5: warning: Added loop label VITIS_LOOP_2954_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2954_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17567:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17571:5: warning: Added loop label VITIS_LOOP_2958_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2958_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17571:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17586:3: warning: Added loop label VITIS_LOOP_2973_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2973_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17586:3: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17618:4: warning: Added loop label VITIS_LOOP_3005_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_3005_5: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17618:4: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17625:5: warning: Added loop label VITIS_LOOP_3012_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_3012_6: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17625:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17629:5: warning: Added loop label VITIS_LOOP_3016_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3016_7: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17629:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17644:3: warning: Added loop label VITIS_LOOP_3031_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3031_8: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17644:3: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17694:4: warning: Added loop label VITIS_LOOP_3081_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3081_9: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17694:4: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17701:5: warning: Added loop label VITIS_LOOP_3088_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3088_10: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17701:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17705:5: warning: Added loop label VITIS_LOOP_3092_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3092_11: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17705:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17720:3: warning: Added loop label VITIS_LOOP_3107_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3107_12: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17720:3: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17857:4: warning: Added loop label VITIS_LOOP_3244_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3244_13: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17857:4: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17864:5: warning: Added loop label VITIS_LOOP_3251_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3251_14: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17864:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17868:5: warning: Added loop label VITIS_LOOP_3255_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3255_15: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17868:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17883:3: warning: Added loop label VITIS_LOOP_3270_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3270_16: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:17883:3: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18043:4: warning: Added loop label VITIS_LOOP_3430_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3430_17: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18043:4: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18050:5: warning: Added loop label VITIS_LOOP_3437_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3437_18: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18050:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18054:5: warning: Added loop label VITIS_LOOP_3441_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3441_19: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18054:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18769:13: warning: Added loop label VITIS_LOOP_729_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_729_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18769:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18987:13: warning: Added loop label VITIS_LOOP_947_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_947_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:18987:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:19404:13: warning: Added loop label VITIS_LOOP_1371_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1371_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:19404:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:19718:9: warning: Added loop label VITIS_LOOP_266_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_266_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:19718:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:19746:9: warning: Added loop label VITIS_LOOP_294_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_294_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:19746:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20441:13: warning: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_74_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20441:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20494:5: warning: Added loop label VITIS_LOOP_135_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_135_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20494:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20508:13: warning: Added loop label VITIS_LOOP_149_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_149_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20508:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20538:13: warning: Added loop label VITIS_LOOP_179_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_179_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20538:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20623:12: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_307_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20623:12: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20643:16: warning: Added loop label VITIS_LOOP_327_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_327_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20643:16: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20657:20: warning: Added loop label VITIS_LOOP_341_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_341_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20657:20: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20750:12: warning: Added loop label VITIS_LOOP_459_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_459_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20750:12: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20764:15: warning: Added loop label VITIS_LOOP_473_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_473_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20764:15: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20877:13: warning: Added loop label VITIS_LOOP_59_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_59_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:20877:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21001:13: warning: Added loop label VITIS_LOOP_209_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_209_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21001:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21056:13: warning: Added loop label VITIS_LOOP_274_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_274_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21056:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21561:2: warning: Added loop label VITIS_LOOP_42_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_42_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21561:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21572:2: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_53_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21572:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21583:2: warning: Added loop label VITIS_LOOP_64_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_64_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21583:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21594:2: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_75_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21594:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21605:2: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_86_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21605:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21616:2: warning: Added loop label VITIS_LOOP_97_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_97_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21616:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21627:2: warning: Added loop label VITIS_LOOP_108_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_108_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21627:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21638:2: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_119_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:21638:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:23939:12: warning: Added loop label VITIS_LOOP_23_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_23_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:23939:12: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:24003:7: warning: Added loop label VITIS_LOOP_66_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_66_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:24003:7: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:24120:9: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_75_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:24120:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:24145:5: warning: Added loop label VITIS_LOOP_107_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_107_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:24145:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:24215:8: warning: Added loop label VITIS_LOOP_195_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_195_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:24215:8: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32405:2: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < N; k++) {
+ ^~~
+ VITIS_LOOP_307_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32405:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32419:5: warning: Added loop label VITIS_LOOP_321_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_321_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32419:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32434:5: warning: Added loop label VITIS_LOOP_336_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_336_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32434:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32449:5: warning: Added loop label VITIS_LOOP_351_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_351_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32449:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32464:5: warning: Added loop label VITIS_LOOP_366_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_366_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32464:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32479:5: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_381_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32479:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32494:5: warning: Added loop label VITIS_LOOP_396_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_396_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32494:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32509:5: warning: Added loop label VITIS_LOOP_411_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_411_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32509:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32524:5: warning: Added loop label VITIS_LOOP_426_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_426_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32524:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32601:9: warning: Added loop label VITIS_LOOP_511_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < (rows * ((cols + NPC - 1) >> xfNPixelsPerCycle<NPC>::datashift)); ++i) {
+        ^~~
+        VITIS_LOOP_511_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32601:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32809:5: warning: Added loop label VITIS_LOOP_719_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_719_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32809:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32810:9: warning: Added loop label VITIS_LOOP_720_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < packcols; c++) {
+        ^~~
+        VITIS_LOOP_720_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32810:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32811:13: warning: Added loop label VITIS_LOOP_721_3:   [xilinx-label-all-loops]
+            for (int p = 0; p < nppc; p++) {
+            ^~~
+            VITIS_LOOP_721_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32811:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32813:17: warning: Added loop label VITIS_LOOP_723_4:   [xilinx-label-all-loops]
+                for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+                ^~~
+                VITIS_LOOP_723_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32813:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32851:5: warning: Added loop label VITIS_LOOP_761_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_761_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32851:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32852:9: warning: Added loop label VITIS_LOOP_762_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < cols; c++) {
+        ^~~
+        VITIS_LOOP_762_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32852:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32854:13: warning: Added loop label VITIS_LOOP_764_3:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+            ^~~
+            VITIS_LOOP_764_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32854:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32855:17: warning: Added loop label VITIS_LOOP_765_4:   [xilinx-label-all-loops]
+                for (int b = 0; b < cv_nbytes; ++b) {
+                ^~~
+                VITIS_LOOP_765_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32855:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32909:5: warning: Added loop label VITIS_LOOP_819_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < rows; i++) {
+    ^~~
+    VITIS_LOOP_819_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32909:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32910:9: warning: Added loop label VITIS_LOOP_820_2:   [xilinx-label-all-loops]
+        for (int j = 0; j<cols>> (xfNPixelsPerCycle<NPPC>::datashift); j++) {
+        ^~~
+        VITIS_LOOP_820_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32910:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32918:13: warning: Added loop label VITIS_LOOP_828_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < (1 << (xfNPixelsPerCycle<NPPC>::datashift)); k++) {
+            ^~~
+            VITIS_LOOP_828_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:32918:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33031:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable=mul_rows_cols op=mul impl=dsp latency=2
+        ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33103:2: warning: Added loop label VITIS_LOOP_1021_1:   [xilinx-label-all-loops]
+ for (c = 0; c < cols_addrbound; c++) {
+ ^~~
+ VITIS_LOOP_1021_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33103:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33511:13: warning: Added loop label VITIS_LOOP_1429_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1429_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33511:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33539:13: warning: Added loop label VITIS_LOOP_1457_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1457_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33539:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33569:13: warning: Added loop label VITIS_LOOP_1487_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1487_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33569:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33599:13: warning: Added loop label VITIS_LOOP_1517_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1517_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33599:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33898:5: warning: Added loop label VITIS_LOOP_122_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_122_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33898:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33902:2: warning: Added loop label VITIS_LOOP_126_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS - 1; j++) {
+ ^~~
+ VITIS_LOOP_126_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33902:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33929:5: warning: Added loop label VITIS_LOOP_166_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_166_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33929:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33933:2: warning: Added loop label VITIS_LOOP_170_2:   [xilinx-label-all-loops]
+ for (j = COLS - 1; j > 0; j--) {
+ ^~~
+ VITIS_LOOP_170_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33933:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33960:5: warning: Added loop label VITIS_LOOP_210_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_210_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33960:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33964:2: warning: Added loop label VITIS_LOOP_214_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_214_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33964:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33991:5: warning: Added loop label VITIS_LOOP_254_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_254_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33991:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33995:2: warning: Added loop label VITIS_LOOP_258_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_258_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:33995:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34041:5: warning: Added loop label VITIS_LOOP_330_1:   [xilinx-label-all-loops]
+    for (j = 0; j < COLS; j++) {
+    ^~~
+    VITIS_LOOP_330_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34041:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34104:5: warning: Added loop label VITIS_LOOP_435_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_435_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34104:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34301:44: error: Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=BRAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34306:44: error: Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=URAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34311:44: error: Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=BRAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34316:44: error: Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=URAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34321:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=BRAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34326:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=URAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34331:44: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=BRAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34336:44: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=URAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34392:5: warning: Added loop label VITIS_LOOP_824_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_824_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34392:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34418:5: warning: Added loop label VITIS_LOOP_867_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_867_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34418:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34474:5: warning: Added loop label VITIS_LOOP_968_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_968_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34474:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34570:5: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_39_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34570:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34589:5: warning: Added loop label VITIS_LOOP_58_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_58_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34589:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34617:5: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_86_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34617:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34650:5: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_119_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34650:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34684:5: warning: Added loop label VITIS_LOOP_153_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_153_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34684:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34712:5: warning: Added loop label VITIS_LOOP_181_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_181_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34712:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34736:5: warning: Added loop label VITIS_LOOP_205_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_205_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34736:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34759:5: warning: Added loop label VITIS_LOOP_228_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_228_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34759:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34794:5: warning: Added loop label VITIS_LOOP_263_1:   [xilinx-label-all-loops]
+    for (uint16_t r = 0; r < K_ROWS; r++) {
+    ^~~
+    VITIS_LOOP_263_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34794:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34796:2: warning: Added loop label VITIS_LOOP_265_2:   [xilinx-label-all-loops]
+ for (uint16_t c = 0; c < K_COLS; c++) {
+ ^~~
+ VITIS_LOOP_265_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34796:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34856:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (ap_int<9> i = 0; i < loopIter; i++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34856:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34928:5: warning: Added loop label VITIS_LOOP_397_1:   [xilinx-label-all-loops]
+    for (i = 0; i < 6; i++, ind++) {
+    ^~~
+    VITIS_LOOP_397_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34928:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34999:5: warning: Added loop label VITIS_LOOP_468_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < imheight; i++) {
+    ^~~
+    VITIS_LOOP_468_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:34999:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35004:2: warning: Added loop label VITIS_LOOP_473_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < (imwidth >> NPC); j++) {
+ ^~~
+ VITIS_LOOP_473_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35004:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35030:9: warning: Added loop label VITIS_LOOP_499_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_499_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35030:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35136:9: warning: Added loop label VITIS_LOOP_623_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_623_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35136:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35250:9: warning: Added loop label VITIS_LOOP_737_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_737_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35250:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35282:9: warning: Added loop label VITIS_LOOP_788_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_788_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35282:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35762:2: warning: Added loop label VITIS_LOOP_171_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < CM_SIZE; i++) {
+ ^~~
+ VITIS_LOOP_171_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35762:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35769:5: warning: Added loop label VITIS_LOOP_178_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_178_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:35769:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46524:48: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=bufUram type=RAM_T2P impl=URAM latency=2
+                                               ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46572:21: warning: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+                    for (int pl = 0, bit = 0; pl < PLANES; pl++, bit += 8) {
+                    ^~~
+                    VITIS_LOOP_114_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46572:21: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46576:2: warning: Added loop label VITIS_LOOP_118_2:   [xilinx-label-all-loops]
+ for (int k = 0; k < 8; k++) {
+ ^~~
+ VITIS_LOOP_118_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46576:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46603:2: warning: Added loop label VITIS_LOOP_145_3:   [xilinx-label-all-loops]
+ for (int pl = 0, bit = 0; pl < PLANES; pl++, bit += 8) {
+ ^~~
+ VITIS_LOOP_145_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46603:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46606:29: warning: Added loop label VITIS_LOOP_148_4:   [xilinx-label-all-loops]
+                            for (int k = 0; k < 8; k++) {
+                            ^~~
+                            VITIS_LOOP_148_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46606:29: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46659:48: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=bufUram type=RAM_T2P impl=URAM latency=2
+                                               ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46667:48: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=lineBuf type=RAM_S2P impl=BRAM latency=1
+                                               ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46695:5: warning: Added loop label VITIS_LOOP_237_1:   [xilinx-label-all-loops]
+    for (int pl = 0; pl < PLANES; pl++) {
+    ^~~
+    VITIS_LOOP_237_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46695:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46735:17: warning: Added loop label VITIS_LOOP_277_2:   [xilinx-label-all-loops]
+                for (int pl = 0, bit = 0; pl < PLANES; pl++, bit += 8) {
+                ^~~
+                VITIS_LOOP_277_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46735:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46817:17: warning: Added loop label VITIS_LOOP_375_3:   [xilinx-label-all-loops]
+                for (int ch = 0; ch < PLANES; ch++) {
+                ^~~
+                VITIS_LOOP_375_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46817:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46829:29: warning: Added loop label VITIS_LOOP_387_4:   [xilinx-label-all-loops]
+                            for (int k = 0; k < 9; k++) {
+                            ^~~
+                            VITIS_LOOP_387_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:46829:29: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47061:2: warning: Added loop label VITIS_LOOP_158_1:   [xilinx-label-all-loops]
+ for (ap_uint<5> c = 0, k = 0; c < PLANES; c++, k += STEP) {
+ ^~~
+ VITIS_LOOP_158_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47061:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47239:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=URAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47243:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47305:13: warning: Added loop label VITIS_LOOP_409_1:   [xilinx-label-all-loops]
+            for (ap_uint<5> c = 0, k = 0; c < PLANES; c++, k += STEP) {
+            ^~~
+            VITIS_LOOP_409_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47305:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47328:13: warning: Added loop label VITIS_LOOP_432_2:   [xilinx-label-all-loops]
+            for (ap_uint<7> i = 0, k = 0; i < PLANES; i++, k += STEP) {
+            ^~~
+            VITIS_LOOP_432_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47328:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47381:5: warning: Added loop label VITIS_LOOP_505_1:   [xilinx-label-all-loops]
+    for (int i = 0, k = 0; i < PLANES; i++, k += STEP) {
+    ^~~
+    VITIS_LOOP_505_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47381:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47450:5: warning: Added loop label VITIS_LOOP_589_1:   [xilinx-label-all-loops]
+    for (int i = 0, k = 0; i < PLANES; i++, k += STEP) {
+    ^~~
+    VITIS_LOOP_589_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47450:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47613:9: warning: Added loop label VITIS_LOOP_752_1:   [xilinx-label-all-loops]
+        for (ap_uint<4> i = 0; i < 4; i++) {
+        ^~~
+        VITIS_LOOP_752_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47613:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47714:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=URAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47719:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47804:13: warning: Added loop label VITIS_LOOP_950_1:   [xilinx-label-all-loops]
+            for (ap_uint<6> i = 4; i < (xfNPixelsPerCycle<NPC>::nppc + 4); i++) {
+            ^~~
+            VITIS_LOOP_950_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47804:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47847:13: warning: Added loop label VITIS_LOOP_993_2:   [xilinx-label-all-loops]
+            for (ap_uint<4> i = 0; i < 4; i++) {
+            ^~~
+            VITIS_LOOP_993_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47847:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47910:5: warning: Added loop label VITIS_LOOP_1078_1:   [xilinx-label-all-loops]
+    for (int i = 0, k = 0; i < PLANES; i++, k += STEP) {
+    ^~~
+    VITIS_LOOP_1078_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:47910:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48101:5: warning: Added loop label VITIS_LOOP_1288_1:   [xilinx-label-all-loops]
+    for (int i = 0, k = 0; i < PLANES; i++, k += STEP) {
+    ^~~
+    VITIS_LOOP_1288_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48101:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48222:2: warning: Added loop label VITIS_LOOP_1409_1:   [xilinx-label-all-loops]
+ for (ap_uint<9> j = 0; j < xfNPixelsPerCycle<NPC>::nppc; j++) {
+ ^~~
+ VITIS_LOOP_1409_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48222:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48401:9: warning: Added loop label VITIS_LOOP_1588_1:   [xilinx-label-all-loops]
+        for (i = 0; i < 8; i++) {
+        ^~~
+        VITIS_LOOP_1588_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48401:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48414:9: warning: Added loop label VITIS_LOOP_1601_2:   [xilinx-label-all-loops]
+        for (i = 0; i < 3; i++) {
+        ^~~
+        VITIS_LOOP_1601_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48414:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48444:9: warning: Added loop label VITIS_LOOP_1631_3:   [xilinx-label-all-loops]
+        for (ap_uint<5> k = 0; k < 3; k++) {
+        ^~~
+        VITIS_LOOP_1631_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48444:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48532:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=URAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48537:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48641:9: warning: Added loop label VITIS_LOOP_1828_1:   [xilinx-label-all-loops]
+        for (i = 0; i < 6; i++) {
+        ^~~
+        VITIS_LOOP_1828_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48641:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48745:9: error: Invalid Directive: for current device, sub +  is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable=x op=sub
+        ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48769:9: warning: Added loop label VITIS_LOOP_77_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < SIZE / 2; i++) {
+        ^~~
+        VITIS_LOOP_77_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48769:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48775:9: warning: Added loop label VITIS_LOOP_83_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < SIZE - SIZE / 2; i++) {
+        ^~~
+        VITIS_LOOP_83_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48775:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48869:5: warning: Added loop label VITIS_LOOP_177_1:   [xilinx-label-all-loops]
+    for (int j = WSIZE - 1; j >= 1; j--) {
+    ^~~
+    VITIS_LOOP_177_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48869:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48927:5: warning: Added loop label VITIS_LOOP_235_1:   [xilinx-label-all-loops]
+    for (unsigned char i = 0; i < WSIZE; i++) {
+    ^~~
+    VITIS_LOOP_235_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48927:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48935:5: warning: Added loop label VITIS_LOOP_243_2:   [xilinx-label-all-loops]
+    for (unsigned char j = WSIZE - 1; j > 0; j--) {
+    ^~~
+    VITIS_LOOP_243_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48935:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48971:54: error: Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=left_line_buf type=RAM_2P impl=URAM
+                                                     ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:48984:55: error: Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=right_line_buf type=RAM_2P impl=URAM
+                                                      ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49035:47: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=minsad type=RAM_S2P impl=URAM
+                                              ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49041:45: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=mind type=RAM_S2P impl=URAM
+                                            ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49047:45: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=skip type=RAM_S2P impl=URAM
+                                            ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49069:17: warning: Added loop label VITIS_LOOP_377_1:   [xilinx-label-all-loops]
+                for (unsigned char i = 0; i < WSIZE; i++) {
+                ^~~
+                VITIS_LOOP_377_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49069:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49092:21: warning: Added loop label VITIS_LOOP_400_2:   [xilinx-label-all-loops]
+                    for (unsigned char sd = WSIZE - 1; sd > 0; sd--) {
+                    ^~~
+                    VITIS_LOOP_400_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49092:21: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49099:21: warning: Added loop label VITIS_LOOP_407_3:   [xilinx-label-all-loops]
+                    for (unsigned char sd = WSIZE - 1; sd > 0; sd--) {
+                    ^~~
+                    VITIS_LOOP_407_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49099:21: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49145:49: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=skip_val type=RAM_S2P impl=URAM
+                                                ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49151:54: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=edge_neighbor type=RAM_S2P impl=URAM
+                                                     ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49157:45: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=edge type=RAM_S2P impl=URAM
+                                            ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49163:49: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=minsad_p type=RAM_S2P impl=URAM
+                                                ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49169:49: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=minsad_n type=RAM_S2P impl=URAM
+                                                ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49329:13: warning: Added loop label VITIS_LOOP_637_1:   [xilinx-label-all-loops]
+            for (int k = 0; k < (1 << xfNPixelsPerCycle<NPC>::datashift); k++) {
+            ^~~
+            VITIS_LOOP_637_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49329:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49438:5: warning: Added loop label VITIS_LOOP_746_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < height * width; i++) {
+    ^~~
+    VITIS_LOOP_746_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49438:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49458:5: warning: Added loop label VITIS_LOOP_766_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < height * width; i++) {
+    ^~~
+    VITIS_LOOP_766_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49458:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49508:5: warning: Added loop label VITIS_LOOP_816_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < height * width; i++) {
+    ^~~
+    VITIS_LOOP_816_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49508:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49613:9: warning: Added loop label VITIS_LOOP_45_1:   [xilinx-label-all-loops]
+        for (ap_uint<13> k_rows = 0; k_rows < K_ROWS; k_rows++) {
+        ^~~
+        VITIS_LOOP_45_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49613:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49618:2: warning: Added loop label VITIS_LOOP_50_2:   [xilinx-label-all-loops]
+ for (ap_uint<13> k_cols = 0; k_cols < K_COLS; k_cols++) {
+ ^~~
+ VITIS_LOOP_50_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49618:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49675:5: warning: Added loop label VITIS_LOOP_107_1:   [xilinx-label-all-loops]
+    for (int k_row = 0; k_row < K_ROWS; k_row++) {
+    ^~~
+    VITIS_LOOP_107_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49675:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49680:2: warning: Added loop label VITIS_LOOP_112_2:   [xilinx-label-all-loops]
+ for (int k_col = 0; k_col < (npc + K_COLS - 1); k_col++) {
+ ^~~
+ VITIS_LOOP_112_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49680:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49710:9: warning: Added loop label VITIS_LOOP_142_3:   [xilinx-label-all-loops]
+        for (int idx = 0; idx < K_ROWS; idx++) {
+        ^~~
+        VITIS_LOOP_142_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49710:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49727:9: warning: Added loop label VITIS_LOOP_159_4:   [xilinx-label-all-loops]
+        for (int extract_px = 0; extract_px < K_ROWS; extract_px++) {
+        ^~~
+        VITIS_LOOP_159_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49727:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49735:13: warning: Added loop label VITIS_LOOP_167_5:   [xilinx-label-all-loops]
+            for (int ext_copy = 0; ext_copy < npc; ext_copy++) {
+            ^~~
+            VITIS_LOOP_167_5: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49735:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49747:9: warning: Added loop label VITIS_LOOP_179_6:   [xilinx-label-all-loops]
+        for (int iter = 0; iter < npc; iter++) {
+        ^~~
+        VITIS_LOOP_179_6: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49747:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49751:2: warning: Added loop label VITIS_LOOP_183_7:   [xilinx-label-all-loops]
+ for (int copyi = 0; copyi < K_ROWS; copyi++) {
+ ^~~
+ VITIS_LOOP_183_7: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49751:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49752:17: warning: Added loop label VITIS_LOOP_184_8:   [xilinx-label-all-loops]
+                for (int copyj = 0; copyj < K_COLS; copyj++) {
+                ^~~
+                VITIS_LOOP_184_8: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49752:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49792:9: warning: Added loop label VITIS_LOOP_224_9:   [xilinx-label-all-loops]
+        for (ap_uint<13> extract_px = 0; extract_px < K_ROWS; extract_px++) {
+        ^~~
+        VITIS_LOOP_224_9: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49792:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49796:2: warning: Added loop label VITIS_LOOP_228_10:   [xilinx-label-all-loops]
+ for (ap_uint<13> col_warp = 0; col_warp < (K_COLS - 1); col_warp++) {
+ ^~~
+ VITIS_LOOP_228_10: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49796:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49845:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49851:2: warning: Added loop label VITIS_LOOP_283_1:   [xilinx-label-all-loops]
+ for (int init_row_ind = 0; init_row_ind < K_ROWS; init_row_ind++) {
+ ^~~
+ VITIS_LOOP_283_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49851:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49866:2: warning: Added loop label VITIS_LOOP_298_2:   [xilinx-label-all-loops]
+ for (ap_uint<13> i_col = 0; i_col<img_width>> xfNPixelsPerCycle<NPC>::datashift; i_col++) {
+ ^~~
+ VITIS_LOOP_298_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49866:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49883:2: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+ for (ap_uint<13> i_col = 0; i_col<img_width>> xfNPixelsPerCycle<NPC>::datashift; i_col++) {
+ ^~~
+ VITIS_LOOP_315_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49883:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49905:9: warning: Added loop label VITIS_LOOP_337_4:   [xilinx-label-all-loops]
+        for (ap_uint<13> init_row_ind = 0; init_row_ind < K_ROWS - 1; init_row_ind++) {
+        ^~~
+        VITIS_LOOP_337_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49905:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49949:2: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+ for (unsigned char i = 0; i < (K_ROWS + ((ITERATIONS - 1) * (K_ROWS - 1))); i++) {
+ ^~~
+ VITIS_LOOP_381_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49949:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49950:13: warning: Added loop label VITIS_LOOP_382_2:   [xilinx-label-all-loops]
+            for (unsigned char j = 0; j < (K_COLS + ((ITERATIONS - 1) * (K_COLS - 1))); j++) {
+            ^~~
+            VITIS_LOOP_382_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49950:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49963:2: warning: Added loop label VITIS_LOOP_395_3:   [xilinx-label-all-loops]
+ for (unsigned char i = 0; i < K_ROWS; i++) {
+ ^~~
+ VITIS_LOOP_395_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49963:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49964:13: warning: Added loop label VITIS_LOOP_396_4:   [xilinx-label-all-loops]
+            for (unsigned char j = 0; j < K_COLS; j++) {
+            ^~~
+            VITIS_LOOP_396_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:49964:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50005:9: warning: Added loop label VITIS_LOOP_45_1:   [xilinx-label-all-loops]
+        for (ap_uint<13> k_rows = 0; k_rows < K_ROWS; k_rows++) {
+        ^~~
+        VITIS_LOOP_45_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50005:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50010:2: warning: Added loop label VITIS_LOOP_50_2:   [xilinx-label-all-loops]
+ for (ap_uint<13> k_cols = 0; k_cols < K_COLS; k_cols++) {
+ ^~~
+ VITIS_LOOP_50_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50010:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50067:5: warning: Added loop label VITIS_LOOP_107_1:   [xilinx-label-all-loops]
+    for (int k_row = 0; k_row < K_ROWS; k_row++) {
+    ^~~
+    VITIS_LOOP_107_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50067:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50072:2: warning: Added loop label VITIS_LOOP_112_2:   [xilinx-label-all-loops]
+ for (int k_col = 0; k_col < (npc + K_COLS - 1); k_col++) {
+ ^~~
+ VITIS_LOOP_112_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50072:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50100:9: warning: Added loop label VITIS_LOOP_140_3:   [xilinx-label-all-loops]
+        for (int idx = 0; idx < K_ROWS; idx++) {
+        ^~~
+        VITIS_LOOP_140_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50100:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50115:9: warning: Added loop label VITIS_LOOP_155_4:   [xilinx-label-all-loops]
+        for (int extract_px = 0; extract_px < K_ROWS; extract_px++) {
+        ^~~
+        VITIS_LOOP_155_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50115:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50123:13: warning: Added loop label VITIS_LOOP_163_5:   [xilinx-label-all-loops]
+            for (int ext_copy = 0; ext_copy < npc; ext_copy++) {
+            ^~~
+            VITIS_LOOP_163_5: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50123:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50135:9: warning: Added loop label VITIS_LOOP_175_6:   [xilinx-label-all-loops]
+        for (int iter = 0; iter < npc; iter++) {
+        ^~~
+        VITIS_LOOP_175_6: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50135:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50139:2: warning: Added loop label VITIS_LOOP_179_7:   [xilinx-label-all-loops]
+ for (int copyi = 0; copyi < K_ROWS; copyi++) {
+ ^~~
+ VITIS_LOOP_179_7: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50139:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50140:17: warning: Added loop label VITIS_LOOP_180_8:   [xilinx-label-all-loops]
+                for (int copyj = 0; copyj < K_COLS; copyj++) {
+                ^~~
+                VITIS_LOOP_180_8: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50140:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50180:9: warning: Added loop label VITIS_LOOP_220_9:   [xilinx-label-all-loops]
+        for (ap_uint<13> extract_px = 0; extract_px < K_ROWS; extract_px++) {
+        ^~~
+        VITIS_LOOP_220_9: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50180:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50184:2: warning: Added loop label VITIS_LOOP_224_10:   [xilinx-label-all-loops]
+ for (ap_uint<13> col_warp = 0; col_warp < (K_COLS - 1); col_warp++) {
+ ^~~
+ VITIS_LOOP_224_10: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50184:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50233:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+                                           ^
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50239:2: warning: Added loop label VITIS_LOOP_279_1:   [xilinx-label-all-loops]
+ for (int init_row_ind = 0; init_row_ind < K_ROWS; init_row_ind++) {
+ ^~~
+ VITIS_LOOP_279_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50239:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50254:2: warning: Added loop label VITIS_LOOP_294_2:   [xilinx-label-all-loops]
+ for (ap_uint<13> i_col = 0; i_col<img_width>> xfNPixelsPerCycle<NPC>::datashift; i_col++) {
+ ^~~
+ VITIS_LOOP_294_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50254:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50271:2: warning: Added loop label VITIS_LOOP_311_3:   [xilinx-label-all-loops]
+ for (ap_uint<13> i_col = 0; i_col<img_width>> xfNPixelsPerCycle<NPC>::datashift; i_col++) {
+ ^~~
+ VITIS_LOOP_311_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50271:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50294:9: warning: Added loop label VITIS_LOOP_334_4:   [xilinx-label-all-loops]
+        for (ap_uint<13> init_row_ind = 0; init_row_ind < K_ROWS - 1; init_row_ind++) {
+        ^~~
+        VITIS_LOOP_334_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50294:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50335:2: warning: Added loop label VITIS_LOOP_393_1:   [xilinx-label-all-loops]
+ for (unsigned char i = 0; i < (K_ROWS + ((ITERATIONS - 1) * (K_ROWS - 1))); i++) {
+ ^~~
+ VITIS_LOOP_393_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50335:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50336:13: warning: Added loop label VITIS_LOOP_394_2:   [xilinx-label-all-loops]
+            for (unsigned char j = 0; j < (K_COLS + ((ITERATIONS - 1) * (K_COLS - 1))); j++) {
+            ^~~
+            VITIS_LOOP_394_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50336:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50349:2: warning: Added loop label VITIS_LOOP_407_3:   [xilinx-label-all-loops]
+ for (unsigned char i = 0; i < K_ROWS; i++) {
+ ^~~
+ VITIS_LOOP_407_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50349:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50350:13: warning: Added loop label VITIS_LOOP_408_4:   [xilinx-label-all-loops]
+            for (unsigned char j = 0; j < K_COLS; j++) {
+            ^~~
+            VITIS_LOOP_408_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50350:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50464:5: warning: Added loop label VITIS_LOOP_46_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 9; i++) {
+    ^~~
+    VITIS_LOOP_46_1: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50464:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50473:5: warning: Added loop label VITIS_LOOP_55_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < 5; i++) {
+    ^~~
+    VITIS_LOOP_55_2: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50473:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50483:6: warning: Added loop label VITIS_LOOP_65_3:   [xilinx-label-all-loops]
+     for (unsigned int i = 0; i < 3 * 3; ++i) {
+     ^~~
+     VITIS_LOOP_65_3: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50483:6: note: FIX-IT applied suggested code changes
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50492:5: warning: Added loop label VITIS_LOOP_74_4:   [xilinx-label-all-loops]
+    for (int ki = 0; ki < (3 * 3); ki++) {
+    ^~~
+    VITIS_LOOP_74_4: 
+C:\Xilinx\HLS_800\v00_ed\stereolbm_axis_cambm.prj\sol1\.autopilot\db\xf_stereolbm_accel.pp.0.cpp:50492:5: note: FIX-IT applied suggested code changes

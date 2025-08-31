@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>C:/Xilinx/HLS_800/v00_ed/stereolbm_axis_cambm.prj/sol1/.autopilot/db/xf_stereolbm_accel.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_video_mem.hpp</string>
+      <key>line</key>
+      <integer>759</integer>
+      <key>column</key>
+      <integer>47</integer>
+      <key>message</key>
+      <string>&apos;factor&apos; in &apos;#pragma HLS array_reshape&apos; is ignored</string>
+      <key>ID</key>
+      <integer>5533</integer>
+      <key>WarningOption</key>
+      <string>extra-tokens</string>
+    </dict>
+  </array>
+</dict>

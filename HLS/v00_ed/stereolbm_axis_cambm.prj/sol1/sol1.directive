@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="stereolbm_axis_cambm" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="stereolbm_axis_cambm"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

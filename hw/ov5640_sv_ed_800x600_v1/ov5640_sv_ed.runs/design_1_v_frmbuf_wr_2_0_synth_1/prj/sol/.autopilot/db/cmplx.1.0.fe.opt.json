@@ -1,0 +1,127 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "7",
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 73,
+    "instructions": 105,
+    "loads": {
+      "G": 2,
+      "L": 12
+    },
+    "name": "v_frmbuf_wr",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 1550
+  },
+  "1": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 1066,
+    "instructions": 45,
+    "loads": {
+      "L": 5
+    },
+    "name": "Bytes2AXIMMvideo",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 58
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_axi_io.h",
+    "fileloc": 46,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "AXIGetBitFields<24, ap_uint<8> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 75
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "hls_axi_io.h",
+    "fileloc": 69,
+    "instructions": 6,
+    "loads": {
+      "L": 1
+    },
+    "name": "AXIGetBitFields<24, ap_uint<8> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 81
+  },
+  "4": {
+    "basicblocks": 44,
+    "calls": "8 6 6 3 3 3",
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 169,
+    "instructions": 186,
+    "loads": {
+      "G": 1,
+      "L": 9
+    },
+    "name": "AXIvideo2MultiPixStream",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 890
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "v_frmbuf_wr.h",
+    "fileloc": 197,
+    "instructions": 3,
+    "name": "",
+    "total_instructions": 6
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 248,
+    "instructions": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "5 4 9 1",
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 26,
+    "instructions": 39,
+    "name": "FrmbufWrHlsDataFlow",
+    "total_instructions": 1445
+  },
+  "8": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "hls_video_core.h",
+    "fileloc": 182,
+    "instructions": 14,
+    "name": "Scalar",
+    "total_instructions": 21
+  },
+  "9": {
+    "basicblocks": 96,
+    "calls": "8",
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 268,
+    "instructions": 259,
+    "loads": {
+      "L": 31
+    },
+    "name": "MultiPixStream2Bytes",
+    "total_instructions": 449
+  }
+}

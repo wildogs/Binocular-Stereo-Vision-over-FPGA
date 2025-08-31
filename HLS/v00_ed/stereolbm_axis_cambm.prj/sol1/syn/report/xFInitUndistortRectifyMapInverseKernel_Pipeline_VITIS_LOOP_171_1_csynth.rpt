@@ -1,0 +1,181 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1'
+================================================================
+* Date:           Tue Jun 24 19:15:16 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.323 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       11|       11|  0.110 us|  0.110 us|   11|   11|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_171_1  |        9|        9|         2|          1|          1|     9|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     28|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     36|    -|
+|Register         |        -|    -|     427|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     427|     64|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln171_fu_255_p2   |         +|   0|  0|  13|           4|           1|
+    |icmp_ln171_fu_249_p2  |      icmp|   0|  0|  13|           4|           4|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  28|           9|           7|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_10    |   9|          2|    4|          8|
+    |i_fu_68                  |   9|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------+----+----+-----+-----------+
+    |              Name             | FF | LUT| Bits| Const Bits|
+    +-------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                      |   1|   0|    1|          0|
+    |ap_done_reg                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1        |   1|   0|    1|          0|
+    |cameraMatrixHLS_1_fu_80        |  32|   0|   32|          0|
+    |cameraMatrixHLS_2_fu_88        |  32|   0|   32|          0|
+    |cameraMatrixHLS_3_fu_100       |  32|   0|   32|          0|
+    |cameraMatrixHLS_4_fu_112       |  32|   0|   32|          0|
+    |iRnewCameraMatrixHLS_1_fu_76   |  32|   0|   32|          0|
+    |iRnewCameraMatrixHLS_2_fu_84   |  32|   0|   32|          0|
+    |iRnewCameraMatrixHLS_3_fu_92   |  32|   0|   32|          0|
+    |iRnewCameraMatrixHLS_4_fu_96   |  32|   0|   32|          0|
+    |iRnewCameraMatrixHLS_5_fu_104  |  32|   0|   32|          0|
+    |iRnewCameraMatrixHLS_6_fu_108  |  32|   0|   32|          0|
+    |iRnewCameraMatrixHLS_7_fu_116  |  32|   0|   32|          0|
+    |iRnewCameraMatrixHLS_8_fu_120  |  32|   0|   32|          0|
+    |iRnewCameraMatrixHLS_fu_72     |  32|   0|   32|          0|
+    |i_10_reg_474                   |   4|   0|    4|          0|
+    |i_fu_68                        |   4|   0|    4|          0|
+    +-------------------------------+----+----+-----+-----------+
+    |Total                          | 427|   0|  427|          0|
+    +-------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+------------------------------------------------------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |                           Source Object                          |    C Type    |
++-------------------------+-----+-----+------------+------------------------------------------------------------------+--------------+
+|ap_clk                   |   in|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1|  return value|
+|ap_rst                   |   in|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1|  return value|
+|ap_start                 |   in|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1|  return value|
+|ap_done                  |  out|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1|  return value|
+|ap_idle                  |  out|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1|  return value|
+|ap_ready                 |  out|    1|  ap_ctrl_hs|  xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1|  return value|
+|cameraMatrix_address0    |  out|    4|   ap_memory|                                                      cameraMatrix|         array|
+|cameraMatrix_ce0         |  out|    1|   ap_memory|                                                      cameraMatrix|         array|
+|cameraMatrix_q0          |   in|   32|   ap_memory|                                                      cameraMatrix|         array|
+|ir_address0              |  out|    4|   ap_memory|                                                                ir|         array|
+|ir_ce0                   |  out|    1|   ap_memory|                                                                ir|         array|
+|ir_q0                    |   in|   32|   ap_memory|                                                                ir|         array|
+|p_0_0_010442_out         |  out|   32|      ap_vld|                                                  p_0_0_010442_out|       pointer|
+|p_0_0_010442_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010442_out|       pointer|
+|p_0_0_010440_out         |  out|   32|      ap_vld|                                                  p_0_0_010440_out|       pointer|
+|p_0_0_010440_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010440_out|       pointer|
+|p_0_0_010538_out         |  out|   32|      ap_vld|                                                  p_0_0_010538_out|       pointer|
+|p_0_0_010538_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010538_out|       pointer|
+|p_0_0_010436_out         |  out|   32|      ap_vld|                                                  p_0_0_010436_out|       pointer|
+|p_0_0_010436_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010436_out|       pointer|
+|p_0_0_010434_out         |  out|   32|      ap_vld|                                                  p_0_0_010434_out|       pointer|
+|p_0_0_010434_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010434_out|       pointer|
+|p_0_0_010532_out         |  out|   32|      ap_vld|                                                  p_0_0_010532_out|       pointer|
+|p_0_0_010532_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010532_out|       pointer|
+|p_0_0_010430_out         |  out|   32|      ap_vld|                                                  p_0_0_010430_out|       pointer|
+|p_0_0_010430_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010430_out|       pointer|
+|p_0_0_010428_out         |  out|   32|      ap_vld|                                                  p_0_0_010428_out|       pointer|
+|p_0_0_010428_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010428_out|       pointer|
+|p_0_0_010526_out         |  out|   32|      ap_vld|                                                  p_0_0_010526_out|       pointer|
+|p_0_0_010526_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010526_out|       pointer|
+|p_0_0_010424_out         |  out|   32|      ap_vld|                                                  p_0_0_010424_out|       pointer|
+|p_0_0_010424_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010424_out|       pointer|
+|p_0_0_010522_out         |  out|   32|      ap_vld|                                                  p_0_0_010522_out|       pointer|
+|p_0_0_010522_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010522_out|       pointer|
+|p_0_0_010420_out         |  out|   32|      ap_vld|                                                  p_0_0_010420_out|       pointer|
+|p_0_0_010420_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010420_out|       pointer|
+|p_0_0_010418_out         |  out|   32|      ap_vld|                                                  p_0_0_010418_out|       pointer|
+|p_0_0_010418_out_ap_vld  |  out|    1|      ap_vld|                                                  p_0_0_010418_out|       pointer|
++-------------------------+-----+-----+------------+------------------------------------------------------------------+--------------+
+

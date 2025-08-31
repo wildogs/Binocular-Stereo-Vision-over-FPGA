@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "stereolbm_axis_cambm",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "stereolbm_axis_cambm"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Xilinx/HLS_800/v00_ed/run_hls.tcl",
+    "sourceLine": 42,
+    "success": true
+  }
+]

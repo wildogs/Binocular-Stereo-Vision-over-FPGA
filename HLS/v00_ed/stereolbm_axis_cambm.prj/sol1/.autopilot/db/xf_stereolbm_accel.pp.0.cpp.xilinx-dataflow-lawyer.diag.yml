@@ -1,0 +1,28 @@
+---
+MainSourceFile:  'C:/Xilinx/HLS_800/v00_ed/stereolbm_axis_cambm.prj/sol1/.autopilot/db/xf_stereolbm_accel.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '106:9'
+    FilePath:        xf_stereolbm_accel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '106:9'
+    FilePath:        xf_stereolbm_accel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '106:9'
+    FilePath:        xf_stereolbm_accel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-12] There are a total of 7 such instances of non-canonical statements in the dataflow region'
+    FileOffset:      '106:9'
+    FilePath:        xf_stereolbm_accel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '470:9'
+    FilePath:        'C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_remap.hpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '800:9'
+    FilePath:        'C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereolbm.hpp'
+...

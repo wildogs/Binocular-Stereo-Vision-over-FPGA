@@ -1,0 +1,133 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFSobel3x3_1_1_0_4_s'
+================================================================
+* Date:           Tue Jun 24 19:14:48 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.672 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        1|  10.000 ns|  10.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.67>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%src_buf3_2_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf3_2_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 3 'read' 'src_buf3_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%src_buf3_1_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf3_1_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 4 'read' 'src_buf3_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%src_buf3_0_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf3_0_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 5 'read' 'src_buf3_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%src_buf2_2_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf2_2_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 6 'read' 'src_buf2_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%src_buf2_0_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf2_0_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 7 'read' 'src_buf2_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%src_buf1_2_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf1_2_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 8 'read' 'src_buf1_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%src_buf1_1_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf1_1_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 9 'read' 'src_buf1_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%src_buf1_0_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %src_buf1_0_val" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 10 'read' 'src_buf1_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (5.67ns)   --->   "%GradientvaluesX = call i11 @xFGradientX3x3<0, 4>, i8 %src_buf1_0_val_read, i8 %src_buf1_2_val_read, i8 %src_buf2_0_val_read, i8 %src_buf2_2_val_read, i8 %src_buf3_0_val_read, i8 %src_buf3_2_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159]   --->   Operation 11 'call' 'GradientvaluesX' <Predicate = true> <Delay = 5.67> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 12 [2/2] (3.73ns)   --->   "%ref_tmp = call i11 @xFGradientY3x3<0, 4>, i8 %src_buf1_0_val_read, i8 %src_buf1_1_val_read, i8 %src_buf1_2_val_read, i8 %src_buf3_0_val_read, i8 %src_buf3_1_val_read, i8 %src_buf3_2_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:166]   --->   Operation 12 'call' 'ref_tmp' <Predicate = true> <Delay = 3.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 3.75>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%sext_ln166 = sext i11 %GradientvaluesX" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:166]   --->   Operation 13 'sext' 'sext_ln166' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/2] (3.75ns)   --->   "%ref_tmp = call i11 @xFGradientY3x3<0, 4>, i8 %src_buf1_0_val_read, i8 %src_buf1_1_val_read, i8 %src_buf1_2_val_read, i8 %src_buf3_0_val_read, i8 %src_buf3_1_val_read, i8 %src_buf3_2_val_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:166]   --->   Operation 14 'call' 'ref_tmp' <Predicate = true> <Delay = 3.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%sext_ln175 = sext i11 %ref_tmp" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:175]   --->   Operation 15 'sext' 'sext_ln175' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%mrv = insertvalue i32 <undef>, i16 %sext_ln166" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:175]   --->   Operation 16 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i32 %mrv, i16 %sext_ln175" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:175]   --->   Operation 17 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%ret_ln175 = ret i32 %mrv_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:175]   --->   Operation 18 'ret' 'ret_ln175' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.672ns
+The critical path consists of the following:
+	wire read operation ('src_buf3_2_val_read', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159) on port 'src_buf3_2_val' (C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159) [9]  (0.000 ns)
+	'call' operation ('GradientvaluesX', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:159) to 'xFGradientX3x3<0, 4>' [17]  (5.672 ns)
+
+ <State 2>: 3.757ns
+The critical path consists of the following:
+	'call' operation ('ref_tmp', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_sobel.hpp:166) to 'xFGradientY3x3<0, 4>' [19]  (3.757 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

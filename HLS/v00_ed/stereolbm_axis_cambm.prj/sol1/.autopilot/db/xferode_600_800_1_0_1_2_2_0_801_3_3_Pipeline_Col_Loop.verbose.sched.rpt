@@ -1,0 +1,311 @@
+
+
+================================================================
+== Vitis HLS Report for 'xferode_600_800_1_0_1_2_2_0_801_3_3_Pipeline_Col_Loop'
+================================================================
+* Date:           Tue Jun 24 19:15:10 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.888 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       10|      810|  0.100 us|  8.100 us|   10|  810|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |            |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |  Loop Name |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- Col_Loop  |        8|      808|         9|          1|          1|  1 ~ 801|       yes|
+        +------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 9
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 9, States = { 1 2 3 4 5 6 7 8 9 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.66>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%col = alloca i32 1"   --->   Operation 12 'alloca' 'col' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%max = alloca i32 1"   --->   Operation 13 'alloca' 'max' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%max_1 = alloca i32 1"   --->   Operation 14 'alloca' 'max_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%src_buf_temp_med_apply = alloca i32 1"   --->   Operation 15 'alloca' 'src_buf_temp_med_apply' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%max_2 = alloca i32 1"   --->   Operation 16 'alloca' 'max_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%src_buf_temp_med_apply_1 = alloca i32 1"   --->   Operation 17 'alloca' 'src_buf_temp_med_apply_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%max_5 = alloca i32 1"   --->   Operation 18 'alloca' 'max_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %buf_r, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 19 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %buf_1, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 20 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %buf_2, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_disp8u_erode_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_disp8u_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%cmp_i_i142_i_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cmp_i_i142_i"   --->   Operation 24 'read' 'cmp_i_i142_i_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %trunc_ln"   --->   Operation 25 'read' 'trunc_ln_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%trunc_ln265_1_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %trunc_ln265_1"   --->   Operation 26 'read' 'trunc_ln265_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln265_2_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %trunc_ln265_2"   --->   Operation 27 'read' 'trunc_ln265_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%img_width_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %img_width"   --->   Operation 28 'read' 'img_width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 255, i8 %max_5"   --->   Operation 29 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 30 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 255, i8 %src_buf_temp_med_apply_1"   --->   Operation 30 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 31 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 255, i8 %max_2"   --->   Operation 31 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 32 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 255, i8 %src_buf_temp_med_apply"   --->   Operation 32 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 33 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 255, i8 %max_1"   --->   Operation 33 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 34 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 255, i8 %max"   --->   Operation 34 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 35 [1/1] (1.58ns)   --->   "%store_ln0 = store i13 0, i13 %col"   --->   Operation 35 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body26.i"   --->   Operation 36 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%col_1 = load i13 %col" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:124->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 37 'load' 'col_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%zext_ln123 = zext i13 %col_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 38 'zext' 'zext_ln123' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (2.07ns)   --->   "%icmp_ln123 = icmp_ugt  i16 %zext_ln123, i16 %img_width_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 39 'icmp' 'icmp_ln123' <Predicate = true> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (1.67ns)   --->   "%col_2 = add i13 %col_1, i13 1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:124->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 40 'add' 'col_2' <Predicate = true> <Delay = 1.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln123 = br i1 %icmp_ln123, void %for.body26.i.split, void %for.inc89.exitStub" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 41 'br' 'br_ln123' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (2.07ns)   --->   "%icmp_ln132 = icmp_ult  i16 %zext_ln123, i16 %img_width_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:132->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 42 'icmp' 'icmp_ln132' <Predicate = (!icmp_ln123)> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (1.58ns)   --->   "%br_ln132 = br i1 %icmp_ln132, void %for.body8.i.i, void %if.then.i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:132->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 43 'br' 'br_ln132' <Predicate = (!icmp_ln123)> <Delay = 1.58>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln133 = br i1 %cmp_i_i142_i_read, void %if.else.i, void %if.then31.i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:133->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 44 'br' 'br_ln133' <Predicate = (!icmp_ln123 & icmp_ln132)> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.then58.i.2"   --->   Operation 45 'br' 'br_ln0' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read)> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln136 = br void %if.then58.i.2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:136->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 46 'br' 'br_ln136' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (1.58ns)   --->   "%store_ln123 = store i13 %col_2, i13 %col" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 47 'store' 'store_ln123' <Predicate = (!icmp_ln123)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 6.88>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%specpipeline_ln128 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:128->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 48 'specpipeline' 'specpipeline_ln128' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%speclooptripcount_ln127 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 801, i64 401" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:127->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 49 'speclooptripcount' 'speclooptripcount_ln127' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%specloopname_ln123 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 50 'specloopname' 'specloopname_ln123' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%conv_i99_i = zext i13 %col_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:124->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 51 'zext' 'conv_i99_i' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%buf_addr_1 = getelementptr i8 %buf_r, i64 0, i64 %conv_i99_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:137->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 52 'getelementptr' 'buf_addr_1' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read)> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%buf_1_addr_1 = getelementptr i8 %buf_1, i64 0, i64 %conv_i99_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:137->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 53 'getelementptr' 'buf_1_addr_1' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%buf_2_addr_1 = getelementptr i8 %buf_2, i64 0, i64 %conv_i99_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:137->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 54 'getelementptr' 'buf_2_addr_1' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read)> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (1.86ns)   --->   "%switch_ln138 = switch i2 %trunc_ln_read, void %arrayidx447.i270.case.2, i2 0, void %arrayidx447.i270.case.0, i2 1, void %arrayidx447.i270.case.1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:138->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 55 'switch' 'switch_ln138' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read)> <Delay = 1.86>
+ST_2 : Operation 56 [1/1] (3.25ns)   --->   "%store_ln138 = store i8 255, i10 %buf_1_addr_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:138->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 56 'store' 'store_ln138' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read & trunc_ln_read == 1)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln138 = br void %arrayidx447.i270.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:138->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 57 'br' 'br_ln138' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read & trunc_ln_read == 1)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (3.25ns)   --->   "%store_ln138 = store i8 255, i10 %buf_addr_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:138->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 58 'store' 'store_ln138' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read & trunc_ln_read == 0)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln138 = br void %arrayidx447.i270.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:138->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 59 'br' 'br_ln138' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read & trunc_ln_read == 0)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (3.25ns)   --->   "%store_ln138 = store i8 255, i10 %buf_2_addr_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:138->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 60 'store' 'store_ln138' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read & trunc_ln_read != 0 & trunc_ln_read != 1)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%br_ln138 = br void %arrayidx447.i270.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:138->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 61 'br' 'br_ln138' <Predicate = (!icmp_ln123 & icmp_ln132 & !cmp_i_i142_i_read & trunc_ln_read != 0 & trunc_ln_read != 1)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (3.63ns)   --->   "%img_disp8u_data_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %img_disp8u_data" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:542->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 62 'read' 'img_disp8u_data_read' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%buf_addr = getelementptr i8 %buf_r, i64 0, i64 %conv_i99_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 63 'getelementptr' 'buf_addr' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read)> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%buf_1_addr = getelementptr i8 %buf_1, i64 0, i64 %conv_i99_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 64 'getelementptr' 'buf_1_addr' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read)> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%buf_2_addr = getelementptr i8 %buf_2, i64 0, i64 %conv_i99_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 65 'getelementptr' 'buf_2_addr' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read)> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (1.86ns)   --->   "%switch_ln134 = switch i2 %trunc_ln_read, void %arrayidx379.i277.case.2, i2 0, void %arrayidx379.i277.case.0, i2 1, void %arrayidx379.i277.case.1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 66 'switch' 'switch_ln134' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read)> <Delay = 1.86>
+ST_2 : Operation 67 [1/1] (3.25ns)   --->   "%store_ln134 = store i8 %img_disp8u_data_read, i10 %buf_1_addr" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 67 'store' 'store_ln134' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read & trunc_ln_read == 1)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln134 = br void %arrayidx379.i277.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 68 'br' 'br_ln134' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read & trunc_ln_read == 1)> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (3.25ns)   --->   "%store_ln134 = store i8 %img_disp8u_data_read, i10 %buf_addr" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 69 'store' 'store_ln134' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read & trunc_ln_read == 0)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%br_ln134 = br void %arrayidx379.i277.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 70 'br' 'br_ln134' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read & trunc_ln_read == 0)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (3.25ns)   --->   "%store_ln134 = store i8 %img_disp8u_data_read, i10 %buf_2_addr" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 71 'store' 'store_ln134' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read & trunc_ln_read != 0 & trunc_ln_read != 1)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln134 = br void %arrayidx379.i277.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 72 'br' 'br_ln134' <Predicate = (!icmp_ln123 & icmp_ln132 & cmp_i_i142_i_read & trunc_ln_read != 0 & trunc_ln_read != 1)> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (1.67ns)   --->   "%icmp_ln216 = icmp_eq  i13 %col_1, i13 0" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:216->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 73 'icmp' 'icmp_ln216' <Predicate = (!icmp_ln123)> <Delay = 1.67> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%br_ln216 = br i1 %icmp_ln216, void %if.then181.i, void %for.body192.i.2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:216->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 74 'br' 'br_ln216' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%buf_addr_2 = getelementptr i8 %buf_r, i64 0, i64 %conv_i99_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 75 'getelementptr' 'buf_addr_2' <Predicate = (!icmp_ln123 & icmp_ln132)> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (0.00ns)   --->   "%buf_1_addr_2 = getelementptr i8 %buf_1, i64 0, i64 %conv_i99_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 76 'getelementptr' 'buf_1_addr_2' <Predicate = (!icmp_ln123 & icmp_ln132)> <Delay = 0.00>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%buf_2_addr_2 = getelementptr i8 %buf_2, i64 0, i64 %conv_i99_i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 77 'getelementptr' 'buf_2_addr_2' <Predicate = (!icmp_ln123 & icmp_ln132)> <Delay = 0.00>
+ST_3 : Operation 78 [2/2] (3.25ns)   --->   "%buf_load = load i10 %buf_addr_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 78 'load' 'buf_load' <Predicate = (!icmp_ln123 & icmp_ln132 & trunc_ln265_1_read == 0) | (!icmp_ln123 & icmp_ln132 & trunc_ln265_2_read == 0) | (!icmp_ln123 & icmp_ln132 & trunc_ln_read == 0)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_3 : Operation 79 [2/2] (3.25ns)   --->   "%buf_1_load = load i10 %buf_1_addr_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 79 'load' 'buf_1_load' <Predicate = (!icmp_ln123 & icmp_ln132 & trunc_ln265_1_read != 0 & trunc_ln265_1_read == 1) | (!icmp_ln123 & icmp_ln132 & trunc_ln265_2_read != 0 & trunc_ln265_2_read == 1) | (!icmp_ln123 & icmp_ln132 & trunc_ln_read == 1)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_3 : Operation 80 [2/2] (3.25ns)   --->   "%buf_2_load = load i10 %buf_2_addr_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 80 'load' 'buf_2_load' <Predicate = (!icmp_ln123 & icmp_ln132 & trunc_ln265_1_read != 0 & trunc_ln265_1_read != 1 & trunc_ln265_1_read == 2) | (!icmp_ln123 & icmp_ln132 & trunc_ln265_2_read != 0 & trunc_ln265_2_read != 1 & trunc_ln265_2_read == 2) | (!icmp_ln123 & icmp_ln132 & trunc_ln_read == 2)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+
+State 4 <SV = 3> <Delay = 4.96>
+ST_4 : Operation 81 [1/2] (3.25ns)   --->   "%buf_load = load i10 %buf_addr_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 81 'load' 'buf_load' <Predicate = (!icmp_ln123 & icmp_ln132 & trunc_ln265_1_read == 0) | (!icmp_ln123 & icmp_ln132 & trunc_ln265_2_read == 0) | (!icmp_ln123 & icmp_ln132 & trunc_ln_read == 0)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_4 : Operation 82 [1/2] (3.25ns)   --->   "%buf_1_load = load i10 %buf_1_addr_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 82 'load' 'buf_1_load' <Predicate = (!icmp_ln123 & icmp_ln132 & trunc_ln265_1_read != 0 & trunc_ln265_1_read == 1) | (!icmp_ln123 & icmp_ln132 & trunc_ln265_2_read != 0 & trunc_ln265_2_read == 1) | (!icmp_ln123 & icmp_ln132 & trunc_ln_read == 1)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_4 : Operation 83 [1/2] (3.25ns)   --->   "%buf_2_load = load i10 %buf_2_addr_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 83 'load' 'buf_2_load' <Predicate = (!icmp_ln123 & icmp_ln132 & trunc_ln265_1_read != 0 & trunc_ln265_1_read != 1 & trunc_ln265_1_read == 2) | (!icmp_ln123 & icmp_ln132 & trunc_ln265_2_read != 0 & trunc_ln265_2_read != 1 & trunc_ln265_2_read == 2) | (!icmp_ln123 & icmp_ln132 & trunc_ln_read == 2)> <Delay = 3.25> <CoreInst = "RAM_S2P_BRAM">   --->   Core 93 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 800> <RAM>
+ST_4 : Operation 84 [1/1] (1.70ns)   --->   "%buf_cop = mux i8 @_ssdm_op_Mux.ap_auto.3i8.i2, i8 %buf_load, i8 %buf_1_load, i8 %buf_2_load, i2 %trunc_ln265_2_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 84 'mux' 'buf_cop' <Predicate = (!icmp_ln123 & icmp_ln132)> <Delay = 1.70> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.70> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 85 [1/1] (1.70ns)   --->   "%buf_cop_1 = mux i8 @_ssdm_op_Mux.ap_auto.3i8.i2, i8 %buf_load, i8 %buf_1_load, i8 %buf_2_load, i2 %trunc_ln265_1_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 85 'mux' 'buf_cop_1' <Predicate = (!icmp_ln123 & icmp_ln132)> <Delay = 1.70> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.70> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 86 [1/1] (1.70ns)   --->   "%buf_cop_2 = mux i8 @_ssdm_op_Mux.ap_auto.3i8.i2, i8 %buf_load, i8 %buf_1_load, i8 %buf_2_load, i2 %trunc_ln_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 86 'mux' 'buf_cop_2' <Predicate = (!icmp_ln123 & icmp_ln132)> <Delay = 1.70> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.70> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 87 [1/1] (1.58ns)   --->   "%br_ln148 = br void %for.body8.i.i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 87 'br' 'br_ln148' <Predicate = (!icmp_ln123 & icmp_ln132)> <Delay = 1.58>
+
+State 5 <SV = 4> <Delay = 6.32>
+ST_5 : Operation 88 [1/1] (0.00ns)   --->   "%src_buf_temp_med_apply_8 = load i8 %max_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 88 'load' 'src_buf_temp_med_apply_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%buf_cop_3 = phi i8 %buf_cop, void %if.then58.i.2, i8 255, void %for.body26.i.split"   --->   Operation 89 'phi' 'buf_cop_3' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_5 : Operation 90 [1/1] (0.00ns)   --->   "%max_load = load i8 %max" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 90 'load' 'max_load' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%src_buf_temp_copy_extract_0 = call i8 @xfExtractPixels<1, 1, 0>, i8 %buf_cop_3" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:165->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 91 'call' 'src_buf_temp_copy_extract_0' <Predicate = (!icmp_ln123)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 92 [1/1] (1.91ns)   --->   "%icmp_ln56 = icmp_ult  i8 %src_buf_temp_med_apply_8, i8 %max_load" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 92 'icmp' 'icmp_ln56' <Predicate = (!icmp_ln123)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 93 [1/1] (1.24ns)   --->   "%max_11 = select i1 %icmp_ln56, i8 %src_buf_temp_med_apply_8, i8 %max_load" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 93 'select' 'max_11' <Predicate = (!icmp_ln123)> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 94 [1/1] (1.91ns)   --->   "%icmp_ln56_1 = icmp_ult  i8 %src_buf_temp_copy_extract_0, i8 %max_11" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 94 'icmp' 'icmp_ln56_1' <Predicate = (!icmp_ln123)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 95 [1/1] (1.24ns)   --->   "%max_13 = select i1 %icmp_ln56_1, i8 %src_buf_temp_copy_extract_0, i8 %max_11" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 95 'select' 'max_13' <Predicate = (!icmp_ln123)> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 96 [1/1] (1.58ns)   --->   "%store_ln123 = store i8 %src_buf_temp_copy_extract_0, i8 %max_2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 96 'store' 'store_ln123' <Predicate = (!icmp_ln123)> <Delay = 1.58>
+ST_5 : Operation 97 [1/1] (1.58ns)   --->   "%store_ln123 = store i8 %src_buf_temp_med_apply_8, i8 %max" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 97 'store' 'store_ln123' <Predicate = (!icmp_ln123)> <Delay = 1.58>
+
+State 6 <SV = 5> <Delay = 6.32>
+ST_6 : Operation 98 [1/1] (0.00ns)   --->   "%src_buf_temp_med_apply_4 = load i8 %src_buf_temp_med_apply_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 98 'load' 'src_buf_temp_med_apply_4' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 99 [1/1] (0.00ns)   --->   "%buf_cop_4 = phi i8 %buf_cop_1, void %if.then58.i.2, i8 255, void %for.body26.i.split"   --->   Operation 99 'phi' 'buf_cop_4' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_6 : Operation 100 [1/1] (0.00ns)   --->   "%max_1_load = load i8 %max_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 100 'load' 'max_1_load' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_6 : Operation 101 [1/1] (0.00ns)   --->   "%src_buf_temp_copy_extract_0_3 = call i8 @xfExtractPixels<1, 1, 0>, i8 %buf_cop_4" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:165->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 101 'call' 'src_buf_temp_copy_extract_0_3' <Predicate = (!icmp_ln123)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 102 [1/1] (1.91ns)   --->   "%icmp_ln56_2 = icmp_ult  i8 %max_1_load, i8 %max_13" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 102 'icmp' 'icmp_ln56_2' <Predicate = (!icmp_ln123)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 103 [1/1] (1.24ns)   --->   "%max_14 = select i1 %icmp_ln56_2, i8 %max_1_load, i8 %max_13" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 103 'select' 'max_14' <Predicate = (!icmp_ln123)> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 104 [1/1] (1.91ns)   --->   "%icmp_ln56_3 = icmp_ult  i8 %src_buf_temp_med_apply_4, i8 %max_14" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 104 'icmp' 'icmp_ln56_3' <Predicate = (!icmp_ln123)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 105 [1/1] (1.24ns)   --->   "%max_15 = select i1 %icmp_ln56_3, i8 %src_buf_temp_med_apply_4, i8 %max_14" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 105 'select' 'max_15' <Predicate = (!icmp_ln123)> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 106 [1/1] (1.58ns)   --->   "%store_ln123 = store i8 %src_buf_temp_copy_extract_0_3, i8 %src_buf_temp_med_apply_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 106 'store' 'store_ln123' <Predicate = (!icmp_ln123)> <Delay = 1.58>
+ST_6 : Operation 107 [1/1] (1.58ns)   --->   "%store_ln123 = store i8 %src_buf_temp_med_apply_4, i8 %max_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 107 'store' 'store_ln123' <Predicate = (!icmp_ln123)> <Delay = 1.58>
+
+State 7 <SV = 6> <Delay = 6.32>
+ST_7 : Operation 108 [1/1] (0.00ns)   --->   "%src_buf_temp_med_apply_9 = load i8 %max_5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 108 'load' 'src_buf_temp_med_apply_9' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 109 [1/1] (0.00ns)   --->   "%buf_cop_5 = phi i8 %buf_cop_2, void %if.then58.i.2, i8 255, void %for.body26.i.split"   --->   Operation 109 'phi' 'buf_cop_5' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_7 : Operation 110 [1/1] (0.00ns)   --->   "%src_buf_temp_med_apply_load = load i8 %src_buf_temp_med_apply" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 110 'load' 'src_buf_temp_med_apply_load' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_7 : Operation 111 [1/1] (0.00ns)   --->   "%src_buf_temp_copy_extract_0_4 = call i8 @xfExtractPixels<1, 1, 0>, i8 %buf_cop_5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:165->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 111 'call' 'src_buf_temp_copy_extract_0_4' <Predicate = (!icmp_ln123)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 112 [1/1] (1.91ns)   --->   "%icmp_ln56_4 = icmp_ult  i8 %src_buf_temp_copy_extract_0_3, i8 %max_15" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 112 'icmp' 'icmp_ln56_4' <Predicate = (!icmp_ln123)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 113 [1/1] (1.24ns)   --->   "%max_17 = select i1 %icmp_ln56_4, i8 %src_buf_temp_copy_extract_0_3, i8 %max_15" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 113 'select' 'max_17' <Predicate = (!icmp_ln123)> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 114 [1/1] (1.91ns)   --->   "%icmp_ln56_5 = icmp_ult  i8 %src_buf_temp_med_apply_load, i8 %max_17" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 114 'icmp' 'icmp_ln56_5' <Predicate = (!icmp_ln123)> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 115 [1/1] (1.24ns)   --->   "%max_18 = select i1 %icmp_ln56_5, i8 %src_buf_temp_med_apply_load, i8 %max_17" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 115 'select' 'max_18' <Predicate = (!icmp_ln123)> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 116 [1/1] (1.58ns)   --->   "%store_ln123 = store i8 %src_buf_temp_copy_extract_0_4, i8 %max_5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 116 'store' 'store_ln123' <Predicate = (!icmp_ln123)> <Delay = 1.58>
+ST_7 : Operation 117 [1/1] (1.58ns)   --->   "%store_ln123 = store i8 %src_buf_temp_med_apply_9, i8 %src_buf_temp_med_apply" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 117 'store' 'store_ln123' <Predicate = (!icmp_ln123)> <Delay = 1.58>
+ST_7 : Operation 118 [1/1] (0.00ns)   --->   "%br_ln123 = br void %for.body26.i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:123->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 118 'br' 'br_ln123' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 6.32>
+ST_8 : Operation 119 [1/1] (1.91ns)   --->   "%icmp_ln56_6 = icmp_ult  i8 %src_buf_temp_med_apply_9, i8 %max_18" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 119 'icmp' 'icmp_ln56_6' <Predicate = true> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 120 [1/1] (1.24ns)   --->   "%max_20 = select i1 %icmp_ln56_6, i8 %src_buf_temp_med_apply_9, i8 %max_18" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 120 'select' 'max_20' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 121 [1/1] (1.91ns)   --->   "%icmp_ln56_7 = icmp_ult  i8 %src_buf_temp_copy_extract_0_4, i8 %max_20" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 121 'icmp' 'icmp_ln56_7' <Predicate = true> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 122 [1/1] (1.24ns)   --->   "%max_22 = select i1 %icmp_ln56_7, i8 %src_buf_temp_copy_extract_0_4, i8 %max_20" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 122 'select' 'max_22' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 125 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 125 'ret' 'ret_ln0' <Predicate = (icmp_ln123)> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 3.63>
+ST_9 : Operation 123 [1/1] (3.63ns)   --->   "%write_ln553 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %img_disp8u_erode_data, i8 %max_22" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:553->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:217->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 123 'write' 'write_ln553' <Predicate = (!icmp_ln216)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_9 : Operation 124 [1/1] (0.00ns)   --->   "%br_ln219 = br void %for.body192.i.2" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:219->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332]   --->   Operation 124 'br' 'br_ln219' <Predicate = (!icmp_ln216)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.665ns
+The critical path consists of the following:
+	'alloca' operation ('col') [11]  (0.000 ns)
+	'load' operation ('col', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:124->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) on local variable 'col' [37]  (0.000 ns)
+	'icmp' operation ('icmp_ln132', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:132->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [49]  (2.077 ns)
+	multiplexor before 'phi' operation ('buf_cop') with incoming values : ('buf_cop', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [99]  (1.588 ns)
+
+ <State 2>: 6.888ns
+The critical path consists of the following:
+	fifo read operation ('img_disp8u_data_read', C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:542->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) on port 'img_disp8u_data' (C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:542->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [71]  (3.634 ns)
+	'store' operation ('store_ln134', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) of variable 'img_disp8u_data_read', C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:542->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:134->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332 on array 'buf_1' [77]  (3.254 ns)
+
+ <State 3>: 3.254ns
+The critical path consists of the following:
+	'getelementptr' operation ('buf_addr_2', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [88]  (0.000 ns)
+	'load' operation ('buf_load', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) on array 'buf_r' [91]  (3.254 ns)
+
+ <State 4>: 4.961ns
+The critical path consists of the following:
+	'load' operation ('buf_load', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) on array 'buf_r' [91]  (3.254 ns)
+	'mux' operation ('buf_cop', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:148->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [94]  (1.707 ns)
+
+ <State 5>: 6.326ns
+The critical path consists of the following:
+	'load' operation ('src_buf_temp_med_apply', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) on local variable 'max' [38]  (0.000 ns)
+	'icmp' operation ('icmp_ln56', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [108]  (1.915 ns)
+	'select' operation ('max', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [109]  (1.248 ns)
+	'icmp' operation ('icmp_ln56_1', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [110]  (1.915 ns)
+	'select' operation ('max', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [111]  (1.248 ns)
+
+ <State 6>: 6.326ns
+The critical path consists of the following:
+	'load' operation ('max_1_load', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) on local variable 'max' [103]  (0.000 ns)
+	'icmp' operation ('icmp_ln56_2', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [112]  (1.915 ns)
+	'select' operation ('max', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [113]  (1.248 ns)
+	'icmp' operation ('icmp_ln56_3', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [114]  (1.915 ns)
+	'select' operation ('max', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [115]  (1.248 ns)
+
+ <State 7>: 6.326ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln56_4', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [116]  (1.915 ns)
+	'select' operation ('max', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [117]  (1.248 ns)
+	'icmp' operation ('icmp_ln56_5', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [118]  (1.915 ns)
+	'select' operation ('max', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [119]  (1.248 ns)
+
+ <State 8>: 6.326ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln56_6', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [120]  (1.915 ns)
+	'select' operation ('max', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [121]  (1.248 ns)
+	'icmp' operation ('icmp_ln56_7', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [122]  (1.915 ns)
+	'select' operation ('max', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:56->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:189->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [123]  (1.248 ns)
+
+ <State 9>: 3.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln553', C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:553->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:217->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) on port 'img_disp8u_erode_data' (C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:553->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:217->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:332) [127]  (3.634 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

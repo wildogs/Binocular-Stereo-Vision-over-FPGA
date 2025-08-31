@@ -1,0 +1,168 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_178_2'
+================================================================
+* Date:           Tue Jun 24 19:14:43 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.238 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        7|        7|  70.000 ns|  70.000 ns|    7|    7|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_178_2  |        5|        5|         2|          1|          1|     5|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.23>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_5 = alloca i32 1"   --->   Operation 5 'alloca' 'i_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%p_0_0_01038 = alloca i32 1"   --->   Operation 6 'alloca' 'p_0_0_01038' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_0_0_010310 = alloca i32 1"   --->   Operation 7 'alloca' 'p_0_0_010310' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_0_0_010312 = alloca i32 1"   --->   Operation 8 'alloca' 'p_0_0_010312' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_0_0_010314 = alloca i32 1"   --->   Operation 9 'alloca' 'p_0_0_010314' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_0_0_010316 = alloca i32 1"   --->   Operation 10 'alloca' 'p_0_0_010316' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.58ns)   --->   "%store_ln0 = store i3 0, i3 %i_5"   --->   Operation 11 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc32"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%i = load i3 %i_5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178]   --->   Operation 13 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (1.65ns)   --->   "%icmp_ln178 = icmp_eq  i3 %i, i3 5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178]   --->   Operation 14 'icmp' 'icmp_ln178' <Predicate = true> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (1.65ns)   --->   "%add_ln178 = add i3 %i, i3 1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178]   --->   Operation 15 'add' 'add_ln178' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln178 = br i1 %icmp_ln178, void %for.inc32.split, void %loop_height.exitStub" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178]   --->   Operation 16 'br' 'br_ln178' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln178 = zext i3 %i" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178]   --->   Operation 17 'zext' 'zext_ln178' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%distCoeffs_addr = getelementptr i32 %distCoeffs, i64 0, i64 %zext_ln178" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 18 'getelementptr' 'distCoeffs_addr' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 19 [2/2] (2.32ns)   --->   "%distCoeffs_load = load i3 %distCoeffs_addr" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 19 'load' 'distCoeffs_load' <Predicate = (!icmp_ln178)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 5> <RAM>
+ST_1 : Operation 20 [1/1] (1.87ns)   --->   "%switch_ln182 = switch i3 %i, void %arrayidx31.case.4, i3 0, void %for.inc32.split.arrayidx31.exit_crit_edge1, i3 1, void %arrayidx31.case.1, i3 2, void %arrayidx31.case.2, i3 3, void %for.inc32.split.arrayidx31.exit_crit_edge" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 20 'switch' 'switch_ln182' <Predicate = (!icmp_ln178)> <Delay = 1.87>
+ST_1 : Operation 21 [1/1] (1.58ns)   --->   "%store_ln178 = store i3 %add_ln178, i3 %i_5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178]   --->   Operation 21 'store' 'store_ln178' <Predicate = (!icmp_ln178)> <Delay = 1.58>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln178 = br void %for.inc32" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178]   --->   Operation 22 'br' 'br_ln178' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%p_0_0_01038_load = load i32 %p_0_0_01038"   --->   Operation 37 'load' 'p_0_0_01038_load' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%p_0_0_010310_load = load i32 %p_0_0_010310"   --->   Operation 38 'load' 'p_0_0_010310_load' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%p_0_0_010312_load = load i32 %p_0_0_010312"   --->   Operation 39 'load' 'p_0_0_010312_load' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%p_0_0_010314_load = load i32 %p_0_0_010314"   --->   Operation 40 'load' 'p_0_0_010314_load' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%p_0_0_010316_load = load i32 %p_0_0_010316"   --->   Operation 41 'load' 'p_0_0_010316_load' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010316_out, i32 %p_0_0_010316_load"   --->   Operation 42 'write' 'write_ln0' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010314_out, i32 %p_0_0_010314_load"   --->   Operation 43 'write' 'write_ln0' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010312_out, i32 %p_0_0_010312_load"   --->   Operation 44 'write' 'write_ln0' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_010310_out, i32 %p_0_0_010310_load"   --->   Operation 45 'write' 'write_ln0' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %p_0_0_01038_out, i32 %p_0_0_01038_load"   --->   Operation 46 'write' 'write_ln0' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 47 'ret' 'ret_ln0' <Predicate = (icmp_ln178)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.32>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_84" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:180]   --->   Operation 23 'specpipeline' 'specpipeline_ln180' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%speclooptripcount_ln178 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 5, i64 5, i64 5" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178]   --->   Operation 24 'speclooptripcount' 'speclooptripcount_ln178' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln178 = specloopname void @_ssdm_op_SpecLoopName, void @empty_37" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178]   --->   Operation 25 'specloopname' 'specloopname_ln178' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/2] (2.32ns)   --->   "%distCoeffs_load = load i3 %distCoeffs_addr" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 26 'load' 'distCoeffs_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 5> <RAM>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%store_ln182 = store i32 %distCoeffs_load, i32 %p_0_0_01038" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 27 'store' 'store_ln182' <Predicate = (i == 3)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln182 = br void %arrayidx31.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 28 'br' 'br_ln182' <Predicate = (i == 3)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%store_ln182 = store i32 %distCoeffs_load, i32 %p_0_0_010310" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 29 'store' 'store_ln182' <Predicate = (i == 2)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln182 = br void %arrayidx31.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 30 'br' 'br_ln182' <Predicate = (i == 2)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%store_ln182 = store i32 %distCoeffs_load, i32 %p_0_0_010312" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 31 'store' 'store_ln182' <Predicate = (i == 1)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln182 = br void %arrayidx31.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 32 'br' 'br_ln182' <Predicate = (i == 1)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%store_ln182 = store i32 %distCoeffs_load, i32 %p_0_0_010314" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 33 'store' 'store_ln182' <Predicate = (i == 0)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln182 = br void %arrayidx31.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 34 'br' 'br_ln182' <Predicate = (i == 0)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%store_ln182 = store i32 %distCoeffs_load, i32 %p_0_0_010316" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 35 'store' 'store_ln182' <Predicate = (i != 0 & i != 1 & i != 2 & i != 3)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln182 = br void %arrayidx31.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182]   --->   Operation 36 'br' 'br_ln182' <Predicate = (i != 0 & i != 1 & i != 2 & i != 3)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.238ns
+The critical path consists of the following:
+	'alloca' operation ('i') [7]  (0.000 ns)
+	'load' operation ('i', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178) on local variable 'i' [16]  (0.000 ns)
+	'add' operation ('add_ln178', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178) [18]  (1.650 ns)
+	'store' operation ('store_ln178', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178) of variable 'add_ln178', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:178 on local variable 'i' [44]  (1.588 ns)
+
+ <State 2>: 2.322ns
+The critical path consists of the following:
+	'load' operation ('distCoeffs_load', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182) on array 'distCoeffs' [26]  (2.322 ns)
+	'store' operation ('store_ln182', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182) of variable 'distCoeffs_load', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:182 on local variable 'p_0_0_01038' [29]  (0.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,154 @@
+
+
+================================================================
+== Vitis HLS Report for 'ConvertShiftAbs_Pipeline_loop_width'
+================================================================
+* Date:           Tue Jun 24 19:15:41 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.797 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      803|      803|  8.030 us|  8.030 us|  803|  803|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_width  |      801|      801|         3|          1|          1|   800|       yes|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     67|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     54|    -|
+|Register         |        -|    -|      23|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      23|    121|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |j_10_fu_81_p2              |         +|   0|  0|  13|          10|           1|
+    |neg_fu_112_p2              |         -|   0|  0|  15|           1|           8|
+    |abscond_fu_118_p2          |      icmp|   0|  0|  14|          13|           1|
+    |icmp_ln10_fu_75_p2         |      icmp|   0|  0|  13|          10|           9|
+    |ap_block_pp0_stage0_01001  |        or|   0|  0|   2|           1|           1|
+    |p_0_fu_124_p3              |    select|   0|  0|   8|           1|           8|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  67|          37|          30|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j       |   9|          2|   10|         20|
+    |img_disp16u_data_blk_n   |   9|          2|    1|          2|
+    |img_disp8u_data_blk_n    |   9|          2|    1|          2|
+    |j_5_fu_50                |   9|          2|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   24|         48|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |j_5_fu_50                         |  10|   0|   10|          0|
+    |p_0_reg_143                       |   8|   0|    8|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  23|   0|   23|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+-------------------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |            Source Object            |    C Type    |
++---------------------------------+-----+-----+------------+-------------------------------------+--------------+
+|ap_clk                           |   in|    1|  ap_ctrl_hs|  ConvertShiftAbs_Pipeline_loop_width|  return value|
+|ap_rst                           |   in|    1|  ap_ctrl_hs|  ConvertShiftAbs_Pipeline_loop_width|  return value|
+|ap_start                         |   in|    1|  ap_ctrl_hs|  ConvertShiftAbs_Pipeline_loop_width|  return value|
+|ap_done                          |  out|    1|  ap_ctrl_hs|  ConvertShiftAbs_Pipeline_loop_width|  return value|
+|ap_idle                          |  out|    1|  ap_ctrl_hs|  ConvertShiftAbs_Pipeline_loop_width|  return value|
+|ap_ready                         |  out|    1|  ap_ctrl_hs|  ConvertShiftAbs_Pipeline_loop_width|  return value|
+|img_disp16u_data_dout            |   in|   16|     ap_fifo|                     img_disp16u_data|       pointer|
+|img_disp16u_data_num_data_valid  |   in|    2|     ap_fifo|                     img_disp16u_data|       pointer|
+|img_disp16u_data_fifo_cap        |   in|    2|     ap_fifo|                     img_disp16u_data|       pointer|
+|img_disp16u_data_empty_n         |   in|    1|     ap_fifo|                     img_disp16u_data|       pointer|
+|img_disp16u_data_read            |  out|    1|     ap_fifo|                     img_disp16u_data|       pointer|
+|img_disp8u_data_din              |  out|    8|     ap_fifo|                      img_disp8u_data|       pointer|
+|img_disp8u_data_num_data_valid   |   in|    2|     ap_fifo|                      img_disp8u_data|       pointer|
+|img_disp8u_data_fifo_cap         |   in|    2|     ap_fifo|                      img_disp8u_data|       pointer|
+|img_disp8u_data_full_n           |   in|    1|     ap_fifo|                      img_disp8u_data|       pointer|
+|img_disp8u_data_write            |  out|    1|     ap_fifo|                      img_disp8u_data|       pointer|
++---------------------------------+-----+-----+------------+-------------------------------------+--------------+
+

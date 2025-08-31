@@ -1,0 +1,1063 @@
+{
+    "1": {
+        "name": "xferode<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>_Pipeline_VITIS_LOOP_283_1",
+        "file": "xf_erosion.hpp",
+        "fileloc": "0",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13_Pipeline_VITIS_LOOP",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "xferode<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>",
+        "file": "xf_erosion.hpp",
+        "fileloc": "254",
+        "instructions": "69",
+        "total_instructions": "237",
+        "calls": "1 36 49",
+        "basicblocks": "9",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "2"
+        }
+    },
+    "4": {
+        "name": "Loop_VITIS_LOOP_46_1_proc",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "190",
+        "total_instructions": "190",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "4",
+            "L": "1"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "Sobel<0, 3, 0, 3, 600, 800, 1, false, 2, 2, 2>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "7",
+        "total_instructions": "319",
+        "calls": "27",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "xFImageClip<600, 800, 1, 2, 4, 0, 3, 0, 800>_Pipeline_loop_col_clip",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "34",
+        "total_instructions": "54",
+        "calls": "48",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "Block_for.end7237_proc",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "5",
+        "total_instructions": "5",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_loop_width",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "283",
+        "total_instructions": "283",
+        "calls": "",
+        "basicblocks": "17",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "xFReadOutStream<600, 800, 1, 2, 4, 0, 3, 800>_Pipeline_loop_col_clip",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "17",
+        "total_instructions": "17",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "xFImageClip<600, 800, 1, 2, 4, 0, 3, 0, 800>.4_Pipeline_loop_col_clip",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "34",
+        "total_instructions": "54",
+        "calls": "48",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "xFSADBlockMatching",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "34",
+        "total_instructions": "6147",
+        "calls": "19",
+        "basicblocks": "1"
+    },
+    "12": {
+        "name": "xFFindStereoCorrespondenceLBMNO",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "95",
+        "total_instructions": "7179",
+        "calls": "63 53 39 16 5 33 38 11 13",
+        "basicblocks": "1"
+    },
+    "13": {
+        "name": "xFFindStereoCorrespondenceLBMNO_Loop_VITIS_LOOP_816_1_proc13",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "12",
+        "total_instructions": "31",
+        "calls": "2",
+        "basicblocks": "1"
+    },
+    "14": {
+        "name": "xFReadOutStream<600, 800, 1, 2, 4, 0, 3, 800>.5_Pipeline_loop_col_clip",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "17",
+        "total_instructions": "17",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "12",
+        "total_instructions": "382",
+        "calls": "56 35",
+        "basicblocks": "1"
+    },
+    "16": {
+        "name": "xFReadOutStream<600, 800, 1, 2, 4, 0, 3, 800>.5",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "20",
+        "total_instructions": "37",
+        "calls": "14",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>.6_Pipeline_1",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "ConvertShiftAbs_Pipeline_loop_width",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "xFSADBlockMatching_Pipeline_loop_row_loop_mux_loop_col",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "6113",
+        "total_instructions": "6113",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "764"
+        },
+        "stores": {
+            "L": "1011"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>.6",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "48",
+        "total_instructions": "361",
+        "calls": "17 47 29",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "xFInitUndistortRectifyMapInverseKernel<600, 800, 9, ap_fixed<32, 12, AP_TRN, AP_WRAP, 0>, 5, 7, 1, 2, 2, ap_uint<32> >",
+        "file": "xf_stereo_pipeline.hpp",
+        "fileloc": "150",
+        "instructions": "48",
+        "total_instructions": "481",
+        "calls": "37 32 60",
+        "basicblocks": "1",
+        "loads": {
+            "L": "18"
+        }
+    },
+    "22": {
+        "name": "xfdilate<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>_Pipeline_VITIS_LOOP_294_2",
+        "file": "xf_dilation.hpp",
+        "fileloc": "0",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "xfMat2AXIvideo<8, 0, 600, 800, 1, 2>_Pipeline_loop_col_mat2axi",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "dilate<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "8",
+        "total_instructions": "245",
+        "calls": "30",
+        "basicblocks": "1"
+    },
+    "25": {
+        "name": "InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>.7",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "8",
+        "total_instructions": "489",
+        "calls": "21",
+        "basicblocks": "1"
+    },
+    "26": {
+        "name": "Block_for.end7235_proc",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "5",
+        "total_instructions": "5",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "27": {
+        "name": "xFSobelFilter3x3<0, 3, 600, 800, 1, 0, 4, 1, 2, 2, 2, 1, 6, 800, false>",
+        "file": "xf_sobel.hpp",
+        "fileloc": "306",
+        "instructions": "79",
+        "total_instructions": "312",
+        "calls": "40 43 66 59",
+        "basicblocks": "4",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "AXIvideo2xfMat<8, 0, 600, 800, 1, 2>.1_Pipeline_loop_last_hunt",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>.6_Pipeline_loop_width",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "283",
+        "total_instructions": "283",
+        "calls": "",
+        "basicblocks": "17",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "30": {
+        "name": "xfdilate<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>",
+        "file": "xf_dilation.hpp",
+        "fileloc": "250",
+        "instructions": "69",
+        "total_instructions": "237",
+        "calls": "52 22 46",
+        "basicblocks": "9",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "2"
+        }
+    },
+    "31": {
+        "name": "xFSobel3x3<1, 1, 0, 4>",
+        "file": "xf_sobel.hpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "61",
+        "calls": "66 59",
+        "basicblocks": "1"
+    },
+    "32": {
+        "name": "xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_178_2",
+        "file": "xf_stereo_pipeline.hpp",
+        "fileloc": "0",
+        "instructions": "42",
+        "total_instructions": "42",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "stereolbm_axis_cambm",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "23",
+        "instructions": "143",
+        "total_instructions": "10288",
+        "calls": "4 71 45 55 65 54 62 25 15 69 26 44 7 42 51 24 70",
+        "basicblocks": "1"
+    },
+    "33": {
+        "name": "xFImageClip<600, 800, 1, 2, 4, 0, 3, 0, 800>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "25",
+        "total_instructions": "79",
+        "calls": "6",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "34": {
+        "name": "AXIvideo2xfMat<8, 0, 600, 800, 1, 2>.1_Pipeline_loop_col_zxi2mat",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "46",
+        "total_instructions": "46",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "35": {
+        "name": "xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "48",
+        "total_instructions": "361",
+        "calls": "50 68 8",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "36": {
+        "name": "xferode<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>_Pipeline_VITIS_LOOP_298_2",
+        "file": "xf_erosion.hpp",
+        "fileloc": "0",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "37": {
+        "name": "xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1",
+        "file": "xf_stereo_pipeline.hpp",
+        "fileloc": "0",
+        "instructions": "80",
+        "total_instructions": "80",
+        "calls": "",
+        "basicblocks": "14",
+        "loads": {
+            "L": "16"
+        },
+        "stores": {
+            "L": "15"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "38": {
+        "name": "xFReadOutStream<600, 800, 1, 2, 4, 0, 3, 800>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "20",
+        "total_instructions": "37",
+        "calls": "9",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "39": {
+        "name": "xFImageClip<600, 800, 1, 2, 4, 0, 3, 0, 800>.4",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "31",
+        "total_instructions": "85",
+        "calls": "10",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "40": {
+        "name": "xFSobelFilter3x3_Pipeline_Clear_Row_Loop",
+        "file": "xf_sobel.hpp",
+        "fileloc": "0",
+        "instructions": "24",
+        "total_instructions": "24",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "41": {
+        "name": "remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>.2_Block_entry1_proc",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "9",
+        "total_instructions": "9",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "42": {
+        "name": "erode<0, 0, 600, 800, 0, 3, 3, 1, 1, 2, 2>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "8",
+        "total_instructions": "245",
+        "calls": "3",
+        "basicblocks": "1"
+    },
+    "43": {
+        "name": "xFSobelFilter3x3_Pipeline_Col_Loop",
+        "file": "xf_sobel.hpp",
+        "fileloc": "0",
+        "instructions": "102",
+        "total_instructions": "163",
+        "calls": "31",
+        "basicblocks": "17",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "44": {
+        "name": "ConvertShiftAbs",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "5",
+        "instructions": "16",
+        "total_instructions": "38",
+        "calls": "18",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "45": {
+        "name": "Block_for.end72_proc",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "46": {
+        "name": "xfdilate<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>_Pipeline_Col_Loop",
+        "file": "xf_dilation.hpp",
+        "fileloc": "0",
+        "instructions": "111",
+        "total_instructions": "117",
+        "calls": "58 58 58",
+        "basicblocks": "19",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "47": {
+        "name": "xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>.6_Pipeline_2",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "48": {
+        "name": "xFImageClipUtility<1>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "49": {
+        "name": "xferode<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>_Pipeline_Col_Loop",
+        "file": "xf_erosion.hpp",
+        "fileloc": "0",
+        "instructions": "111",
+        "total_instructions": "117",
+        "calls": "58 58 58",
+        "basicblocks": "19",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "50": {
+        "name": "xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_1",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "51": {
+        "name": "Block_for.end7239_proc",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "5",
+        "total_instructions": "5",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "52": {
+        "name": "xfdilate<600, 800, 1, 0, 1, 2, 2, 0, 801, 3, 3>_Pipeline_VITIS_LOOP_279_1",
+        "file": "xf_dilation.hpp",
+        "fileloc": "0",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "53": {
+        "name": "Sobel<0, 3, 0, 3, 600, 800, 1, false, 2, 2, 2>.3",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "7",
+        "total_instructions": "319",
+        "calls": "27",
+        "basicblocks": "1"
+    },
+    "54": {
+        "name": "InitUndistortRectifyMapInverse<9, 5, 7, 600, 800, 1, 2, 2>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "8",
+        "total_instructions": "489",
+        "calls": "21",
+        "basicblocks": "1"
+    },
+    "55": {
+        "name": "AXIvideo2xfMat<8, 0, 600, 800, 1, 2>.1",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "52",
+        "total_instructions": "150",
+        "calls": "61 34 28",
+        "basicblocks": "6",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "56": {
+        "name": "remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>_Block_entry1_proc",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "9",
+        "total_instructions": "9",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "57": {
+        "name": "AXIvideo2xfMat<8, 0, 600, 800, 1, 2>_Pipeline_loop_start_hunt",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "58": {
+        "name": "xfExtractPixels<1, 1, 0>",
+        "file": "xf_dilation.hpp",
+        "fileloc": "0",
+        "instructions": "2",
+        "total_instructions": "2",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "59": {
+        "name": "xFGradientY3x3<0, 4>",
+        "file": "xf_sobel.hpp",
+        "fileloc": "0",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "60": {
+        "name": "xFInitUndistortRectifyMapInverseKernel_Pipeline_loop_height_loop_width",
+        "file": "xf_stereo_pipeline.hpp",
+        "fileloc": "0",
+        "instructions": "311",
+        "total_instructions": "311",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "61": {
+        "name": "AXIvideo2xfMat<8, 0, 600, 800, 1, 2>.1_Pipeline_loop_start_hunt",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "62": {
+        "name": "remap<128, 1, 0, 7, 0, 600, 800, 1, false, 2, 2, 2, 2>.2",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "12",
+        "total_instructions": "382",
+        "calls": "41 20",
+        "basicblocks": "1"
+    },
+    "63": {
+        "name": "entry_proc",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "64": {
+        "name": "AXIvideo2xfMat<8, 0, 600, 800, 1, 2>_Pipeline_loop_last_hunt",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "65": {
+        "name": "AXIvideo2xfMat<8, 0, 600, 800, 1, 2>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "52",
+        "total_instructions": "150",
+        "calls": "57 67 64",
+        "basicblocks": "6",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "66": {
+        "name": "xFGradientX3x3<0, 4>",
+        "file": "xf_sobel.hpp",
+        "fileloc": "0",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "67": {
+        "name": "AXIvideo2xfMat<8, 0, 600, 800, 1, 2>_Pipeline_loop_col_zxi2mat",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "46",
+        "total_instructions": "46",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "68": {
+        "name": "xFRemapLI<0, 0, 1, 7, 128, 600, 800, 1, 2, 2, 2, 2, false>_Pipeline_2",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "69": {
+        "name": "StereoBM<15, 128, 16, 0, 2, 600, 800, 1, false, 2, 2, 2>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "16",
+        "total_instructions": "7195",
+        "calls": "12",
+        "basicblocks": "1"
+    },
+    "70": {
+        "name": "xfMat2AXIvideo<8, 0, 600, 800, 1, 2>",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "29",
+        "total_instructions": "52",
+        "calls": "23",
+        "basicblocks": "6",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "71": {
+        "name": "Loop_VITIS_LOOP_55_2_proc",
+        "file": "xf_stereolbm_accel.cpp",
+        "fileloc": "0",
+        "instructions": "102",
+        "total_instructions": "102",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

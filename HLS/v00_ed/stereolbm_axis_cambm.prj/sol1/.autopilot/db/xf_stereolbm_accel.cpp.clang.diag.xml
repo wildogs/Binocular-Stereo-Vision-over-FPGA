@@ -1,0 +1,37 @@
+<dict>
+  <key>main-file</key>
+  <string>xf_stereolbm_accel.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp</string>
+      <key>line</key>
+      <integer>17</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;_XF_EROSION_HPP__&apos; is used as a header guard here, followed by #define of a different macro</string>
+      <key>ID</key>
+      <integer>989</integer>
+      <key>WarningOption</key>
+      <string>header-guard</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>note</string>
+      <key>filename</key>
+      <string>C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp</string>
+      <key>line</key>
+      <integer>18</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;_XF_EROSION_HPP_&apos; is defined here; did you mean &apos;_XF_EROSION_HPP__&apos;?</string>
+      <key>ID</key>
+      <integer>923</integer>
+    </dict>
+  </array>
+</dict>

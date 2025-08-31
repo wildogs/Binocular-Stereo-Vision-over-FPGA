@@ -1,0 +1,405 @@
+
+
+================================================================
+== Vitis HLS Report for 'stereolbm_axis_cambm'
+================================================================
+* Date:           Tue Jun 24 19:15:46 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.570 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline |
+    |   min   |   max   |    min    |    max    |   min   |   max   |   Type   |
+    +---------+---------+-----------+-----------+---------+---------+----------+
+    |  3998490|  3998490|  39.985 ms|  39.985 ms|  3998427|  3998427|  dataflow|
+    +---------+---------+-----------+-----------+---------+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------+------------------------------------------------------+---------+---------+-----------+-----------+---------+---------+----------+
+        |                                                         |                                                      |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline |
+        |                         Instance                        |                        Module                        |   min   |   max   |    min    |    max    |   min   |   max   |   Type   |
+        +---------------------------------------------------------+------------------------------------------------------+---------+---------+-----------+-----------+---------+---------+----------+
+        |Loop_VITIS_LOOP_46_1_proc_U0                             |Loop_VITIS_LOOP_46_1_proc                             |       15|       15|   0.150 us|   0.150 us|       15|       15|        no|
+        |Loop_VITIS_LOOP_55_2_proc_U0                             |Loop_VITIS_LOOP_55_2_proc                             |       11|       11|   0.110 us|   0.110 us|       11|       11|        no|
+        |Block_for_end72_proc_U0                                  |Block_for_end72_proc                                  |        0|        0|       0 ns|       0 ns|        0|        0|        no|
+        |AXIvideo2xfMat_8_0_600_800_1_2_1_U0                      |AXIvideo2xfMat_8_0_600_800_1_2_1                      |        6|   486607|  60.000 ns|   4.866 ms|        6|   486607|        no|
+        |AXIvideo2xfMat_8_0_600_800_1_2_U0                        |AXIvideo2xfMat_8_0_600_800_1_2_s                      |        6|   486607|  60.000 ns|   4.866 ms|        6|   486607|        no|
+        |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_U0    |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_s  |       47|   480046|   0.470 us|   4.800 ms|       47|   480046|        no|
+        |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7_U0  |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7  |       47|   480046|   0.470 us|   4.800 ms|       47|   480046|        no|
+        |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_2_U0           |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_2           |     1546|   599282|  15.460 us|   5.993 ms|     1546|   599282|  dataflow|
+        |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_U0             |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_s           |     1546|   599282|  15.460 us|   5.993 ms|     1546|   599282|  dataflow|
+        |StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_U0          |StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_s        |  3998426|  3998426|  39.984 ms|  39.984 ms|  3998426|  3998426|        no|
+        |ConvertShiftAbs_U0                                       |ConvertShiftAbs                                       |   483001|   483001|   4.830 ms|   4.830 ms|   483001|   483001|        no|
+        |Block_for_end7235_proc_U0                                |Block_for_end7235_proc                                |        0|        0|       0 ns|       0 ns|        0|        0|        no|
+        |erode_0_0_600_800_0_3_3_1_1_2_2_U0                       |erode_0_0_600_800_0_3_3_1_1_2_2_s                     |       23|   488817|   0.230 us|   4.888 ms|       23|   488817|        no|
+        |Block_for_end7237_proc_U0                                |Block_for_end7237_proc                                |        0|        0|       0 ns|       0 ns|        0|        0|        no|
+        |dilate_0_0_600_800_0_3_3_1_1_2_2_U0                      |dilate_0_0_600_800_0_3_3_1_1_2_2_s                    |       23|   488817|   0.230 us|   4.888 ms|       23|   488817|        no|
+        |Block_for_end7239_proc_U0                                |Block_for_end7239_proc                                |        0|        0|       0 ns|       0 ns|        0|        0|        no|
+        |xfMat2AXIvideo_8_0_600_800_1_2_U0                        |xfMat2AXIvideo_8_0_600_800_1_2_s                      |        2|   483002|  20.000 ns|   4.830 ms|        2|   483002|        no|
+        +---------------------------------------------------------+------------------------------------------------------+---------+---------+-----------+-----------+---------+---------+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    164|    -|
+|FIFO             |        -|    -|    3663|   2510|    -|
+|Instance         |      187|  190|   59274|  79712|    0|
+|Memory           |        0|    -|     192|     46|    0|
+|Multiplexer      |        -|    -|       -|    297|    -|
+|Register         |        -|    -|      33|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |      187|  190|   63162|  82729|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       66|   86|      59|    155|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------+------------------------------------------------------+---------+----+-------+-------+-----+
+    |                         Instance                        |                        Module                        | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +---------------------------------------------------------+------------------------------------------------------+---------+----+-------+-------+-----+
+    |AXIvideo2xfMat_8_0_600_800_1_2_1_U0                      |AXIvideo2xfMat_8_0_600_800_1_2_1                      |        0|   0|     99|    514|    0|
+    |AXIvideo2xfMat_8_0_600_800_1_2_U0                        |AXIvideo2xfMat_8_0_600_800_1_2_s                      |        0|   0|     99|    514|    0|
+    |Block_for_end7235_proc_U0                                |Block_for_end7235_proc                                |        0|   0|     66|     29|    0|
+    |Block_for_end7237_proc_U0                                |Block_for_end7237_proc                                |        0|   0|     66|     29|    0|
+    |Block_for_end7239_proc_U0                                |Block_for_end7239_proc                                |        0|   0|     66|     29|    0|
+    |Block_for_end72_proc_U0                                  |Block_for_end72_proc                                  |        0|   0|    482|    146|    0|
+    |ConvertShiftAbs_U0                                       |ConvertShiftAbs                                       |        0|   0|     38|    205|    0|
+    |Ctrl_s_axi_U                                             |Ctrl_s_axi                                            |        0|   0|    226|    360|    0|
+    |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7_U0  |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7  |        0|  77|   7848|   5013|    0|
+    |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_U0    |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_s  |        0|  77|   7848|   5013|    0|
+    |Loop_VITIS_LOOP_46_1_proc_U0                             |Loop_VITIS_LOOP_46_1_proc                             |        0|   0|   1639|   3112|    0|
+    |Loop_VITIS_LOOP_55_2_proc_U0                             |Loop_VITIS_LOOP_55_2_proc                             |        0|   0|    859|   1598|    0|
+    |StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_U0          |StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_s        |       49|  16|  32593|  51236|    0|
+    |dilate_0_0_600_800_0_3_3_1_1_2_2_U0                      |dilate_0_0_600_800_0_3_3_1_1_2_2_s                    |        3|   0|    635|   1208|    0|
+    |erode_0_0_600_800_0_3_3_1_1_2_2_U0                       |erode_0_0_600_800_0_3_3_1_1_2_2_s                     |        3|   0|    635|   1208|    0|
+    |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_2_U0           |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_2           |       66|  10|   3005|   4611|    0|
+    |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_U0             |remap_128_1_0_7_0_600_800_1_false_2_2_2_2_s           |       66|  10|   3005|   4611|    0|
+    |xfMat2AXIvideo_8_0_600_800_1_2_U0                        |xfMat2AXIvideo_8_0_600_800_1_2_s                      |        0|   0|     65|    276|    0|
+    +---------------------------------------------------------+------------------------------------------------------+---------+----+-------+-------+-----+
+    |Total                                                    |                                                      |      187| 190|  59274|  79712|    0|
+    +---------------------------------------------------------+------------------------------------------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +------------------+------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |      Memory      |            Module            | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------------+------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |cameraMA_l_fix_U  |cameraMA_l_fix_RAM_AUTO_1R1W  |        0|  32|   9|    0|     9|   32|     1|          288|
+    |cameraMA_r_fix_U  |cameraMA_l_fix_RAM_AUTO_1R1W  |        0|  32|   9|    0|     9|   32|     1|          288|
+    |irA_l_fix_U       |cameraMA_l_fix_RAM_AUTO_1R1W  |        0|  32|   9|    0|     9|   32|     1|          288|
+    |irA_r_fix_U       |cameraMA_l_fix_RAM_AUTO_1R1W  |        0|  32|   9|    0|     9|   32|     1|          288|
+    |distC_l_fix_U     |distC_l_fix_RAM_AUTO_1R1W     |        0|  32|   5|    0|     5|   32|     1|          160|
+    |distC_r_fix_U     |distC_l_fix_RAM_AUTO_1R1W     |        0|  32|   5|    0|     5|   32|     1|          160|
+    +------------------+------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total             |                              |        0| 192|  46|    0|    46|  192|     6|         1472|
+    +------------------+------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    +----------------------------+---------+----+----+-----+------+-----+---------+
+    |            Name            | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +----------------------------+---------+----+----+-----+------+-----+---------+
+    |bmState_preFilterCap_U      |        0|  99|   0|    -|     4|   32|      128|
+    |bmState_textureThreshold_U  |        0|  99|   0|    -|     4|   32|      128|
+    |bmState_uniquenessRatio_U   |        0|  99|   0|    -|     4|   32|      128|
+    |imgL_in_cols_c60_channel_U  |        0|  99|   0|    -|     2|   32|       64|
+    |imgL_in_cols_c_U            |        0|  99|   0|    -|     2|   32|       64|
+    |imgL_in_data_U              |        0|  99|   0|    -|     2|    8|       16|
+    |imgL_in_rows_c59_channel_U  |        0|  99|   0|    -|     2|   32|       64|
+    |imgL_in_rows_c_U            |        0|  99|   0|    -|     2|   32|       64|
+    |imgR_in_cols_c62_channel_U  |        0|  99|   0|    -|     2|   32|       64|
+    |imgR_in_cols_c_U            |        0|  99|   0|    -|     2|   32|       64|
+    |imgR_in_data_U              |        0|  99|   0|    -|     2|    8|       16|
+    |imgR_in_rows_c61_channel_U  |        0|  99|   0|    -|     2|   32|       64|
+    |imgR_in_rows_c_U            |        0|  99|   0|    -|     2|   32|       64|
+    |img_disp16u_data_U          |        0|  99|   0|    -|     2|   16|       32|
+    |img_disp8u_cols_U           |        0|  99|   0|    -|     6|   32|      192|
+    |img_disp8u_data_U           |        0|  99|   0|    -|     2|    8|       16|
+    |img_disp8u_dilate_cols_U    |        0|  99|   0|    -|     8|   32|      256|
+    |img_disp8u_dilate_data_U    |        0|  99|   0|    -|     2|    8|       16|
+    |img_disp8u_dilate_rows_U    |        0|  99|   0|    -|     8|   32|      256|
+    |img_disp8u_erode_cols_U     |        0|  99|   0|    -|     7|   32|      224|
+    |img_disp8u_erode_data_U     |        0|  99|   0|    -|     2|    8|       16|
+    |img_disp8u_erode_rows_U     |        0|  99|   0|    -|     7|   32|      224|
+    |img_disp8u_rows_U           |        0|  99|   0|    -|     6|   32|      192|
+    |leftRemappedMat_cols_U      |        0|  99|   0|    -|     4|   32|      128|
+    |leftRemappedMat_data_U      |        0|  99|   0|    -|     2|    8|       16|
+    |leftRemappedMat_rows_U      |        0|  99|   0|    -|     4|   32|      128|
+    |mapxLMat_cols_U             |        0|  99|   0|    -|     2|   32|       64|
+    |mapxLMat_data_U             |        0|  99|   0|    -|     2|   32|       64|
+    |mapxLMat_rows_U             |        0|  99|   0|    -|     2|   32|       64|
+    |mapxRMat_cols_U             |        0|  99|   0|    -|     2|   32|       64|
+    |mapxRMat_data_U             |        0|  99|   0|    -|     2|   32|       64|
+    |mapxRMat_rows_U             |        0|  99|   0|    -|     2|   32|       64|
+    |mapyLMat_data_U             |        0|  99|   0|    -|     2|   32|       64|
+    |mapyRMat_data_U             |        0|  99|   0|    -|     2|   32|       64|
+    |rightRemappedMat_cols_U     |        0|  99|   0|    -|     4|   32|      128|
+    |rightRemappedMat_data_U     |        0|  99|   0|    -|     2|    8|       16|
+    |rightRemappedMat_rows_U     |        0|  99|   0|    -|     4|   32|      128|
+    +----------------------------+---------+----+----+-----+------+-----+---------+
+    |Total                       |        0|3663|   0|    0|   118| 1000|     3408|
+    +----------------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                           Variable Name                          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |AXIvideo2xfMat_8_0_600_800_1_2_1_U0_ap_start                      |       and|   0|  0|   2|           1|           1|
+    |AXIvideo2xfMat_8_0_600_800_1_2_U0_ap_start                        |       and|   0|  0|   2|           1|           1|
+    |Block_for_end7235_proc_U0_ap_continue                             |       and|   0|  0|   2|           1|           1|
+    |Block_for_end7235_proc_U0_ap_start                                |       and|   0|  0|   2|           1|           1|
+    |Block_for_end7237_proc_U0_ap_continue                             |       and|   0|  0|   2|           1|           1|
+    |Block_for_end7237_proc_U0_ap_start                                |       and|   0|  0|   2|           1|           1|
+    |Block_for_end7239_proc_U0_ap_continue                             |       and|   0|  0|   2|           1|           1|
+    |Block_for_end7239_proc_U0_ap_start                                |       and|   0|  0|   2|           1|           1|
+    |Block_for_end72_proc_U0_ap_continue                               |       and|   0|  0|   2|           1|           1|
+    |Block_for_end72_proc_U0_ap_start                                  |       and|   0|  0|   2|           1|           1|
+    |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7_U0_ap_start  |       and|   0|  0|   2|           1|           1|
+    |InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_U0_ap_start    |       and|   0|  0|   2|           1|           1|
+    |Loop_VITIS_LOOP_46_1_proc_U0_ap_continue                          |       and|   0|  0|   2|           1|           1|
+    |Loop_VITIS_LOOP_46_1_proc_U0_ap_start                             |       and|   0|  0|   2|           1|           1|
+    |Loop_VITIS_LOOP_55_2_proc_U0_ap_continue                          |       and|   0|  0|   2|           1|           1|
+    |Loop_VITIS_LOOP_55_2_proc_U0_ap_start                             |       and|   0|  0|   2|           1|           1|
+    |StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bmState_preFilterCap                              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bmState_textureThreshold                          |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bmState_uniquenessRatio                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_cameraMA_l_fix                                    |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_cameraMA_r_fix                                    |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_distC_l_fix                                       |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_distC_r_fix                                       |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_imgL_in_cols_c60_channel                          |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_imgL_in_rows_c59_channel                          |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_imgR_in_cols_c62_channel                          |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_imgR_in_rows_c61_channel                          |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_img_disp8u_cols                                   |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_img_disp8u_dilate_cols                            |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_img_disp8u_dilate_rows                            |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_img_disp8u_erode_cols                             |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_img_disp8u_erode_rows                             |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_img_disp8u_rows                                   |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_irA_l_fix                                         |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_irA_r_fix                                         |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_leftRemappedMat_cols                              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_leftRemappedMat_rows                              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_mapxLMat_cols                                     |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_mapxLMat_rows                                     |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_mapxRMat_cols                                     |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_mapxRMat_rows                                     |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_rightRemappedMat_cols                             |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_rightRemappedMat_rows                             |       and|   0|  0|   2|           1|           1|
+    |ap_idle                                                           |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                                                     |       and|   0|  0|   2|           1|           1|
+    |dilate_0_0_600_800_0_3_3_1_1_2_2_U0_ap_start                      |       and|   0|  0|   2|           1|           1|
+    |erode_0_0_600_800_0_3_3_1_1_2_2_U0_ap_start                       |       and|   0|  0|   2|           1|           1|
+    |xfMat2AXIvideo_8_0_600_800_1_2_U0_ap_start                        |       and|   0|  0|   2|           1|           1|
+    |ap_sync_Block_for_end7235_proc_U0_ap_ready                        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_Block_for_end7237_proc_U0_ap_ready                        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_Block_for_end7239_proc_U0_ap_ready                        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_Block_for_end72_proc_U0_ap_ready                          |        or|   0|  0|   2|           1|           1|
+    |ap_sync_Loop_VITIS_LOOP_46_1_proc_U0_ap_ready                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_Loop_VITIS_LOOP_55_2_proc_U0_ap_ready                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bmState_preFilterCap                        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bmState_textureThreshold                    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bmState_uniquenessRatio                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_cameraMA_l_fix                              |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_cameraMA_r_fix                              |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_distC_l_fix                                 |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_distC_r_fix                                 |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_imgL_in_cols_c60_channel                    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_imgL_in_rows_c59_channel                    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_imgR_in_cols_c62_channel                    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_imgR_in_rows_c61_channel                    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_img_disp8u_cols                             |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_img_disp8u_dilate_cols                      |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_img_disp8u_dilate_rows                      |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_img_disp8u_erode_cols                       |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_img_disp8u_erode_rows                       |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_img_disp8u_rows                             |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_irA_l_fix                                   |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_irA_r_fix                                   |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_leftRemappedMat_cols                        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_leftRemappedMat_rows                        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_mapxLMat_cols                               |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_mapxLMat_rows                               |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_mapxRMat_cols                               |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_mapxRMat_rows                               |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_rightRemappedMat_cols                       |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_rightRemappedMat_rows                       |        or|   0|  0|   2|           1|           1|
+    +------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                             |          |   0|  0| 164|          82|          82|
+    +------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------------+----+-----------+-----+-----------+
+    |                        Name                        | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_Block_for_end7235_proc_U0_ap_ready      |   9|          2|    1|          2|
+    |ap_sync_reg_Block_for_end7237_proc_U0_ap_ready      |   9|          2|    1|          2|
+    |ap_sync_reg_Block_for_end7239_proc_U0_ap_ready      |   9|          2|    1|          2|
+    |ap_sync_reg_Block_for_end72_proc_U0_ap_ready        |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_VITIS_LOOP_46_1_proc_U0_ap_ready   |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_VITIS_LOOP_55_2_proc_U0_ap_ready   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bmState_preFilterCap      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bmState_textureThreshold  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bmState_uniquenessRatio   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_cameraMA_l_fix            |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_cameraMA_r_fix            |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_distC_l_fix               |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_distC_r_fix               |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_imgL_in_cols_c60_channel  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_imgL_in_rows_c59_channel  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_imgR_in_cols_c62_channel  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_imgR_in_rows_c61_channel  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_img_disp8u_cols           |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_img_disp8u_dilate_cols    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_img_disp8u_dilate_rows    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_img_disp8u_erode_cols     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_img_disp8u_erode_rows     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_img_disp8u_rows           |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_irA_l_fix                 |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_irA_r_fix                 |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_leftRemappedMat_cols      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_leftRemappedMat_rows      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_mapxLMat_cols             |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_mapxLMat_rows             |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_mapxRMat_cols             |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_mapxRMat_rows             |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_rightRemappedMat_cols     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_rightRemappedMat_rows     |   9|          2|    1|          2|
+    +----------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                               | 297|         66|   33|         66|
+    +----------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------+---+----+-----+-----------+
+    |                        Name                        | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_Block_for_end7235_proc_U0_ap_ready      |  1|   0|    1|          0|
+    |ap_sync_reg_Block_for_end7237_proc_U0_ap_ready      |  1|   0|    1|          0|
+    |ap_sync_reg_Block_for_end7239_proc_U0_ap_ready      |  1|   0|    1|          0|
+    |ap_sync_reg_Block_for_end72_proc_U0_ap_ready        |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_VITIS_LOOP_46_1_proc_U0_ap_ready   |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_VITIS_LOOP_55_2_proc_U0_ap_ready   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bmState_preFilterCap      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bmState_textureThreshold  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bmState_uniquenessRatio   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_cameraMA_l_fix            |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_cameraMA_r_fix            |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_distC_l_fix               |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_distC_r_fix               |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_imgL_in_cols_c60_channel  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_imgL_in_rows_c59_channel  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_imgR_in_cols_c62_channel  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_imgR_in_rows_c61_channel  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_img_disp8u_cols           |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_img_disp8u_dilate_cols    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_img_disp8u_dilate_rows    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_img_disp8u_erode_cols     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_img_disp8u_erode_rows     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_img_disp8u_rows           |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_irA_l_fix                 |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_irA_r_fix                 |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_leftRemappedMat_cols      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_leftRemappedMat_rows      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_mapxLMat_cols             |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_mapxLMat_rows             |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_mapxRMat_cols             |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_mapxRMat_rows             |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_rightRemappedMat_cols     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_rightRemappedMat_rows     |  1|   0|    1|          0|
+    +----------------------------------------------------+---+----+-----+-----------+
+    |Total                                               | 33|   0|   33|          0|
+    +----------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+----------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++--------------------+-----+-----+------------+----------------------+--------------+
+|s_axi_Ctrl_AWVALID  |   in|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_AWREADY  |  out|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_AWADDR   |   in|    6|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_WVALID   |   in|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_WREADY   |  out|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_WDATA    |   in|   32|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_WSTRB    |   in|    4|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_ARVALID  |   in|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_ARREADY  |  out|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_ARADDR   |   in|    6|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_RVALID   |  out|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_RREADY   |   in|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_RDATA    |  out|   32|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_RRESP    |  out|    2|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_BVALID   |  out|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_BREADY   |   in|    1|       s_axi|                  Ctrl|        scalar|
+|s_axi_Ctrl_BRESP    |  out|    2|       s_axi|                  Ctrl|        scalar|
+|ap_clk              |   in|    1|  ap_ctrl_hs|  stereolbm_axis_cambm|  return value|
+|ap_rst_n            |   in|    1|  ap_ctrl_hs|  stereolbm_axis_cambm|  return value|
+|interrupt           |  out|    1|  ap_ctrl_hs|  stereolbm_axis_cambm|  return value|
+|vid_inL_TDATA       |   in|    8|        axis|      vid_inL_V_data_V|       pointer|
+|vid_inL_TKEEP       |   in|    1|        axis|      vid_inL_V_keep_V|       pointer|
+|vid_inL_TSTRB       |   in|    1|        axis|      vid_inL_V_strb_V|       pointer|
+|vid_inL_TUSER       |   in|    1|        axis|      vid_inL_V_user_V|       pointer|
+|vid_inL_TLAST       |   in|    1|        axis|      vid_inL_V_last_V|       pointer|
+|vid_inL_TID         |   in|    1|        axis|        vid_inL_V_id_V|       pointer|
+|vid_inL_TDEST       |   in|    1|        axis|      vid_inL_V_dest_V|       pointer|
+|vid_inL_TVALID      |   in|    1|        axis|      vid_inL_V_dest_V|       pointer|
+|vid_inL_TREADY      |  out|    1|        axis|      vid_inL_V_dest_V|       pointer|
+|vid_inR_TDATA       |   in|    8|        axis|      vid_inR_V_data_V|       pointer|
+|vid_inR_TKEEP       |   in|    1|        axis|      vid_inR_V_keep_V|       pointer|
+|vid_inR_TSTRB       |   in|    1|        axis|      vid_inR_V_strb_V|       pointer|
+|vid_inR_TUSER       |   in|    1|        axis|      vid_inR_V_user_V|       pointer|
+|vid_inR_TLAST       |   in|    1|        axis|      vid_inR_V_last_V|       pointer|
+|vid_inR_TID         |   in|    1|        axis|        vid_inR_V_id_V|       pointer|
+|vid_inR_TDEST       |   in|    1|        axis|      vid_inR_V_dest_V|       pointer|
+|vid_inR_TVALID      |   in|    1|        axis|      vid_inR_V_dest_V|       pointer|
+|vid_inR_TREADY      |  out|    1|        axis|      vid_inR_V_dest_V|       pointer|
+|vid_out_TDATA       |  out|    8|        axis|      vid_out_V_data_V|       pointer|
+|vid_out_TKEEP       |  out|    1|        axis|      vid_out_V_keep_V|       pointer|
+|vid_out_TSTRB       |  out|    1|        axis|      vid_out_V_strb_V|       pointer|
+|vid_out_TUSER       |  out|    1|        axis|      vid_out_V_user_V|       pointer|
+|vid_out_TLAST       |  out|    1|        axis|      vid_out_V_last_V|       pointer|
+|vid_out_TID         |  out|    1|        axis|        vid_out_V_id_V|       pointer|
+|vid_out_TDEST       |  out|    1|        axis|      vid_out_V_dest_V|       pointer|
+|vid_out_TVALID      |  out|    1|        axis|      vid_out_V_dest_V|       pointer|
+|vid_out_TREADY      |   in|    1|        axis|      vid_out_V_dest_V|       pointer|
++--------------------+-----+-----+------------+----------------------+--------------+
+

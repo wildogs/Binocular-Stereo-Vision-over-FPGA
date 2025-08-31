@@ -1,0 +1,177 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'AXIvideo2xfMat_8_0_600_800_1_2_s'" level="0">
+<item name = "Date">Tue Jun 24 19:15:16 2025
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">stereolbm_axis_cambm.prj</item>
+<item name = "Solution">sol1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.268 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">6, 486607, 60.000 ns, 4.866 ms, 6, 486607, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_start_hunt_fu_185">AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_start_hunt, 2, 3, 20.000 ns, 30.000 ns, 2, 3, no</column>
+<column name="grp_AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_col_zxi2mat_fu_205">AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_col_zxi2mat, 3, 802, 30.000 ns, 8.020 us, 3, 802, no</column>
+<column name="grp_AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_last_hunt_fu_232">AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_last_hunt, 2, 3, 20.000 ns, 30.000 ns, 2, 3, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- loop_row_axi2mat">0, 486600, 7 ~ 811, -, -, 0 ~ 600, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 93, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 32, 243, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 178, -</column>
+<column name="Register">-, -, 67, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_col_zxi2mat_fu_205">AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_col_zxi2mat, 0, 0, 24, 148, 0</column>
+<column name="grp_AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_last_hunt_fu_232">AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_last_hunt, 0, 0, 4, 52, 0</column>
+<column name="grp_AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_start_hunt_fu_185">AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_start_hunt, 0, 0, 4, 43, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_19_fu_297_p2">+, 0, 0, 13, 10, 1</column>
+<column name="cmp91_fu_262_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln129_fu_292_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">59, 11, 1, 11</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="axi_data_2_lcssa_reg_163">9, 2, 8, 16</column>
+<column name="axi_data_fu_90">9, 2, 8, 16</column>
+<column name="axi_last_2_lcssa_reg_152">9, 2, 1, 2</column>
+<column name="axi_last_reg_142">9, 2, 1, 2</column>
+<column name="i_fu_86">9, 2, 10, 20</column>
+<column name="imgR_in_cols_c_blk_n">9, 2, 1, 2</column>
+<column name="imgR_in_data_write">9, 2, 1, 2</column>
+<column name="imgR_in_rows_c_blk_n">9, 2, 1, 2</column>
+<column name="last_0_lcssa_reg_173">9, 2, 1, 2</column>
+<column name="real_start">9, 2, 1, 2</column>
+<column name="vid_inR_TREADY_int_regslice">20, 4, 1, 4</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">10, 0, 10, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="axi_data_2_lcssa_reg_163">8, 0, 8, 0</column>
+<column name="axi_data_fu_90">8, 0, 8, 0</column>
+<column name="axi_last_2_lcssa_reg_152">1, 0, 1, 0</column>
+<column name="axi_last_4_loc_fu_98">1, 0, 1, 0</column>
+<column name="axi_last_reg_142">1, 0, 1, 0</column>
+<column name="cmp91_reg_380">1, 0, 1, 0</column>
+<column name="empty_reg_351">10, 0, 10, 0</column>
+<column name="grp_AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_col_zxi2mat_fu_205_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_last_hunt_fu_232_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_AXIvideo2xfMat_8_0_600_800_1_2_Pipeline_loop_start_hunt_fu_185_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_19_reg_393">10, 0, 10, 0</column>
+<column name="i_fu_86">10, 0, 10, 0</column>
+<column name="last_0_lcssa_reg_173">1, 0, 1, 0</column>
+<column name="start_fu_94">1, 0, 1, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, AXIvideo2xfMat&lt;8, 0, 600, 800, 1, 2&gt;, return value</column>
+<column name="vid_inR_TDATA">in, 8, axis, vid_inR_V_data_V, pointer</column>
+<column name="vid_inR_TVALID">in, 1, axis, vid_inR_V_dest_V, pointer</column>
+<column name="vid_inR_TREADY">out, 1, axis, vid_inR_V_dest_V, pointer</column>
+<column name="vid_inR_TDEST">in, 1, axis, vid_inR_V_dest_V, pointer</column>
+<column name="vid_inR_TKEEP">in, 1, axis, vid_inR_V_keep_V, pointer</column>
+<column name="vid_inR_TSTRB">in, 1, axis, vid_inR_V_strb_V, pointer</column>
+<column name="vid_inR_TUSER">in, 1, axis, vid_inR_V_user_V, pointer</column>
+<column name="vid_inR_TLAST">in, 1, axis, vid_inR_V_last_V, pointer</column>
+<column name="vid_inR_TID">in, 1, axis, vid_inR_V_id_V, pointer</column>
+<column name="p_read">in, 32, ap_none, p_read, scalar</column>
+<column name="p_read1">in, 32, ap_none, p_read1, scalar</column>
+<column name="imgR_in_data_din">out, 8, ap_fifo, imgR_in_data, pointer</column>
+<column name="imgR_in_data_num_data_valid">in, 2, ap_fifo, imgR_in_data, pointer</column>
+<column name="imgR_in_data_fifo_cap">in, 2, ap_fifo, imgR_in_data, pointer</column>
+<column name="imgR_in_data_full_n">in, 1, ap_fifo, imgR_in_data, pointer</column>
+<column name="imgR_in_data_write">out, 1, ap_fifo, imgR_in_data, pointer</column>
+<column name="imgR_in_rows_c_din">out, 32, ap_fifo, imgR_in_rows_c, pointer</column>
+<column name="imgR_in_rows_c_num_data_valid">in, 2, ap_fifo, imgR_in_rows_c, pointer</column>
+<column name="imgR_in_rows_c_fifo_cap">in, 2, ap_fifo, imgR_in_rows_c, pointer</column>
+<column name="imgR_in_rows_c_full_n">in, 1, ap_fifo, imgR_in_rows_c, pointer</column>
+<column name="imgR_in_rows_c_write">out, 1, ap_fifo, imgR_in_rows_c, pointer</column>
+<column name="imgR_in_cols_c_din">out, 32, ap_fifo, imgR_in_cols_c, pointer</column>
+<column name="imgR_in_cols_c_num_data_valid">in, 2, ap_fifo, imgR_in_cols_c, pointer</column>
+<column name="imgR_in_cols_c_fifo_cap">in, 2, ap_fifo, imgR_in_cols_c, pointer</column>
+<column name="imgR_in_cols_c_full_n">in, 1, ap_fifo, imgR_in_cols_c, pointer</column>
+<column name="imgR_in_cols_c_write">out, 1, ap_fifo, imgR_in_cols_c, pointer</column>
+</table>
+</item>
+</section>
+</profile>

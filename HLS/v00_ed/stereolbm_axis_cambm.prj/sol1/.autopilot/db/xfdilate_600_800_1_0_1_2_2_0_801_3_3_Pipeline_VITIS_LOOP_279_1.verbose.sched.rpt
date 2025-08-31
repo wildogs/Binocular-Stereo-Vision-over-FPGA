@@ -1,0 +1,146 @@
+
+
+================================================================
+== Vitis HLS Report for 'xfdilate_600_800_1_0_1_2_2_0_801_3_3_Pipeline_VITIS_LOOP_279_1'
+================================================================
+* Date:           Tue Jun 24 19:15:11 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.153 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  50.000 ns|  50.000 ns|    5|    5|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_279_1  |        3|        3|         1|          1|          1|     3|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.15>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%row_ind_6 = alloca i32 1"   --->   Operation 4 'alloca' 'row_ind_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%row_ind = alloca i32 1"   --->   Operation 5 'alloca' 'row_ind' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%row_ind_7 = alloca i32 1"   --->   Operation 6 'alloca' 'row_ind_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%row_ind_8 = alloca i32 1"   --->   Operation 7 'alloca' 'row_ind_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (1.58ns)   --->   "%store_ln0 = store i2 0, i2 %row_ind_6"   --->   Operation 8 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 9 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%row_ind_10 = load i2 %row_ind_6" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279]   --->   Operation 10 'load' 'row_ind_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 11 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.56ns)   --->   "%icmp_ln279 = icmp_eq  i2 %row_ind_10, i2 3" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279]   --->   Operation 12 'icmp' 'icmp_ln279' <Predicate = true> <Delay = 1.56> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (1.56ns)   --->   "%init_row_ind = add i2 %row_ind_10, i2 1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279]   --->   Operation 13 'add' 'init_row_ind' <Predicate = true> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln279 = br i1 %icmp_ln279, void %for.inc.split, void %VITIS_LOOP_294_2.exitStub" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279]   --->   Operation 14 'br' 'br_ln279' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%speclooptripcount_ln255 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:255]   --->   Operation 15 'speclooptripcount' 'speclooptripcount_ln255' <Predicate = (!icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specloopname_ln279 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279]   --->   Operation 16 'specloopname' 'specloopname_ln279' <Predicate = (!icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln283 = zext i2 %row_ind_10" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:283]   --->   Operation 17 'zext' 'zext_ln283' <Predicate = (!icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (1.86ns)   --->   "%switch_ln283 = switch i2 %row_ind_10, void %arrayidx.case.2, i2 0, void %for.inc.split.arrayidx.exit_crit_edge1, i2 1, void %for.inc.split.arrayidx.exit_crit_edge" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:283]   --->   Operation 18 'switch' 'switch_ln283' <Predicate = (!icmp_ln279)> <Delay = 1.86>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%store_ln283 = store i13 %zext_ln283, i13 %row_ind_7" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:283]   --->   Operation 19 'store' 'store_ln283' <Predicate = (!icmp_ln279 & row_ind_10 == 1)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln283 = br void %arrayidx.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:283]   --->   Operation 20 'br' 'br_ln283' <Predicate = (!icmp_ln279 & row_ind_10 == 1)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%store_ln283 = store i13 %zext_ln283, i13 %row_ind" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:283]   --->   Operation 21 'store' 'store_ln283' <Predicate = (!icmp_ln279 & row_ind_10 == 0)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln283 = br void %arrayidx.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:283]   --->   Operation 22 'br' 'br_ln283' <Predicate = (!icmp_ln279 & row_ind_10 == 0)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%store_ln283 = store i13 %zext_ln283, i13 %row_ind_8" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:283]   --->   Operation 23 'store' 'store_ln283' <Predicate = (!icmp_ln279 & row_ind_10 != 0 & row_ind_10 != 1)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln283 = br void %arrayidx.exit" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:283]   --->   Operation 24 'br' 'br_ln283' <Predicate = (!icmp_ln279 & row_ind_10 != 0 & row_ind_10 != 1)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (1.58ns)   --->   "%store_ln279 = store i2 %init_row_ind, i2 %row_ind_6" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279]   --->   Operation 25 'store' 'store_ln279' <Predicate = (!icmp_ln279)> <Delay = 1.58>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln279 = br void %for.inc" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279]   --->   Operation 26 'br' 'br_ln279' <Predicate = (!icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%row_ind_load = load i13 %row_ind"   --->   Operation 27 'load' 'row_ind_load' <Predicate = (icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%row_ind_7_load = load i13 %row_ind_7"   --->   Operation 28 'load' 'row_ind_7_load' <Predicate = (icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%row_ind_8_load = load i13 %row_ind_8"   --->   Operation 29 'load' 'row_ind_8_load' <Predicate = (icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i13P0A, i13 %row_ind_8_out, i13 %row_ind_8_load"   --->   Operation 30 'write' 'write_ln0' <Predicate = (icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i13P0A, i13 %row_ind_7_out, i13 %row_ind_7_load"   --->   Operation 31 'write' 'write_ln0' <Predicate = (icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i13P0A, i13 %row_ind_out, i13 %row_ind_load"   --->   Operation 32 'write' 'write_ln0' <Predicate = (icmp_ln279)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 33 'ret' 'ret_ln0' <Predicate = (icmp_ln279)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.153ns
+The critical path consists of the following:
+	'alloca' operation ('row_ind') [4]  (0.000 ns)
+	'load' operation ('row_ind', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279) on local variable 'row_ind' [11]  (0.000 ns)
+	'add' operation ('init_row_ind', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279) [14]  (1.565 ns)
+	'store' operation ('store_ln279', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279) of variable 'init_row_ind', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_dilation.hpp:279 on local variable 'row_ind' [31]  (1.588 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

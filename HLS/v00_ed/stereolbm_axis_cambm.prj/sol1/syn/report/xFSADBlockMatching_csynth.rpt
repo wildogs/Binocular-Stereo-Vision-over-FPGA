@@ -1,0 +1,225 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFSADBlockMatching'
+================================================================
+* Date:           Tue Jun 24 19:15:37 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.570 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
+    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  3998414|  3998414|  39.984 ms|  39.984 ms|  3998414|  3998414|       no|
+    +---------+---------+-----------+-----------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------------------+--------------------------------------------------------+---------+---------+-----------+-----------+---------+---------+---------+
+        |                                                                   |                                                        |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
+        |                              Instance                             |                         Module                         |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
+        +-------------------------------------------------------------------+--------------------------------------------------------+---------+---------+-----------+-----------+---------+---------+---------+
+        |grp_xFSADBlockMatching_Pipeline_loop_row_loop_mux_loop_col_fu_106  |xFSADBlockMatching_Pipeline_loop_row_loop_mux_loop_col  |  3998411|  3998411|  39.984 ms|  39.984 ms|  3998411|  3998411|       no|
+        +-------------------------------------------------------------------+--------------------------------------------------------+---------+---------+-----------+-----------+---------+---------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    185|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |       43|   15|   27920|  44726|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    133|    -|
+|Register         |        -|    -|     302|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       43|   15|   28222|  45044|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       15|    6|      26|     84|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------------------------------+--------------------------------------------------------+---------+----+-------+-------+-----+
+    |                              Instance                             |                         Module                         | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +-------------------------------------------------------------------+--------------------------------------------------------+---------+----+-------+-------+-----+
+    |mul_17ns_20ns_37_1_1_U504                                          |mul_17ns_20ns_37_1_1                                    |        0|   1|      0|     12|    0|
+    |grp_xFSADBlockMatching_Pipeline_loop_row_loop_mux_loop_col_fu_106  |xFSADBlockMatching_Pipeline_loop_row_loop_mux_loop_col  |       43|  14|  27920|  44714|    0|
+    +-------------------------------------------------------------------+--------------------------------------------------------+---------+----+-------+-------+-----+
+    |Total                                                              |                                                        |       43|  15|  27920|  44726|    0|
+    +-------------------------------------------------------------------+--------------------------------------------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------+----------+----+---+----+------------+------------+
+    |   Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------+----------+----+---+----+------------+------------+
+    |add103_fu_172_p2  |         +|   0|  0|  24|          17|           3|
+    |add111_fu_178_p2  |         +|   0|  0|  24|          17|           3|
+    |sub233_fu_184_p2  |         +|   0|  0|  24|          17|           4|
+    |sub246_fu_190_p2  |         +|   0|  0|  24|          17|           4|
+    |sub57_fu_146_p2   |         +|   0|  0|  24|          17|           4|
+    |sub_fu_136_p2     |         +|   0|  0|  24|          17|           4|
+    |cmp288_fu_196_p2  |      icmp|   0|  0|  39|          32|           1|
+    |ap_block_state1   |        or|   0|  0|   2|           1|           1|
+    +------------------+----------+----+---+----+------------+------------+
+    |Total             |          |   0|  0| 185|         135|          24|
+    +------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------+----+-----------+-----+-----------+
+    |             Name             | LUT| Input Size| Bits| Total Bits|
+    +------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                     |  25|          5|    1|          5|
+    |ap_done                       |   9|          2|    1|          2|
+    |height_blk_n                  |   9|          2|    1|          2|
+    |height_c_blk_n                |   9|          2|    1|          2|
+    |left_clipped_read             |   9|          2|    1|          2|
+    |p_disp_strm_write             |   9|          2|    1|          2|
+    |real_start                    |   9|          2|    1|          2|
+    |right_clipped_read            |   9|          2|    1|          2|
+    |state_preFilterCap_blk_n      |   9|          2|    1|          2|
+    |state_textureThreshold_blk_n  |   9|          2|    1|          2|
+    |state_uniquenessRatio_blk_n   |   9|          2|    1|          2|
+    |width_blk_n                   |   9|          2|    1|          2|
+    |width_c_blk_n                 |   9|          2|    1|          2|
+    +------------------------------+----+-----------+-----+-----------+
+    |Total                         | 133|         29|   13|         29|
+    +------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                      Name                                      | FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------------------------------+----+----+-----+-----------+
+    |add103_reg_256                                                                  |  17|   0|   17|          0|
+    |add111_reg_261                                                                  |  17|   0|   17|          0|
+    |ap_CS_fsm                                                                       |   4|   0|    4|          0|
+    |ap_done_reg                                                                     |   1|   0|    1|          0|
+    |bound4_reg_251                                                                  |  37|   0|   37|          0|
+    |cmp288_reg_276                                                                  |   1|   0|    1|          0|
+    |grp_xFSADBlockMatching_Pipeline_loop_row_loop_mux_loop_col_fu_106_ap_start_reg  |   1|   0|    1|          0|
+    |height_cast_reg_223                                                             |  17|   0|   17|          0|
+    |start_once_reg                                                                  |   1|   0|    1|          0|
+    |state_preFilterCap_read_reg_213                                                 |  32|   0|   32|          0|
+    |state_textureThreshold_read_reg_208                                             |  32|   0|   32|          0|
+    |state_uniquenessRatio_read_reg_202                                              |  32|   0|   32|          0|
+    |sub233_reg_266                                                                  |  17|   0|   17|          0|
+    |sub246_reg_271                                                                  |  17|   0|   17|          0|
+    |sub57_reg_240                                                                   |  17|   0|   17|          0|
+    |sub_reg_229                                                                     |  17|   0|   17|          0|
+    |tmp_2_reg_246                                                                   |  17|   0|   20|          3|
+    |tmp_r_reg_218                                                                   |   8|   0|    8|          0|
+    |width_cast_reg_234                                                              |  17|   0|   17|          0|
+    +--------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                           | 302|   0|  305|          3|
+    +--------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------------+-----+-----+------------+------------------------+--------------+
+|               RTL Ports               | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++---------------------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                                 |   in|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|ap_rst                                 |   in|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|ap_start                               |   in|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|start_full_n                           |   in|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|ap_done                                |  out|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|ap_continue                            |   in|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|ap_idle                                |  out|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|ap_ready                               |  out|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|start_out                              |  out|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|start_write                            |  out|    1|  ap_ctrl_hs|      xFSADBlockMatching|  return value|
+|left_clipped_dout                      |   in|    8|     ap_fifo|            left_clipped|       pointer|
+|left_clipped_num_data_valid            |   in|    2|     ap_fifo|            left_clipped|       pointer|
+|left_clipped_fifo_cap                  |   in|    2|     ap_fifo|            left_clipped|       pointer|
+|left_clipped_empty_n                   |   in|    1|     ap_fifo|            left_clipped|       pointer|
+|left_clipped_read                      |  out|    1|     ap_fifo|            left_clipped|       pointer|
+|right_clipped_dout                     |   in|    8|     ap_fifo|           right_clipped|       pointer|
+|right_clipped_num_data_valid           |   in|    2|     ap_fifo|           right_clipped|       pointer|
+|right_clipped_fifo_cap                 |   in|    2|     ap_fifo|           right_clipped|       pointer|
+|right_clipped_empty_n                  |   in|    1|     ap_fifo|           right_clipped|       pointer|
+|right_clipped_read                     |  out|    1|     ap_fifo|           right_clipped|       pointer|
+|p_disp_strm_din                        |  out|   16|     ap_fifo|             p_disp_strm|       pointer|
+|p_disp_strm_num_data_valid             |   in|    2|     ap_fifo|             p_disp_strm|       pointer|
+|p_disp_strm_fifo_cap                   |   in|    2|     ap_fifo|             p_disp_strm|       pointer|
+|p_disp_strm_full_n                     |   in|    1|     ap_fifo|             p_disp_strm|       pointer|
+|p_disp_strm_write                      |  out|    1|     ap_fifo|             p_disp_strm|       pointer|
+|state_preFilterCap_dout                |   in|   32|     ap_fifo|      state_preFilterCap|       pointer|
+|state_preFilterCap_num_data_valid      |   in|    2|     ap_fifo|      state_preFilterCap|       pointer|
+|state_preFilterCap_fifo_cap            |   in|    2|     ap_fifo|      state_preFilterCap|       pointer|
+|state_preFilterCap_empty_n             |   in|    1|     ap_fifo|      state_preFilterCap|       pointer|
+|state_preFilterCap_read                |  out|    1|     ap_fifo|      state_preFilterCap|       pointer|
+|state_textureThreshold_dout            |   in|   32|     ap_fifo|  state_textureThreshold|       pointer|
+|state_textureThreshold_num_data_valid  |   in|    3|     ap_fifo|  state_textureThreshold|       pointer|
+|state_textureThreshold_fifo_cap        |   in|    3|     ap_fifo|  state_textureThreshold|       pointer|
+|state_textureThreshold_empty_n         |   in|    1|     ap_fifo|  state_textureThreshold|       pointer|
+|state_textureThreshold_read            |  out|    1|     ap_fifo|  state_textureThreshold|       pointer|
+|state_uniquenessRatio_dout             |   in|   32|     ap_fifo|   state_uniquenessRatio|       pointer|
+|state_uniquenessRatio_num_data_valid   |   in|    3|     ap_fifo|   state_uniquenessRatio|       pointer|
+|state_uniquenessRatio_fifo_cap         |   in|    3|     ap_fifo|   state_uniquenessRatio|       pointer|
+|state_uniquenessRatio_empty_n          |   in|    1|     ap_fifo|   state_uniquenessRatio|       pointer|
+|state_uniquenessRatio_read             |  out|    1|     ap_fifo|   state_uniquenessRatio|       pointer|
+|height_dout                            |   in|   16|     ap_fifo|                  height|       pointer|
+|height_num_data_valid                  |   in|    2|     ap_fifo|                  height|       pointer|
+|height_fifo_cap                        |   in|    2|     ap_fifo|                  height|       pointer|
+|height_empty_n                         |   in|    1|     ap_fifo|                  height|       pointer|
+|height_read                            |  out|    1|     ap_fifo|                  height|       pointer|
+|width_dout                             |   in|   16|     ap_fifo|                   width|       pointer|
+|width_num_data_valid                   |   in|    2|     ap_fifo|                   width|       pointer|
+|width_fifo_cap                         |   in|    2|     ap_fifo|                   width|       pointer|
+|width_empty_n                          |   in|    1|     ap_fifo|                   width|       pointer|
+|width_read                             |  out|    1|     ap_fifo|                   width|       pointer|
+|height_c_din                           |  out|   16|     ap_fifo|                height_c|       pointer|
+|height_c_num_data_valid                |   in|    2|     ap_fifo|                height_c|       pointer|
+|height_c_fifo_cap                      |   in|    2|     ap_fifo|                height_c|       pointer|
+|height_c_full_n                        |   in|    1|     ap_fifo|                height_c|       pointer|
+|height_c_write                         |  out|    1|     ap_fifo|                height_c|       pointer|
+|width_c_din                            |  out|   16|     ap_fifo|                 width_c|       pointer|
+|width_c_num_data_valid                 |   in|    2|     ap_fifo|                 width_c|       pointer|
+|width_c_fifo_cap                       |   in|    2|     ap_fifo|                 width_c|       pointer|
+|width_c_full_n                         |   in|    1|     ap_fifo|                 width_c|       pointer|
+|width_c_write                          |  out|    1|     ap_fifo|                 width_c|       pointer|
++---------------------------------------+-----+-----+------------+------------------------+--------------+
+

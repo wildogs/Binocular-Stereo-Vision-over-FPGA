@@ -1,0 +1,10 @@
+In file included from xf_stereolbm_accel.cpp:2:
+In file included from ./xf_config_params.h:28:
+C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:17:9: warning: '_XF_EROSION_HPP__' is used as a header guard here, followed by #define of a different macro [-Wheader-guard]
+#ifndef _XF_EROSION_HPP__
+        ^~~~~~~~~~~~~~~~~
+C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_erosion.hpp:18:9: note: '_XF_EROSION_HPP_' is defined here; did you mean '_XF_EROSION_HPP__'?
+#define _XF_EROSION_HPP_
+        ^~~~~~~~~~~~~~~~
+        _XF_EROSION_HPP__
+1 warning generated.

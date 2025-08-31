@@ -1,0 +1,314 @@
+<stg><name>Sobel<0, 3, 0, 3, 600, 800, 1, false, 2, 2, 2>.3</name>
+
+
+<trans_list>
+
+<trans id="11" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="16" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:3 %p_read13 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read1
+
+]]></Node>
+<StgValue><ssdm name="p_read13"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="16" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:4 %p_read_16 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read
+
+]]></Node>
+<StgValue><ssdm name="p_read_16"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16">
+<![CDATA[
+entry:5 %call_ln1894 = call void @xFSobelFilter3x3<0, 3, 600, 800, 1, 0, 4, 1, 2, 2, 2, 1, 6, 800, false>, i8 %leftRemappedMat_data, i16 %in_sobel_x_i3_data, i16 %in_sobel_y_i4_data, i16 %p_read_16, i16 %p_read13
+
+]]></Node>
+<StgValue><ssdm name="call_ln1894"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="6" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_sobel_y_i4_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_sobel_x_i3_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="8" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %leftRemappedMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="9" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16">
+<![CDATA[
+entry:5 %call_ln1894 = call void @xFSobelFilter3x3<0, 3, 600, 800, 1, 0, 4, 1, 2, 2, 2, 1, 6, 800, false>, i8 %leftRemappedMat_data, i16 %in_sobel_x_i3_data, i16 %in_sobel_y_i4_data, i16 %p_read_16, i16 %p_read13
+
+]]></Node>
+<StgValue><ssdm name="call_ln1894"/></StgValue>
+</operation>
+
+<operation id="10" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="0">
+<![CDATA[
+entry:6 %ret_ln1913 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln1913"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="12" name="p_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_read"/></StgValue>
+</port>
+<port id="13" name="p_read1" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_read1"/></StgValue>
+</port>
+<port id="14" name="leftRemappedMat_data" dir="0" iftype="3">
+<core>NULL</core><StgValue><ssdm name="leftRemappedMat_data"/></StgValue>
+</port>
+<port id="15" name="in_sobel_x_i3_data" dir="1" iftype="3">
+<core>NULL</core><StgValue><ssdm name="in_sobel_x_i3_data"/></StgValue>
+</port>
+<port id="16" name="in_sobel_y_i4_data" dir="1" iftype="3">
+<core>NULL</core><StgValue><ssdm name="in_sobel_y_i4_data"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="18" from="_ssdm_op_Read.ap_auto.i16" to="p_read13" fromId="17" toId="3">
+</dataflow>
+<dataflow id="19" from="p_read1" to="p_read13" fromId="13" toId="3">
+</dataflow>
+<dataflow id="20" from="_ssdm_op_Read.ap_auto.i16" to="p_read_16" fromId="17" toId="4">
+</dataflow>
+<dataflow id="21" from="p_read" to="p_read_16" fromId="12" toId="4">
+</dataflow>
+<dataflow id="23" from="xFSobelFilter3x3<0, 3, 600, 800, 1, 0, 4, 1, 2, 2, 2, 1, 6, 800, false>" to="call_ln1894" fromId="22" toId="5">
+</dataflow>
+<dataflow id="24" from="leftRemappedMat_data" to="call_ln1894" fromId="14" toId="5">
+</dataflow>
+<dataflow id="25" from="in_sobel_x_i3_data" to="call_ln1894" fromId="15" toId="5">
+</dataflow>
+<dataflow id="26" from="in_sobel_y_i4_data" to="call_ln1894" fromId="16" toId="5">
+</dataflow>
+<dataflow id="27" from="p_read_16" to="call_ln1894" fromId="4" toId="5">
+</dataflow>
+<dataflow id="28" from="p_read13" to="call_ln1894" fromId="3" toId="5">
+</dataflow>
+<dataflow id="30" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="29" toId="6">
+</dataflow>
+<dataflow id="31" from="in_sobel_y_i4_data" to="specinterface_ln0" fromId="16" toId="6">
+</dataflow>
+<dataflow id="33" from="empty_7" to="specinterface_ln0" fromId="32" toId="6">
+</dataflow>
+<dataflow id="35" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="6">
+</dataflow>
+<dataflow id="36" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="6">
+</dataflow>
+<dataflow id="38" from="empty_84" to="specinterface_ln0" fromId="37" toId="6">
+</dataflow>
+<dataflow id="39" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="6">
+</dataflow>
+<dataflow id="40" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="6">
+</dataflow>
+<dataflow id="41" from="empty_84" to="specinterface_ln0" fromId="37" toId="6">
+</dataflow>
+<dataflow id="42" from="empty_84" to="specinterface_ln0" fromId="37" toId="6">
+</dataflow>
+<dataflow id="43" from="empty_84" to="specinterface_ln0" fromId="37" toId="6">
+</dataflow>
+<dataflow id="44" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="6">
+</dataflow>
+<dataflow id="45" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="6">
+</dataflow>
+<dataflow id="46" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="6">
+</dataflow>
+<dataflow id="47" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="6">
+</dataflow>
+<dataflow id="48" from="empty_84" to="specinterface_ln0" fromId="37" toId="6">
+</dataflow>
+<dataflow id="49" from="empty_84" to="specinterface_ln0" fromId="37" toId="6">
+</dataflow>
+<dataflow id="51" from="StgValue_50" to="specinterface_ln0" fromId="50" toId="6">
+</dataflow>
+<dataflow id="52" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="6">
+</dataflow>
+<dataflow id="53" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="29" toId="7">
+</dataflow>
+<dataflow id="54" from="in_sobel_x_i3_data" to="specinterface_ln0" fromId="15" toId="7">
+</dataflow>
+<dataflow id="55" from="empty_7" to="specinterface_ln0" fromId="32" toId="7">
+</dataflow>
+<dataflow id="56" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="7">
+</dataflow>
+<dataflow id="57" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="7">
+</dataflow>
+<dataflow id="58" from="empty_84" to="specinterface_ln0" fromId="37" toId="7">
+</dataflow>
+<dataflow id="59" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="7">
+</dataflow>
+<dataflow id="60" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="7">
+</dataflow>
+<dataflow id="61" from="empty_84" to="specinterface_ln0" fromId="37" toId="7">
+</dataflow>
+<dataflow id="62" from="empty_84" to="specinterface_ln0" fromId="37" toId="7">
+</dataflow>
+<dataflow id="63" from="empty_84" to="specinterface_ln0" fromId="37" toId="7">
+</dataflow>
+<dataflow id="64" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="7">
+</dataflow>
+<dataflow id="65" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="7">
+</dataflow>
+<dataflow id="66" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="7">
+</dataflow>
+<dataflow id="67" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="7">
+</dataflow>
+<dataflow id="68" from="empty_84" to="specinterface_ln0" fromId="37" toId="7">
+</dataflow>
+<dataflow id="69" from="empty_84" to="specinterface_ln0" fromId="37" toId="7">
+</dataflow>
+<dataflow id="70" from="StgValue_50" to="specinterface_ln0" fromId="50" toId="7">
+</dataflow>
+<dataflow id="71" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="7">
+</dataflow>
+<dataflow id="72" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="29" toId="8">
+</dataflow>
+<dataflow id="73" from="leftRemappedMat_data" to="specinterface_ln0" fromId="14" toId="8">
+</dataflow>
+<dataflow id="74" from="empty_7" to="specinterface_ln0" fromId="32" toId="8">
+</dataflow>
+<dataflow id="75" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="8">
+</dataflow>
+<dataflow id="76" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="8">
+</dataflow>
+<dataflow id="77" from="empty_84" to="specinterface_ln0" fromId="37" toId="8">
+</dataflow>
+<dataflow id="78" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="8">
+</dataflow>
+<dataflow id="79" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="8">
+</dataflow>
+<dataflow id="80" from="empty_84" to="specinterface_ln0" fromId="37" toId="8">
+</dataflow>
+<dataflow id="81" from="empty_84" to="specinterface_ln0" fromId="37" toId="8">
+</dataflow>
+<dataflow id="82" from="empty_84" to="specinterface_ln0" fromId="37" toId="8">
+</dataflow>
+<dataflow id="83" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="8">
+</dataflow>
+<dataflow id="84" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="8">
+</dataflow>
+<dataflow id="85" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="8">
+</dataflow>
+<dataflow id="86" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="8">
+</dataflow>
+<dataflow id="87" from="empty_84" to="specinterface_ln0" fromId="37" toId="8">
+</dataflow>
+<dataflow id="88" from="empty_84" to="specinterface_ln0" fromId="37" toId="8">
+</dataflow>
+<dataflow id="89" from="StgValue_50" to="specinterface_ln0" fromId="50" toId="8">
+</dataflow>
+<dataflow id="90" from="StgValue_34" to="specinterface_ln0" fromId="34" toId="8">
+</dataflow>
+<dataflow id="91" from="xFSobelFilter3x3<0, 3, 600, 800, 1, 0, 4, 1, 2, 2, 2, 1, 6, 800, false>" to="call_ln1894" fromId="22" toId="9">
+</dataflow>
+<dataflow id="92" from="leftRemappedMat_data" to="call_ln1894" fromId="14" toId="9">
+</dataflow>
+<dataflow id="93" from="in_sobel_x_i3_data" to="call_ln1894" fromId="15" toId="9">
+</dataflow>
+<dataflow id="94" from="in_sobel_y_i4_data" to="call_ln1894" fromId="16" toId="9">
+</dataflow>
+<dataflow id="95" from="p_read_16" to="call_ln1894" fromId="4" toId="9">
+</dataflow>
+<dataflow id="96" from="p_read13" to="call_ln1894" fromId="3" toId="9">
+</dataflow>
+</dataflows>
+
+
+</stg>

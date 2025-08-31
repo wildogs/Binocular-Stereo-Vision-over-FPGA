@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vitis HLS Report for 'AXIvideo2xfMat_8_0_600_800_1_2_1_Pipeline_loop_col_zxi2mat'
+================================================================
+* Date:           Tue Jun 24 19:14:41 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.132 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        3|      802|  30.000 ns|  8.020 us|    3|  802|       no|
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- loop_col_zxi2mat  |        1|      800|         2|          1|          1|  1 ~ 800|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.13>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%j = alloca i32 1"   --->   Operation 5 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%axi_last_3 = alloca i32 1"   --->   Operation 6 'alloca' 'axi_last_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%axi_data = alloca i32 1"   --->   Operation 7 'alloca' 'axi_data' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i8 %vid_inL_V_data_V, i1 %vid_inL_V_keep_V, i1 %vid_inL_V_strb_V, i1 %vid_inL_V_user_V, i1 %vid_inL_V_last_V, i1 %vid_inL_V_id_V, i1 %vid_inL_V_dest_V, void @empty_9"   --->   Operation 8 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %vid_inL_V_data_V, void @empty_82, i32 0, i32 0, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %vid_inL_V_keep_V, void @empty_82, i32 0, i32 0, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %vid_inL_V_strb_V, void @empty_82, i32 0, i32 0, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %vid_inL_V_user_V, void @empty_82, i32 0, i32 0, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %vid_inL_V_last_V, void @empty_82, i32 0, i32 0, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %vid_inL_V_id_V, void @empty_82, i32 0, i32 0, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %vid_inL_V_dest_V, void @empty_82, i32 0, i32 0, void @empty_83, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %imgL_in_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_read14 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read1"   --->   Operation 17 'read' 'p_read14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%axi_last_2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %axi_last_2"   --->   Operation 18 'read' 'axi_last_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%axi_data_2_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %axi_data_2"   --->   Operation 19 'read' 'axi_data_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%start_2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %start_2"   --->   Operation 20 'read' 'start_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 %axi_data_2_read, i8 %axi_data"   --->   Operation 21 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 22 [1/1] (1.58ns)   --->   "%store_ln0 = store i1 %axi_last_2_read, i1 %axi_last_3"   --->   Operation 22 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 23 [1/1] (1.58ns)   --->   "%store_ln0 = store i10 0, i10 %j"   --->   Operation 23 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 24 [1/1] (1.58ns)   --->   "%br_ln0 = br void %for.body11"   --->   Operation 24 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%last = phi i1 %axi_last_9, void %if.end16, i1 0, void %newFuncRoot"   --->   Operation 25 'phi' 'last' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%start = phi i1 0, void %if.end16, i1 %start_2_read, void %newFuncRoot"   --->   Operation 26 'phi' 'start' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%j_13 = load i10 %j" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133]   --->   Operation 27 'load' 'j_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (1.73ns)   --->   "%icmp_ln133 = icmp_eq  i10 %j_13, i10 %p_read14" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133]   --->   Operation 28 'icmp' 'icmp_ln133' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 800, i64 0"   --->   Operation 29 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (1.73ns)   --->   "%j_14 = add i10 %j_13, i10 1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133]   --->   Operation 30 'add' 'j_14' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln133 = br i1 %icmp_ln133, void %for.body11.split, void %loop_last_hunt.loopexit.exitStub" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133]   --->   Operation 31 'br' 'br_ln133' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%specpipeline_ln136 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_84" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:136]   --->   Operation 32 'specpipeline' 'specpipeline_ln136' <Predicate = (!icmp_ln133)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%specloopname_ln133 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133]   --->   Operation 33 'specloopname' 'specloopname_ln133' <Predicate = (!icmp_ln133)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.97ns)   --->   "%or_ln139 = or i1 %start, i1 %last" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:139]   --->   Operation 34 'or' 'or_ln139' <Predicate = (!icmp_ln133)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln139 = br i1 %or_ln139, void %if.else, void %if.end16" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:139]   --->   Operation 35 'br' 'br_ln139' <Predicate = (!icmp_ln133)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%empty = read i14 @_ssdm_op_Read.axis.volatile.i8P0A.i1P0A.i1P0A.i1P0A.i1P0A.i1P0A.i1P0A, i8 %vid_inL_V_data_V, i1 %vid_inL_V_keep_V, i1 %vid_inL_V_strb_V, i1 %vid_inL_V_user_V, i1 %vid_inL_V_last_V, i1 %vid_inL_V_id_V, i1 %vid_inL_V_dest_V" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:142]   --->   Operation 36 'read' 'empty' <Predicate = (!icmp_ln133 & !or_ln139)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%axi_data_3 = extractvalue i14 %empty" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:142]   --->   Operation 37 'extractvalue' 'axi_data_3' <Predicate = (!icmp_ln133 & !or_ln139)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%axi_last = extractvalue i14 %empty" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:142]   --->   Operation 38 'extractvalue' 'axi_last' <Predicate = (!icmp_ln133 & !or_ln139)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (1.58ns)   --->   "%store_ln142 = store i8 %axi_data_3, i8 %axi_data" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:142]   --->   Operation 39 'store' 'store_ln142' <Predicate = (!icmp_ln133 & !or_ln139)> <Delay = 1.58>
+ST_1 : Operation 40 [1/1] (1.58ns)   --->   "%store_ln142 = store i1 %axi_last, i1 %axi_last_3" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:142]   --->   Operation 40 'store' 'store_ln142' <Predicate = (!icmp_ln133 & !or_ln139)> <Delay = 1.58>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end16"   --->   Operation 41 'br' 'br_ln0' <Predicate = (!icmp_ln133 & !or_ln139)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (1.58ns)   --->   "%store_ln133 = store i10 %j_14, i10 %j" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133]   --->   Operation 42 'store' 'store_ln133' <Predicate = (!icmp_ln133)> <Delay = 1.58>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln133 = br void %for.body11" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133]   --->   Operation 43 'br' 'br_ln133' <Predicate = (!icmp_ln133)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%axi_data_load = load i8 %axi_data"   --->   Operation 47 'load' 'axi_data_load' <Predicate = (icmp_ln133)> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %last_out, i1 %last"   --->   Operation 48 'write' 'write_ln0' <Predicate = (icmp_ln133)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %axi_data_5_out, i8 %axi_data_load"   --->   Operation 49 'write' 'write_ln0' <Predicate = (icmp_ln133)> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 50 'ret' 'ret_ln0' <Predicate = (icmp_ln133)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.63>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%axi_last_9 = load i1 %axi_last_3"   --->   Operation 44 'load' 'axi_last_9' <Predicate = (!icmp_ln133)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%axi_data_4 = load i8 %axi_data" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:553->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:155]   --->   Operation 45 'load' 'axi_data_4' <Predicate = (!icmp_ln133)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (3.63ns)   --->   "%write_ln553 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %imgL_in_data, i8 %axi_data_4" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:553->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:155]   --->   Operation 46 'write' 'write_ln553' <Predicate = (!icmp_ln133)> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.132ns
+The critical path consists of the following:
+	'alloca' operation ('j') [15]  (0.000 ns)
+	'load' operation ('j', C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133) on local variable 'j' [38]  (0.000 ns)
+	'add' operation ('j', C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133) [41]  (1.731 ns)
+	'store' operation ('store_ln133', C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133) of variable 'j', C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:133 on local variable 'j' [59]  (1.588 ns)
+	blocking operation 1.813 ns on control path)
+
+ <State 2>: 3.634ns
+The critical path consists of the following:
+	'load' operation ('axi.data', C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:553->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:155) on local variable 'axi.data' [57]  (0.000 ns)
+	fifo write operation ('write_ln553', C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:553->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:155) on port 'imgL_in_data' (C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:553->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_infra.hpp:155) [58]  (3.634 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

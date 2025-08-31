@@ -1,0 +1,108 @@
+
+
+================================================================
+== Vitis HLS Report for 'Block_for_end7235_proc'
+================================================================
+* Date:           Tue Jun 24 19:15:08 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|      0 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%cols_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %cols" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:614->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:675->xf_stereolbm_accel.cpp:132]   --->   Operation 2 'read' 'cols_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%rows_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %rows" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:614->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:675->xf_stereolbm_accel.cpp:132]   --->   Operation 3 'read' 'rows_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%mrv = insertvalue i64 <undef>, i32 %rows_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:614->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:675->xf_stereolbm_accel.cpp:132]   --->   Operation 4 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i64 %mrv, i32 %cols_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:614->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:675->xf_stereolbm_accel.cpp:132]   --->   Operation 5 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%ret_ln614 = ret i64 %mrv_1" [C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:614->C:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:675->xf_stereolbm_accel.cpp:132]   --->   Operation 6 'ret' 'ret_ln614' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

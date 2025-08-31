@@ -1,0 +1,128 @@
+
+
+================================================================
+== Vitis HLS Report for 'StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_s'
+================================================================
+* Date:           Tue Jun 24 19:15:08 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.570 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
+    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  3998426|  3998426|  39.984 ms|  39.984 ms|  3998426|  3998426|       no|
+    +---------+---------+-----------+-----------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.63>
+ST_1 : Operation 3 [1/1] (3.63ns)   --->   "%p_read613 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read6"   --->   Operation 3 'read' 'p_read613' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 4 [1/1] (3.63ns)   --->   "%p_read512 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read5"   --->   Operation 4 'read' 'p_read512' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (3.63ns)   --->   "%p_read411 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read4"   --->   Operation 5 'read' 'p_read411' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 6 [1/1] (3.63ns)   --->   "%p_read310 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read3"   --->   Operation 6 'read' 'p_read310' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 7 [1/1] (3.63ns)   --->   "%p_read29 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read2"   --->   Operation 7 'read' 'p_read29' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 8 [1/1] (3.63ns)   --->   "%p_read18 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read1"   --->   Operation 8 'read' 'p_read18' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 9 [1/1] (3.63ns)   --->   "%p_read_15 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read"   --->   Operation 9 'read' 'p_read_15' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%empty = trunc i32 %p_read310"   --->   Operation 10 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%empty_329 = trunc i32 %p_read29"   --->   Operation 11 'trunc' 'empty_329' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%width = trunc i32 %p_read18"   --->   Operation 12 'trunc' 'width' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%height = trunc i32 %p_read_15"   --->   Operation 13 'trunc' 'height' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln889 = call void @xFFindStereoCorrespondenceLBMNO, i16 %height, i16 %width, i8 %leftRemappedMat_data, i16 %empty_329, i16 %empty, i8 %rightRemappedMat_data, i16 %img_disp16u_data, i32 %p_read411, i32 %p_read512, i32 %p_read613, i16 %height, i16 %width" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereolbm.hpp:889->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereolbm.hpp:914]   --->   Operation 14 'call' 'call_ln889' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %img_disp16u_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %rightRemappedMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %leftRemappedMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln889 = call void @xFFindStereoCorrespondenceLBMNO, i16 %height, i16 %width, i8 %leftRemappedMat_data, i16 %empty_329, i16 %empty, i8 %rightRemappedMat_data, i16 %img_disp16u_data, i32 %p_read411, i32 %p_read512, i32 %p_read613, i16 %height, i16 %width" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereolbm.hpp:889->C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereolbm.hpp:914]   --->   Operation 18 'call' 'call_ln889' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln917 = ret" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereolbm.hpp:917]   --->   Operation 19 'ret' 'ret_ln917' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.634ns
+The critical path consists of the following:
+	wire read operation ('p_read613') on port 'p_read6' [11]  (3.634 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

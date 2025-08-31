@@ -1,0 +1,373 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'stereolbm_axis_cambm'" level="0">
+<item name = "Date">Tue Jun 24 19:15:47 2025
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">stereolbm_axis_cambm.prj</item>
+<item name = "Solution">sol1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.570 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3998490, 3998490, 39.985 ms, 39.985 ms, 3998427, 3998427, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="Loop_VITIS_LOOP_46_1_proc_U0">Loop_VITIS_LOOP_46_1_proc, 15, 15, 0.150 us, 0.150 us, 15, 15, no</column>
+<column name="Loop_VITIS_LOOP_55_2_proc_U0">Loop_VITIS_LOOP_55_2_proc, 11, 11, 0.110 us, 0.110 us, 11, 11, no</column>
+<column name="Block_for_end72_proc_U0">Block_for_end72_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="AXIvideo2xfMat_8_0_600_800_1_2_1_U0">AXIvideo2xfMat_8_0_600_800_1_2_1, 6, 486607, 60.000 ns, 4.866 ms, 6, 486607, no</column>
+<column name="AXIvideo2xfMat_8_0_600_800_1_2_U0">AXIvideo2xfMat_8_0_600_800_1_2_s, 6, 486607, 60.000 ns, 4.866 ms, 6, 486607, no</column>
+<column name="InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_U0">InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_s, 47, 480046, 0.470 us, 4.800 ms, 47, 480046, no</column>
+<column name="InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7_U0">InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7, 47, 480046, 0.470 us, 4.800 ms, 47, 480046, no</column>
+<column name="remap_128_1_0_7_0_600_800_1_false_2_2_2_2_2_U0">remap_128_1_0_7_0_600_800_1_false_2_2_2_2_2, 1546, 599282, 15.460 us, 5.993 ms, 1546, 599282, dataflow</column>
+<column name="remap_128_1_0_7_0_600_800_1_false_2_2_2_2_U0">remap_128_1_0_7_0_600_800_1_false_2_2_2_2_s, 1546, 599282, 15.460 us, 5.993 ms, 1546, 599282, dataflow</column>
+<column name="StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_U0">StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_s, 3998426, 3998426, 39.984 ms, 39.984 ms, 3998426, 3998426, no</column>
+<column name="ConvertShiftAbs_U0">ConvertShiftAbs, 483001, 483001, 4.830 ms, 4.830 ms, 483001, 483001, no</column>
+<column name="Block_for_end7235_proc_U0">Block_for_end7235_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="erode_0_0_600_800_0_3_3_1_1_2_2_U0">erode_0_0_600_800_0_3_3_1_1_2_2_s, 23, 488817, 0.230 us, 4.888 ms, 23, 488817, no</column>
+<column name="Block_for_end7237_proc_U0">Block_for_end7237_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="dilate_0_0_600_800_0_3_3_1_1_2_2_U0">dilate_0_0_600_800_0_3_3_1_1_2_2_s, 23, 488817, 0.230 us, 4.888 ms, 23, 488817, no</column>
+<column name="Block_for_end7239_proc_U0">Block_for_end7239_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="xfMat2AXIvideo_8_0_600_800_1_2_U0">xfMat2AXIvideo_8_0_600_800_1_2_s, 2, 483002, 20.000 ns, 4.830 ms, 2, 483002, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 164, -</column>
+<column name="FIFO">-, -, 3663, 2510, -</column>
+<column name="Instance">187, 190, 59274, 79712, 0</column>
+<column name="Memory">0, -, 192, 46, 0</column>
+<column name="Multiplexer">-, -, -, 297, -</column>
+<column name="Register">-, -, 33, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">66, 86, 59, 155, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="AXIvideo2xfMat_8_0_600_800_1_2_1_U0">AXIvideo2xfMat_8_0_600_800_1_2_1, 0, 0, 99, 514, 0</column>
+<column name="AXIvideo2xfMat_8_0_600_800_1_2_U0">AXIvideo2xfMat_8_0_600_800_1_2_s, 0, 0, 99, 514, 0</column>
+<column name="Block_for_end7235_proc_U0">Block_for_end7235_proc, 0, 0, 66, 29, 0</column>
+<column name="Block_for_end7237_proc_U0">Block_for_end7237_proc, 0, 0, 66, 29, 0</column>
+<column name="Block_for_end7239_proc_U0">Block_for_end7239_proc, 0, 0, 66, 29, 0</column>
+<column name="Block_for_end72_proc_U0">Block_for_end72_proc, 0, 0, 482, 146, 0</column>
+<column name="ConvertShiftAbs_U0">ConvertShiftAbs, 0, 0, 38, 205, 0</column>
+<column name="Ctrl_s_axi_U">Ctrl_s_axi, 0, 0, 226, 360, 0</column>
+<column name="InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7_U0">InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7, 0, 77, 7848, 5013, 0</column>
+<column name="InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_U0">InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_s, 0, 77, 7848, 5013, 0</column>
+<column name="Loop_VITIS_LOOP_46_1_proc_U0">Loop_VITIS_LOOP_46_1_proc, 0, 0, 1639, 3112, 0</column>
+<column name="Loop_VITIS_LOOP_55_2_proc_U0">Loop_VITIS_LOOP_55_2_proc, 0, 0, 859, 1598, 0</column>
+<column name="StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_U0">StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_s, 49, 16, 32593, 51236, 0</column>
+<column name="dilate_0_0_600_800_0_3_3_1_1_2_2_U0">dilate_0_0_600_800_0_3_3_1_1_2_2_s, 3, 0, 635, 1208, 0</column>
+<column name="erode_0_0_600_800_0_3_3_1_1_2_2_U0">erode_0_0_600_800_0_3_3_1_1_2_2_s, 3, 0, 635, 1208, 0</column>
+<column name="remap_128_1_0_7_0_600_800_1_false_2_2_2_2_2_U0">remap_128_1_0_7_0_600_800_1_false_2_2_2_2_2, 66, 10, 3005, 4611, 0</column>
+<column name="remap_128_1_0_7_0_600_800_1_false_2_2_2_2_U0">remap_128_1_0_7_0_600_800_1_false_2_2_2_2_s, 66, 10, 3005, 4611, 0</column>
+<column name="xfMat2AXIvideo_8_0_600_800_1_2_U0">xfMat2AXIvideo_8_0_600_800_1_2_s, 0, 0, 65, 276, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="cameraMA_l_fix_U">cameraMA_l_fix_RAM_AUTO_1R1W, 0, 32, 9, 0, 9, 32, 1, 288</column>
+<column name="cameraMA_r_fix_U">cameraMA_l_fix_RAM_AUTO_1R1W, 0, 32, 9, 0, 9, 32, 1, 288</column>
+<column name="irA_l_fix_U">cameraMA_l_fix_RAM_AUTO_1R1W, 0, 32, 9, 0, 9, 32, 1, 288</column>
+<column name="irA_r_fix_U">cameraMA_l_fix_RAM_AUTO_1R1W, 0, 32, 9, 0, 9, 32, 1, 288</column>
+<column name="distC_l_fix_U">distC_l_fix_RAM_AUTO_1R1W, 0, 32, 5, 0, 5, 32, 1, 160</column>
+<column name="distC_r_fix_U">distC_l_fix_RAM_AUTO_1R1W, 0, 32, 5, 0, 5, 32, 1, 160</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="bmState_preFilterCap_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="bmState_textureThreshold_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="bmState_uniquenessRatio_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="imgL_in_cols_c60_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="imgL_in_cols_c_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="imgL_in_data_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="imgL_in_rows_c59_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="imgL_in_rows_c_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="imgR_in_cols_c62_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="imgR_in_cols_c_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="imgR_in_data_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="imgR_in_rows_c61_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="imgR_in_rows_c_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="img_disp16u_data_U">0, 99, 0, -, 2, 16, 32</column>
+<column name="img_disp8u_cols_U">0, 99, 0, -, 6, 32, 192</column>
+<column name="img_disp8u_data_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="img_disp8u_dilate_cols_U">0, 99, 0, -, 8, 32, 256</column>
+<column name="img_disp8u_dilate_data_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="img_disp8u_dilate_rows_U">0, 99, 0, -, 8, 32, 256</column>
+<column name="img_disp8u_erode_cols_U">0, 99, 0, -, 7, 32, 224</column>
+<column name="img_disp8u_erode_data_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="img_disp8u_erode_rows_U">0, 99, 0, -, 7, 32, 224</column>
+<column name="img_disp8u_rows_U">0, 99, 0, -, 6, 32, 192</column>
+<column name="leftRemappedMat_cols_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="leftRemappedMat_data_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="leftRemappedMat_rows_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="mapxLMat_cols_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="mapxLMat_data_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="mapxLMat_rows_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="mapxRMat_cols_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="mapxRMat_data_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="mapxRMat_rows_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="mapyLMat_data_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="mapyRMat_data_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="rightRemappedMat_cols_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="rightRemappedMat_data_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="rightRemappedMat_rows_U">0, 99, 0, -, 4, 32, 128</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="AXIvideo2xfMat_8_0_600_800_1_2_1_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="AXIvideo2xfMat_8_0_600_800_1_2_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Block_for_end7235_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Block_for_end7235_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Block_for_end7237_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Block_for_end7237_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Block_for_end7239_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Block_for_end7239_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Block_for_end72_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Block_for_end72_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_7_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="InitUndistortRectifyMapInverse_9_5_7_600_800_1_2_2_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_VITIS_LOOP_46_1_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_VITIS_LOOP_46_1_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_VITIS_LOOP_55_2_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_VITIS_LOOP_55_2_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="StereoBM_15_128_16_0_2_600_800_1_false_2_2_2_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_bmState_preFilterCap">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_bmState_textureThreshold">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_bmState_uniquenessRatio">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_cameraMA_l_fix">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_cameraMA_r_fix">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_distC_l_fix">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_distC_r_fix">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_imgL_in_cols_c60_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_imgL_in_rows_c59_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_imgR_in_cols_c62_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_imgR_in_rows_c61_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_img_disp8u_cols">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_img_disp8u_dilate_cols">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_img_disp8u_dilate_rows">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_img_disp8u_erode_cols">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_img_disp8u_erode_rows">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_img_disp8u_rows">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_irA_l_fix">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_irA_r_fix">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_leftRemappedMat_cols">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_leftRemappedMat_rows">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_mapxLMat_cols">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_mapxLMat_rows">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_mapxRMat_cols">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_mapxRMat_rows">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_rightRemappedMat_cols">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_rightRemappedMat_rows">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="dilate_0_0_600_800_0_3_3_1_1_2_2_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="erode_0_0_600_800_0_3_3_1_1_2_2_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="xfMat2AXIvideo_8_0_600_800_1_2_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_for_end7235_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_for_end7237_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_for_end7239_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_for_end72_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Loop_VITIS_LOOP_46_1_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Loop_VITIS_LOOP_55_2_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_bmState_preFilterCap">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_bmState_textureThreshold">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_bmState_uniquenessRatio">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_cameraMA_l_fix">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_cameraMA_r_fix">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_distC_l_fix">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_distC_r_fix">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_imgL_in_cols_c60_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_imgL_in_rows_c59_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_imgR_in_cols_c62_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_imgR_in_rows_c61_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_img_disp8u_cols">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_img_disp8u_dilate_cols">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_img_disp8u_dilate_rows">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_img_disp8u_erode_cols">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_img_disp8u_erode_rows">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_img_disp8u_rows">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_irA_l_fix">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_irA_r_fix">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_leftRemappedMat_cols">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_leftRemappedMat_rows">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_mapxLMat_cols">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_mapxLMat_rows">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_mapxRMat_cols">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_mapxRMat_rows">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_rightRemappedMat_cols">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_rightRemappedMat_rows">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_Block_for_end7235_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_Block_for_end7237_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_Block_for_end7239_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_Block_for_end72_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_Loop_VITIS_LOOP_46_1_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_Loop_VITIS_LOOP_55_2_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_bmState_preFilterCap">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_bmState_textureThreshold">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_bmState_uniquenessRatio">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_cameraMA_l_fix">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_cameraMA_r_fix">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_distC_l_fix">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_distC_r_fix">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_imgL_in_cols_c60_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_imgL_in_rows_c59_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_imgR_in_cols_c62_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_imgR_in_rows_c61_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_cols">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_dilate_cols">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_dilate_rows">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_erode_cols">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_erode_rows">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_rows">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_irA_l_fix">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_irA_r_fix">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_leftRemappedMat_cols">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_leftRemappedMat_rows">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_mapxLMat_cols">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_mapxLMat_rows">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_mapxRMat_cols">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_mapxRMat_rows">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_rightRemappedMat_cols">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_rightRemappedMat_rows">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_Block_for_end7235_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_Block_for_end7237_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_Block_for_end7239_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_Block_for_end72_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_Loop_VITIS_LOOP_46_1_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_Loop_VITIS_LOOP_55_2_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_bmState_preFilterCap">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_bmState_textureThreshold">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_bmState_uniquenessRatio">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_cameraMA_l_fix">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_cameraMA_r_fix">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_distC_l_fix">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_distC_r_fix">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_imgL_in_cols_c60_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_imgL_in_rows_c59_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_imgR_in_cols_c62_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_imgR_in_rows_c61_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_cols">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_dilate_cols">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_dilate_rows">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_erode_cols">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_erode_rows">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_img_disp8u_rows">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_irA_l_fix">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_irA_r_fix">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_leftRemappedMat_cols">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_leftRemappedMat_rows">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_mapxLMat_cols">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_mapxLMat_rows">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_mapxRMat_cols">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_mapxRMat_rows">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_rightRemappedMat_cols">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_rightRemappedMat_rows">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_Ctrl_AWVALID">in, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_AWREADY">out, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_AWADDR">in, 6, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_WVALID">in, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_WREADY">out, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_WDATA">in, 32, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_WSTRB">in, 4, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_ARVALID">in, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_ARREADY">out, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_ARADDR">in, 6, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_RVALID">out, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_RREADY">in, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_RDATA">out, 32, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_RRESP">out, 2, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_BVALID">out, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_BREADY">in, 1, s_axi, Ctrl, scalar</column>
+<column name="s_axi_Ctrl_BRESP">out, 2, s_axi, Ctrl, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, stereolbm_axis_cambm, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, stereolbm_axis_cambm, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, stereolbm_axis_cambm, return value</column>
+<column name="vid_inL_TDATA">in, 8, axis, vid_inL_V_data_V, pointer</column>
+<column name="vid_inL_TKEEP">in, 1, axis, vid_inL_V_keep_V, pointer</column>
+<column name="vid_inL_TSTRB">in, 1, axis, vid_inL_V_strb_V, pointer</column>
+<column name="vid_inL_TUSER">in, 1, axis, vid_inL_V_user_V, pointer</column>
+<column name="vid_inL_TLAST">in, 1, axis, vid_inL_V_last_V, pointer</column>
+<column name="vid_inL_TID">in, 1, axis, vid_inL_V_id_V, pointer</column>
+<column name="vid_inL_TDEST">in, 1, axis, vid_inL_V_dest_V, pointer</column>
+<column name="vid_inL_TVALID">in, 1, axis, vid_inL_V_dest_V, pointer</column>
+<column name="vid_inL_TREADY">out, 1, axis, vid_inL_V_dest_V, pointer</column>
+<column name="vid_inR_TDATA">in, 8, axis, vid_inR_V_data_V, pointer</column>
+<column name="vid_inR_TKEEP">in, 1, axis, vid_inR_V_keep_V, pointer</column>
+<column name="vid_inR_TSTRB">in, 1, axis, vid_inR_V_strb_V, pointer</column>
+<column name="vid_inR_TUSER">in, 1, axis, vid_inR_V_user_V, pointer</column>
+<column name="vid_inR_TLAST">in, 1, axis, vid_inR_V_last_V, pointer</column>
+<column name="vid_inR_TID">in, 1, axis, vid_inR_V_id_V, pointer</column>
+<column name="vid_inR_TDEST">in, 1, axis, vid_inR_V_dest_V, pointer</column>
+<column name="vid_inR_TVALID">in, 1, axis, vid_inR_V_dest_V, pointer</column>
+<column name="vid_inR_TREADY">out, 1, axis, vid_inR_V_dest_V, pointer</column>
+<column name="vid_out_TDATA">out, 8, axis, vid_out_V_data_V, pointer</column>
+<column name="vid_out_TKEEP">out, 1, axis, vid_out_V_keep_V, pointer</column>
+<column name="vid_out_TSTRB">out, 1, axis, vid_out_V_strb_V, pointer</column>
+<column name="vid_out_TUSER">out, 1, axis, vid_out_V_user_V, pointer</column>
+<column name="vid_out_TLAST">out, 1, axis, vid_out_V_last_V, pointer</column>
+<column name="vid_out_TID">out, 1, axis, vid_out_V_id_V, pointer</column>
+<column name="vid_out_TDEST">out, 1, axis, vid_out_V_dest_V, pointer</column>
+<column name="vid_out_TVALID">out, 1, axis, vid_out_V_dest_V, pointer</column>
+<column name="vid_out_TREADY">in, 1, axis, vid_out_V_dest_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

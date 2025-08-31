@@ -1,0 +1,177 @@
+
+
+================================================================
+== Vitis HLS Report for 'xFInitUndistortRectifyMapInverseKernel'
+================================================================
+* Date:           Tue Jun 24 19:14:44 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        stereolbm_axis_cambm.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.972 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+    +---------+---------+----------+----------+-----+--------+---------+
+    |       45|   480044|  0.450 us|  4.800 ms|   45|  480044|       no|
+    +---------+---------+----------+----------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_0_0_01038_loc = alloca i64 1"   --->   Operation 5 'alloca' 'p_0_0_01038_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%p_0_0_010310_loc = alloca i64 1"   --->   Operation 6 'alloca' 'p_0_0_010310_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_0_0_010312_loc = alloca i64 1"   --->   Operation 7 'alloca' 'p_0_0_010312_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_0_0_010314_loc = alloca i64 1"   --->   Operation 8 'alloca' 'p_0_0_010314_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_0_0_010316_loc = alloca i64 1"   --->   Operation 9 'alloca' 'p_0_0_010316_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_0_0_010418_loc = alloca i64 1"   --->   Operation 10 'alloca' 'p_0_0_010418_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_0_0_010420_loc = alloca i64 1"   --->   Operation 11 'alloca' 'p_0_0_010420_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_0_0_010522_loc = alloca i64 1"   --->   Operation 12 'alloca' 'p_0_0_010522_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_0_0_010424_loc = alloca i64 1"   --->   Operation 13 'alloca' 'p_0_0_010424_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_0_0_010526_loc = alloca i64 1"   --->   Operation 14 'alloca' 'p_0_0_010526_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_0_0_010428_loc = alloca i64 1"   --->   Operation 15 'alloca' 'p_0_0_010428_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_0_0_010430_loc = alloca i64 1"   --->   Operation 16 'alloca' 'p_0_0_010430_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_0_0_010532_loc = alloca i64 1"   --->   Operation 17 'alloca' 'p_0_0_010532_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_0_0_010434_loc = alloca i64 1"   --->   Operation 18 'alloca' 'p_0_0_010434_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_0_0_010436_loc = alloca i64 1"   --->   Operation 19 'alloca' 'p_0_0_010436_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_0_0_010538_loc = alloca i64 1"   --->   Operation 20 'alloca' 'p_0_0_010538_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p_0_0_010440_loc = alloca i64 1"   --->   Operation 21 'alloca' 'p_0_0_010440_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_0_0_010442_loc = alloca i64 1"   --->   Operation 22 'alloca' 'p_0_0_010442_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [2/2] (0.00ns)   --->   "%call_ln0 = call void @xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1, i32 %cameraMatrix, i32 %ir, i32 %p_0_0_010442_loc, i32 %p_0_0_010440_loc, i32 %p_0_0_010538_loc, i32 %p_0_0_010436_loc, i32 %p_0_0_010434_loc, i32 %p_0_0_010532_loc, i32 %p_0_0_010430_loc, i32 %p_0_0_010428_loc, i32 %p_0_0_010526_loc, i32 %p_0_0_010424_loc, i32 %p_0_0_010522_loc, i32 %p_0_0_010420_loc, i32 %p_0_0_010418_loc"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln0 = call void @xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_178_2, i32 %distCoeffs, i32 %p_0_0_010316_loc, i32 %p_0_0_010314_loc, i32 %p_0_0_010312_loc, i32 %p_0_0_010310_loc, i32 %p_0_0_01038_loc"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 5.58>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%cols_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %cols"   --->   Operation 25 'read' 'cols_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%rows_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %rows"   --->   Operation 26 'read' 'rows_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/2] (3.32ns)   --->   "%call_ln0 = call void @xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_171_1, i32 %cameraMatrix, i32 %ir, i32 %p_0_0_010442_loc, i32 %p_0_0_010440_loc, i32 %p_0_0_010538_loc, i32 %p_0_0_010436_loc, i32 %p_0_0_010434_loc, i32 %p_0_0_010532_loc, i32 %p_0_0_010430_loc, i32 %p_0_0_010428_loc, i32 %p_0_0_010526_loc, i32 %p_0_0_010424_loc, i32 %p_0_0_010522_loc, i32 %p_0_0_010420_loc, i32 %p_0_0_010418_loc"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 3.32> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 28 [1/2] (3.23ns)   --->   "%call_ln0 = call void @xFInitUndistortRectifyMapInverseKernel_Pipeline_VITIS_LOOP_178_2, i32 %distCoeffs, i32 %p_0_0_010316_loc, i32 %p_0_0_010314_loc, i32 %p_0_0_010312_loc, i32 %p_0_0_010310_loc, i32 %p_0_0_01038_loc"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 3.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln163 = zext i16 %rows_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:163]   --->   Operation 29 'zext' 'zext_ln163' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln163_14 = zext i16 %cols_read" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:163]   --->   Operation 30 'zext' 'zext_ln163_14' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (5.58ns)   --->   "%mul_ln163 = mul i32 %zext_ln163, i32 %zext_ln163_14" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:163]   --->   Operation 31 'mul' 'mul_ln163' <Predicate = true> <Delay = 5.58> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.58> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%p_0_0_010442_loc_load = load i32 %p_0_0_010442_loc"   --->   Operation 32 'load' 'p_0_0_010442_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%p_0_0_010440_loc_load = load i32 %p_0_0_010440_loc"   --->   Operation 33 'load' 'p_0_0_010440_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%p_0_0_010538_loc_load = load i32 %p_0_0_010538_loc"   --->   Operation 34 'load' 'p_0_0_010538_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%p_0_0_010436_loc_load = load i32 %p_0_0_010436_loc"   --->   Operation 35 'load' 'p_0_0_010436_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%p_0_0_010434_loc_load = load i32 %p_0_0_010434_loc"   --->   Operation 36 'load' 'p_0_0_010434_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%p_0_0_010532_loc_load = load i32 %p_0_0_010532_loc"   --->   Operation 37 'load' 'p_0_0_010532_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%p_0_0_010430_loc_load = load i32 %p_0_0_010430_loc"   --->   Operation 38 'load' 'p_0_0_010430_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%p_0_0_010428_loc_load = load i32 %p_0_0_010428_loc"   --->   Operation 39 'load' 'p_0_0_010428_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%p_0_0_010526_loc_load = load i32 %p_0_0_010526_loc"   --->   Operation 40 'load' 'p_0_0_010526_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%p_0_0_010424_loc_load = load i32 %p_0_0_010424_loc"   --->   Operation 41 'load' 'p_0_0_010424_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%p_0_0_010522_loc_load = load i32 %p_0_0_010522_loc"   --->   Operation 42 'load' 'p_0_0_010522_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%p_0_0_010420_loc_load = load i32 %p_0_0_010420_loc"   --->   Operation 43 'load' 'p_0_0_010420_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%p_0_0_010418_loc_load = load i32 %p_0_0_010418_loc"   --->   Operation 44 'load' 'p_0_0_010418_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%p_0_0_010316_loc_load = load i32 %p_0_0_010316_loc"   --->   Operation 45 'load' 'p_0_0_010316_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%p_0_0_010314_loc_load = load i32 %p_0_0_010314_loc"   --->   Operation 46 'load' 'p_0_0_010314_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%p_0_0_010312_loc_load = load i32 %p_0_0_010312_loc"   --->   Operation 47 'load' 'p_0_0_010312_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%p_0_0_010310_loc_load = load i32 %p_0_0_010310_loc"   --->   Operation 48 'load' 'p_0_0_010310_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%p_0_0_01038_loc_load = load i32 %p_0_0_01038_loc"   --->   Operation 49 'load' 'p_0_0_01038_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 50 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 51 [2/2] (0.00ns)   --->   "%call_ln163 = call void @xFInitUndistortRectifyMapInverseKernel_Pipeline_loop_height_loop_width, i32 %mul_ln163, i16 %cols_read, i32 %p_0_0_010436_loc_load, i32 %p_0_0_010440_loc_load, i32 %p_0_0_010434_loc_load, i32 %p_0_0_010428_loc_load, i32 %p_0_0_010430_loc_load, i32 %p_0_0_010424_loc_load, i32 %p_0_0_010418_loc_load, i32 %p_0_0_010420_loc_load, i32 %p_0_0_010442_loc_load, i32 %p_0_0_010316_loc_load, i32 %p_0_0_010312_loc_load, i32 %p_0_0_010314_loc_load, i32 %p_0_0_010310_loc_load, i32 %p_0_0_01038_loc_load, i32 %p_0_0_010538_loc_load, i32 %p_0_0_010532_loc_load, i32 %p_0_0_010526_loc_load, i32 %p_0_0_010522_loc_load, i32 %mapxRMat_data, i32 %mapyRMat_data" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:163]   --->   Operation 51 'call' 'call_ln163' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapxRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 52 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mapyRMat_data, void @empty_7, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_84, void @empty_84, void @empty_84, i32 0, i32 0, i32 0, i32 0, void @empty_84, void @empty_84, i32 4294967295, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/2] (0.00ns)   --->   "%call_ln163 = call void @xFInitUndistortRectifyMapInverseKernel_Pipeline_loop_height_loop_width, i32 %mul_ln163, i16 %cols_read, i32 %p_0_0_010436_loc_load, i32 %p_0_0_010440_loc_load, i32 %p_0_0_010434_loc_load, i32 %p_0_0_010428_loc_load, i32 %p_0_0_010430_loc_load, i32 %p_0_0_010424_loc_load, i32 %p_0_0_010418_loc_load, i32 %p_0_0_010420_loc_load, i32 %p_0_0_010442_loc_load, i32 %p_0_0_010316_loc_load, i32 %p_0_0_010312_loc_load, i32 %p_0_0_010314_loc_load, i32 %p_0_0_010310_loc_load, i32 %p_0_0_01038_loc_load, i32 %p_0_0_010538_loc_load, i32 %p_0_0_010532_loc_load, i32 %p_0_0_010526_loc_load, i32 %p_0_0_010522_loc_load, i32 %mapxRMat_data, i32 %mapyRMat_data" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:163]   --->   Operation 54 'call' 'call_ln163' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%ret_ln226 = ret" [C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:226]   --->   Operation 55 'ret' 'ret_ln226' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 5.580ns
+The critical path consists of the following:
+	wire read operation ('cols_read') on port 'cols' [8]  (0.000 ns)
+	'mul' operation ('mul_ln163', C:/Xilinx/Vitis_Libraries/vision/L1/include\imgproc/xf_stereo_pipeline.hpp:163) [52]  (5.580 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
