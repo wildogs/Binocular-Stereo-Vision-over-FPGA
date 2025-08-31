@@ -29,7 +29,7 @@ Se calcula un mapa de disparidad haciendo uso de un IP **StereoLBM** acelerado m
 
 ```bash
 # 1) Clona
-git clone https://github.com/wildogs/Binocular-Stereo-Vision-over-FPGA.git
+git clone https://github.com/santi-rwx/Binocular-Stereo-Vision-over-FPGA.git
 
 # 2) (Opcional) Activa LFS y trackea artefactos grandes
 git lfs install
